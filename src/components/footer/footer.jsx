@@ -1,4 +1,4 @@
-import NuevamenteLogoSrc from "../../assets/TopnavLogo.png";
+import NuevamenteLogoSrc from "../../../public/TopnavLogo.png";
 export default function Footer() {
   return (
     <div className="bg-white">

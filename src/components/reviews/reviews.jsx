@@ -1,6 +1,6 @@
-import Client1Src from "../../assets/client1.png";
-import Client2Src from "../../assets/client2.png";
-import Client3Src from "../../assets/client3.png";
+import Client1Src from "../../../public/client1.png";
+import Client2Src from "../../../public/client2.png";
+import Client3Src from "../../../public/client3.png";
 import ReviewItem from "./reviewItem";
 export default function Reviews() {
   return (

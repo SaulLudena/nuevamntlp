@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import LogoPresentationSrc from "../../assets/LogoPresentation.png";
-import PresentationBackground from "../../assets/presentationBackground.png";
+import LogoPresentationSrc from "../../../public/LogoPresentation.png";
+import PresentationBackground from "../../../public/presentationBackground.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../../animations.css";

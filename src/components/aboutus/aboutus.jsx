@@ -1,6 +1,6 @@
-import fourcirclesSrc from "../../assets/fourcircles.png";
-import aboutus1src from "../../assets/aboutus1.png";
-import aboutus2src from "../../assets/aboutus2.png";
+import fourcirclesSrc from "../../../public/fourcircles.png";
+import aboutus1src from "../../../public/aboutus1.png";
+import aboutus2src from "../../../public/aboutus2.png";
 export default function Aboutus() {
   return (
     <div className="bg-white mt-72">

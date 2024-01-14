@@ -1,4 +1,4 @@
-import TopnavLogo from "../../assets/TopnavLogo.png";
+import TopnavLogo from "../../../public/TopnavLogo.png";
 
 export default function Topnav() {
   return (

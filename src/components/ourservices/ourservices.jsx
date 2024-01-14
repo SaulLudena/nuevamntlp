@@ -1,5 +1,5 @@
-import CirclesSrc from "../../assets/circles.svg";
-import OurServices1Src from "../../assets/ourservices1.png";
+import CirclesSrc from "../../../public/circles.svg";
+import OurServices1Src from "../../../public/ourservices1.png";
 export default function Ourservices() {
   return (
     <div className="mt-10 ">
