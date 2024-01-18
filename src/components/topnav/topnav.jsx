@@ -1,35 +1,54 @@
-import TopnavLogo from "../../../public/TopnavLogo.png";
-
+import TopnavLogo from "./topnavLogo";
+import TopnavItem from "./topnavItem";
+import React from "react";
+import TopnavContact from "./topnavContact";
+import { FaBars } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
+import ResponsiveTopnav from "./responsiveTopnav";
 export default function Topnav() {
+  const [topnavItems, setTopnavItems] = React.useState([]);
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen);
+  };
+
+  React.useEffect(() => {
+    const fetchingTopnavItems = async () => {
+      const response = await fetch("../../../src/data/nuevamenteData.json");
+      const { topnavitems } = await response.json();
+
+      setTopnavItems(topnavitems);
+    };
+    fetchingTopnavItems();
+  }, []);
   return (
-    <div className="fixed z-40 w-full px-10 py-5 text-xl bg-white/50 backdrop-blur-2xl">
+    <div className="fixed z-40 w-full px-10 py-5 text-xl bg-white/50 backdrop-blur-2xl ">
       <div className="flex items-center justify-between ">
+        <TopnavLogo />
         <div>
-          <img src={TopnavLogo} alt="NuevamenteLogo" className="w-24 h-auto" />
-        </div>
-        <div>
-          <ul className="flex gap-5 text-xl">
-            <li className="grid justify-center text-center transition duration-200 border-b-4 border-white/50 hover:border-b-4 hover:border-[#F3CF00] px-5 py-2">
-              Inicio
-            </li>
-            <li className="grid justify-center text-center transition duration-200 border-b-4 border-white/50 hover:border-b-4 hover:border-[#F3CF00] px-5 py-2">
-              Nosotros
-            </li>
-            <li className="grid justify-center text-center transition duration-200 border-b-4 border-white/50 hover:border-b-4 hover:border-[#F3CF00] px-5 py-2">
-              Servicios
-            </li>
-            <li className="grid justify-center text-center transition duration-200 border-b-4 border-white/50 hover:border-b-4 hover:border-[#F3CF00] px-5 py-2">
-              Reseñas
-            </li>
-            <li className="grid justify-center text-center transition duration-200 border-b-4 border-white/50 hover:border-b-4 hover:border-[#F3CF00] px-5 py-2">
-              Visión
-            </li>
+          <ul className="flex text-xl max-lg:hidden">
+            {topnavItems.map((item, index) => {
+              return (
+                <TopnavItem key={index} href={item.href} label={item.label} />
+              );
+            })}
           </ul>
         </div>
-        <div className="px-5 py-2 bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-xl">
-          Contáctanos
+        <TopnavContact />
+        <div className="hidden max-lg:flex">
+          <div
+            className="p-3 rounded-xl bg-[#F3CF00] shadow-xl cursor-pointer fixed top-8 right-10 z-50 transition duration-500 select-none"
+            onClick={() => {
+              handleOpen();
+            }}
+          >
+            {isOpen ? <IoClose size={20} /> : <FaBars size={20} />}
+          </div>
         </div>
       </div>
+      <ResponsiveTopnav isOpen={isOpen} topnavItems={topnavItems} />
     </div>
   );
 }

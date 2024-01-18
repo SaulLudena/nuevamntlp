@@ -3,9 +3,14 @@ export default function ReviewItem({
   clientName,
   clientReview,
   positionIndex,
+  data_aos_duration_value,
 }) {
   return (
-    <div className="shadow-2xl rounded-2xl ">
+    <div
+      className="shadow-2xl rounded-2xl "
+      data-aos="fade-up"
+      data-aos-duration={data_aos_duration_value}
+    >
       <div>
         <div>
           <img

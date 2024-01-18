@@ -2,16 +2,26 @@ import CirclesSrc from "../../../public/circles.svg";
 import OurServices1Src from "../../../public/ourservices1.png";
 export default function Ourservices() {
   return (
-    <div className="mt-10 ">
+    <div className="pt-10 " id="Servicios">
       <div className=" w-[1500px] max-w-full m-auto">
         <div className="px-20 py-20">
           <div>
             <div className="mb-10 text-7xl">
-              <h1 className="text-center">NUESTROS SERVICIOS</h1>
+              <h1
+                className="text-center"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                NUESTROS SERVICIOS
+              </h1>
             </div>
           </div>
           <div className="grid grid-cols-2 grid-rows-3 gap-10">
-            <div className="flex items-center justify-between col-span-1 bg-white shadow-xl rounded-3xl">
+            <div
+              className="flex items-center justify-between col-span-1 bg-white shadow-xl rounded-3xl"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <div className="grid">
                 <div className="flex justify-between">
                   <h1 className="p-10 text-5xl">Servicio 1</h1>
@@ -37,7 +47,11 @@ export default function Ourservices() {
               </div>
             </div>
 
-            <div className="flex justify-between col-span-1 row-span-2 bg-white shadow-xl rounded-3xl">
+            <div
+              className="flex justify-between col-span-1 row-span-2 bg-white shadow-xl rounded-3xl"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <div className="grid">
                 <div className="flex justify-between">
                   <h1 className="p-10 text-5xl">Servicio 2</h1>
@@ -84,7 +98,11 @@ export default function Ourservices() {
               </div>
             </div>
 
-            <div className="flex items-center justify-between col-span-1 bg-white shadow-xl rounded-3xl">
+            <div
+              className="flex items-center justify-between col-span-1 bg-white shadow-xl rounded-3xl"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <div className="grid">
                 <div className="flex justify-between">
                   <h1 className="p-10 text-5xl">Servicio 3</h1>
@@ -110,7 +128,11 @@ export default function Ourservices() {
               </div>
             </div>
 
-            <div className="flex items-center justify-between col-span-2 bg-white shadow-xl rounded-3xl">
+            <div
+              className="flex items-center justify-between col-span-2 bg-white shadow-xl rounded-3xl"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <div className="grid w-full h-full">
                 <div className="flex justify-between ">
                   <h1 className="p-10 text-5xl">Servicio 4</h1>

@@ -1,24 +1,24 @@
-import { useEffect } from "react";
 import LogoPresentationSrc from "../../../public/LogoPresentation.png";
 import PresentationBackground from "../../../public/presentationBackground.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import "../../animations.css";
-export default function presentation() {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
 
+export default function presentation() {
   return (
     <div
-      className=" w-[1500px] max-w-full m-auto  h-[80vh] items-center grid"
-      data-aos="fade-down"
-      data-aos-duration="1500"
+      className=" w-[1500px] max-w-full m-auto  h-[80vh] items-center grid pt-32 max-2xl:pt-52 mb-20"
+      id="Inicio"
     >
       <div>
-        <img src={PresentationBackground} alt="" className="select-none" />
+        <img
+          src={PresentationBackground}
+          alt=""
+          className="object-cover w-full h-full select-none"
+        />
       </div>
-      <div className="absolute px-20 ">
+      <div
+        className="absolute px-20 "
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <div className="flex items-center ">
           <div className="grid gap-5">
             <div>
