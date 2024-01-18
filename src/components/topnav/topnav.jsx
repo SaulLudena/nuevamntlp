@@ -16,7 +16,7 @@ export default function Topnav() {
 
   React.useEffect(() => {
     const fetchingTopnavItems = async () => {
-      const response = await fetch("../../../src/data/nuevamenteData.json");
+      const response = await fetch("/src/data/topnav.json");
       const { topnavitems } = await response.json();
 
       setTopnavItems(topnavitems);
