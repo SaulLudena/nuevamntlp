@@ -14,11 +14,11 @@ export default function ResponsiveTopnav({ isOpen, topnavItems }) {
 
         <div>
           <ul className="flex flex-col text-xl">
-            {topnavItems.map((item, index) => {
-              return (
-                <TopnavItem key={index} href={item.href} label={item.label} />
-              );
-            })}
+            <TopnavItem href="#Inicio" label="Inicio" />
+            <TopnavItem href="#Nosotros" label="Nosotros" />
+            <TopnavItem href="#Servicios" label="Servicios" />
+            <TopnavItem href="#Reseñas" label="Reseñas" />
+            <TopnavItem href="#Visión" label="Visión" />
           </ul>
         </div>
         <div className="px-5 py-2 bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-xl ">

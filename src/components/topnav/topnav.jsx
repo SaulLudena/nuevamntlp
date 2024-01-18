@@ -6,7 +6,6 @@ import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import ResponsiveTopnav from "./responsiveTopnav";
 export default function Topnav() {
-  const [topnavItems, setTopnavItems] = React.useState([]);
   const [isOpen, setIsOpen] = React.useState(false);
 
   const handleOpen = () => {
@@ -14,26 +13,17 @@ export default function Topnav() {
     console.log(isOpen);
   };
 
-  React.useEffect(() => {
-    const fetchingTopnavItems = async () => {
-      const response = await fetch("../../../public/nuevamenteData.json");
-      const { topnavitems } = await response.json();
-
-      setTopnavItems(topnavitems);
-    };
-    fetchingTopnavItems();
-  }, []);
   return (
     <div className="fixed z-40 w-full px-10 py-5 text-xl bg-white/50 backdrop-blur-2xl ">
       <div className="flex items-center justify-between ">
         <TopnavLogo />
         <div>
           <ul className="flex text-xl max-lg:hidden">
-            {topnavItems.map((item, index) => {
-              return (
-                <TopnavItem key={index} href={item.href} label={item.label} />
-              );
-            })}
+            <TopnavItem href="#Inicio" label="Inicio" />
+            <TopnavItem href="#Nosotros" label="Nosotros" />
+            <TopnavItem href="#Servicios" label="Servicios" />
+            <TopnavItem href="#Reseñas" label="Reseñas" />
+            <TopnavItem href="#Visión" label="Visión" />
           </ul>
         </div>
         <TopnavContact />
@@ -48,7 +38,7 @@ export default function Topnav() {
           </div>
         </div>
       </div>
-      <ResponsiveTopnav isOpen={isOpen} topnavItems={topnavItems} />
+      <ResponsiveTopnav isOpen={isOpen} />
     </div>
   );
 }
