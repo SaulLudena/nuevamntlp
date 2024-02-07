@@ -1,9 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Garde_ghotic";
+  src: url("/src/assets/fonts/AVANTGARDELT-BOLD.OTF");
+}
+@font-face {
+  font-family: "Garde_ghotic_2";
+  src: url("/src/assets/fonts/AVANTGARDELT-BOOK.OTF");
+}
+@font-face {
+  font-family: "Better_yesterday";
+  src: url("/src/assets/fonts/BETTER-YESTERDAY.OTF");
+}
+
 body {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Garde_ghotic";
   background-color: #efefef;
-  overflow-x: hidden;
+}
+.better_yesterday {
+  font-family: "Better_yesterday";
+}
+
+.Garde_ghotic_semibold {
+  font-weight: lighter;
 }

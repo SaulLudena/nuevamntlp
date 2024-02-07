@@ -10,14 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
     "@react-spring/web": "^9.7.3",
     "aos": "^2.3.4",
+    "embla-carousel-react": "^8.0.0-rc22",
+    "framer-motion": "^11.0.3",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
+    "react-multi-carousel": "^2.8.4",
     "react-router-dom": "^6.21.1",
+    "react-slick": "^0.30.1",
+    "slick-carousel": "^1.8.1",
     "sort-by": "^1.2.0"
   },
   "devDependencies": {

@@ -1,9 +1,0 @@
-{
-  "topnavitems": [
-    { "href": "#Inicio", "label": "Inicio" },
-    { "href": "#Nosotros", "label": "Nosotros" },
-    { "href": "#Servicios", "label": "Servicios" },
-    { "href": "#Reseñas", "label": "Reseñas" },
-    { "href": "#Visión", "label": "Visión" }
-  ]
-}

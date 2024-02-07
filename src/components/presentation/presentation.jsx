@@ -1,44 +1,34 @@
-import LogoPresentationSrc from "../../../public/LogoPresentation.png";
-import PresentationBackground from "../../../public/presentationBackground.png";
+import PresentationBackground4 from "../../../public/presentationBackground4.png";
+import TopnavContact from "../topnav/topnavContact";
 
 export default function presentation() {
   return (
-    <div
-      className=" w-[1500px] max-w-full m-auto  h-[80vh] items-center grid pt-32 max-2xl:pt-52 mb-20"
-      id="Inicio"
-    >
-      <div>
-        <img
-          src={PresentationBackground}
-          alt=""
-          className="object-cover w-full h-full select-none"
-        />
-      </div>
+    <div className="grid items-center" id="Inicio">
+      <img
+        src={PresentationBackground4}
+        alt=""
+        className="object-cover w-full h-full select-none "
+      />
+
       <div
-        className="absolute px-20 "
+        className="absolute w-full "
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        <div className="flex items-center ">
-          <div className="grid gap-5">
-            <div>
-              <h1 className="text-9xl">COMPARTE TU LUZ</h1>
-              <h1 className="text-9xl">CON EL MUNDO</h1>
-            </div>
-            <div className="w-2/3">
-              <p className="text-2xl">
-                SOMOS LA ÚNICA ACELERADORA DE NEGOCIOS ESPECIALIZADA EN VENTA
-                DIRECTA MULTINIVEL
+        <div className=" w-[80%] max-w-[1500px] m-auto  -translate-y-20">
+          <div className="flex items-center justify-between ">
+            <div className=" w-[50rem] grid gap-10">
+              <h1 className="text-8xl text-[#EDCA21]">
+                Comparte tu luz con el mundo
+              </h1>
+              <p className="text-3xl text-white">
+                Somos la única aceleradora de negocios especializada en venta
+                directa multinivel
               </p>
-            </div>
-            <div className="flex">
-              <div className="px-5 py-2 bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-xl">
-                Contáctanos
+              <div className="flex">
+                <TopnavContact />
               </div>
             </div>
-          </div>
-          <div>
-            <img src={LogoPresentationSrc} alt={LogoPresentationSrc} />
           </div>
         </div>
       </div>
