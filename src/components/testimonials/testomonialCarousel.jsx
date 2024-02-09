@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TestimonialsItem from "./testimonialsItem";
+
 export default function TestimonialCarousel() {
   const settings = {
     dots: true,
@@ -11,15 +12,11 @@ export default function TestimonialCarousel() {
     slidesToScroll: 1,
   };
   return (
-    <div className="w-[80%] w-max-[1500px] m-auto slider-container">
+    <div className="w-[80%] w-max-[1500px] m-auto slider-container h-[150px] ">
       <Slider {...settings}>
         <TestimonialsItem />
-        <div className="border-2 border-black">
-          <h3>2</h3>
-        </div>
-        <div className="border-2 border-black">
-          <h3>3</h3>
-        </div>
+        <TestimonialsItem />
+        <TestimonialsItem />
       </Slider>
     </div>
   );
