@@ -1,5 +1,6 @@
 import { FaChevronRight } from "react-icons/fa";
 import TestimonialCarousel from "./testomonialCarousel";
+import OurClientes from "./OurClients";
 export default function Testimonials() {
   return (
     <>
@@ -18,6 +19,9 @@ export default function Testimonials() {
       </div>
 
       <TestimonialCarousel />
+      <div className="w-[80%] max-w-[1500px] m-auto py-20 grid gap-10">
+        <OurClientes />
+      </div>
     </>
   );
 }

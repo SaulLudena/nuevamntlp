@@ -1,9 +1,13 @@
 import TestimonialImg from "../../../public/testimonials/Rectangle 227.png";
 export default function TestimonialsItem() {
   return (
-    <div className="grid w-full grid-cols-12 p-10 ">
-      <div className="flex justify-end col-span-5 ">
-        <img src={TestimonialImg} alt="" className="object-cover h-full w-96" />
+    <div className="grid w-full grid-cols-12 p-10 border-2 border-black">
+      <div className="flex justify-end col-span-5 border-2 border-black">
+        <img
+          src={TestimonialImg}
+          alt=""
+          className="object-cover h-full w-96 "
+        />
       </div>
       <div className="grid items-center h-full col-span-7 py-10">
         <div className="bg-[#DC4242] h-full text-white p-10 grid">
