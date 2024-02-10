@@ -15,7 +15,7 @@ export default function TeamMemberItem({
       <div className="bg-[#EDCA21]">
         <div className="bg-[#EDCA21] h-full p-5 flex flex-col justify-between gap-4">
           <h1 className="text-2xl truncate ">{nombre}</h1>
-          <h1 className="truncate">{cargo}</h1>
+          <h1 className="truncate garde_ghotic_semibold">{cargo}</h1>
           <ul className="flex justify-end w-full gap-5 ">
             <li>
               <a href={instagram} target="_blank" rel="noreferrer">

@@ -15,6 +15,7 @@ import { FaCamera } from "react-icons/fa";
 import { FaBox } from "react-icons/fa";
 
 import collageImagen1 from "../../../public/collage_1.png";
+import ServicesDetailItem from "./servicesDetailItem";
 
 export default function ServiceSlider() {
   const containerRef = useRef(null);
@@ -154,78 +155,16 @@ export default function ServiceSlider() {
         </Tab.List>
         <Tab.Panels>
           <Tab.Panel>
-            <div className="grid grid-cols-12 gap-20">
-              <div className="grid items-center col-span-6 ">
-                <div className="grid gap-6 px-10">
-                  <h1 className="text-5xl text-[#DC4242]">Diseño Gráfico</h1>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur. Eget massa mauris
-                    cras fames tempus lorem. At lectus nunc odio blandit sed
-                    arcu. Rhoncus mauris gravida volutpat convallis duis
-                    vestibulum feugiat elit consequat. Sit mus nisi velit quis.
-                    Lorem ipsum dolor sit amet consectetur. Eget massa mauris
-                    cras fames tempus lorem. At lectus nunc odio blandit sed
-                    arcu. Rhoncus mauris gravida volutpat convallis duis
-                    vestibulum feugiat elit consequat. Sit mus nisi velit quis.
-                  </p>
-
-                  <h2 className="text-[#434343] text-2xl">Incluye:</h2>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur. Eget massa mauris
-                    cras fames tempus lorem. At lectus nunc odio blandit sed
-                    arcu. Rhoncus mauris gravida volutpat convallis duis
-                    vestibulum feugiat elit consequat.
-                  </p>
-                  <div className="w-full h-[2px] bg-[#DC4242]"></div>
-                  <div className="flex items-center justify-center gap-10">
-                    <p className="text-5xl better_yesterday">¿Lo quieres?</p>
-                    <div className="text-center ">
-                      <TopnavContact />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-span-6 ">
-                <img src={collageImagen1} alt="" className="w-full" />
-              </div>
-            </div>
+            <ServicesDetailItem collageImagen1={collageImagen1} />
           </Tab.Panel>
           <Tab.Panel>
-            <div className="grid grid-cols-12 gap-20">
-              <div className="grid items-center col-span-6 ">
-                <div className="grid gap-6 px-10">
-                  <h1 className="text-5xl text-[#DC4242]">Redes sociales</h1>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur. Eget massa mauris
-                    cras fames tempus lorem. At lectus nunc odio blandit sed
-                    arcu. Rhoncus mauris gravida volutpat convallis duis
-                    vestibulum feugiat elit consequat. Sit mus nisi velit quis.
-                    Lorem ipsum dolor sit amet consectetur. Eget massa mauris
-                    cras fames tempus lorem. At lectus nunc odio blandit sed
-                    arcu. Rhoncus mauris gravida volutpat convallis duis
-                    vestibulum feugiat elit consequat. Sit mus nisi velit quis.
-                  </p>
-
-                  <h2 className="text-[#434343] text-2xl">Incluye:</h2>
-                  <p className="text-sm">
-                    Lorem ipsum dolor sit amet consectetur. Eget massa mauris
-                    cras fames tempus lorem. At lectus nunc odio blandit sed
-                    arcu. Rhoncus mauris gravida volutpat convallis duis
-                    vestibulum feugiat elit consequat.
-                  </p>
-                  <div className="w-full h-[2px] bg-[#DC4242]"></div>
-                  <div className="flex items-center justify-center gap-10">
-                    <p>¿Lo quieres?</p>
-                    <div className="text-center ">
-                      <TopnavContact />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-span-6 ">
-                <img src={collageImagen1} alt="" className="w-full" />
-              </div>
-            </div>
+            <ServicesDetailItem collageImagen1={collageImagen1} />
+          </Tab.Panel>
+          <Tab.Panel>
+            <ServicesDetailItem collageImagen1={collageImagen1} />
+          </Tab.Panel>
+          <Tab.Panel>
+            <ServicesDetailItem collageImagen1={collageImagen1} />
           </Tab.Panel>
         </Tab.Panels>
       </Tab.Group>

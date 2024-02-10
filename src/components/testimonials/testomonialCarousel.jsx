@@ -9,9 +9,9 @@ function SamplePrevArrow(props) {
   return (
     <div
       onClick={onClick}
-      className="absolute z-40 border-2 border-black top-1/2 text-[#DC4242]"
+      className="absolute z-40 top-1/2 text-[#DC4242] -translate-x-32"
     >
-      <GrFormPrevious size={110} />
+      <GrFormPrevious size={150} />
     </div>
   );
 }
@@ -20,9 +20,9 @@ function SampleNextArrow(props) {
   return (
     <div
       onClick={onClick}
-      className="absolute right-0 border-2 border-black top-1/2 text-[#DC4242]"
+      className="absolute right-0  top-1/2 text-[#DC4242] translate-x-32 "
     >
-      <MdNavigateNext size={110} />
+      <MdNavigateNext size={210} />
     </div>
   );
 }

@@ -7,9 +7,11 @@ export default function Services() {
         <div className="text-[#DC4242]">
           <FaChevronRight size={55} />
         </div>
-        <div className="grid gap-2">
+        <div className="grid gap-5">
           <h1 className="text-6xl">Servicios</h1>
-          <p className="text-md">Lorem ipsum dolor sit amet consectetur.</p>
+          <p className="text-md garde_ghotic_semibold">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
         </div>
       </div>
 

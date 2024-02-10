@@ -18,13 +18,15 @@ export default function PresentationComplement() {
       <div className="bg-[#130202] py-32">
         <div className=" w-[80%] max-w-[1500px] m-auto justify-center grid gap-10">
           <div className="grid justify-center w-full ">
-            <img src={TopnavLogo2} alt="" />
+            <img src={TopnavLogo2} alt="" className="w-[30rem]" />
           </div>
-          <p className="text-center text-white ">
-            Somos una agencia creativa, con más de 5 años en el mercado,
-            especializada en generar CREATIVIDAD e INNOVACIÓN para la venta
-            directa multinivel. Brindamos los siguientes servicios:
-          </p>
+          <div className="w-[50rem]  text-center m-auto">
+            <p className="text-center text-white garde_ghotic_semibold ">
+              Somos una agencia creativa, con más de 5 años en el mercado,
+              especializada en generar CREATIVIDAD e INNOVACIÓN para la venta
+              directa multinivel. Brindamos los siguientes servicios:
+            </p>
+          </div>
           <ul className="grid grid-cols-3 grid-rows-3 gap-5">
             <PresentationComplementItem
               to="#awd"

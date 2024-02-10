@@ -11,7 +11,7 @@ export default function Testimonials() {
           </div>
           <div className="grid gap-2">
             <h1 className="text-6xl">Testimonios</h1>
-            <p className="text-md">
+            <p className="text-md garde_ghotic_semibold">
               Enterate de las experiencias de nuestros clientes.
             </p>
           </div>

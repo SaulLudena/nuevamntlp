@@ -1,8 +1,8 @@
-import TestimonialImg from "../../../public/testimonials/Rectangle 227.png";
+import TestimonialImg from "../../../public/testimonials/testimonialAuthor1.png";
 export default function TestimonialsItem() {
   return (
-    <div className="grid w-full grid-cols-12 p-10 border-2 border-black">
-      <div className="flex justify-end col-span-5 border-2 border-black">
+    <div className="grid w-full grid-cols-12 p-10 ">
+      <div className="flex justify-end col-span-5 ">
         <img
           src={TestimonialImg}
           alt=""
@@ -14,7 +14,7 @@ export default function TestimonialsItem() {
           <p className="text-2xl">Networker</p>
           <h1 className="text-5xl">Jimmy Garcia</h1>
           <div className="w-full h-[0.5px] bg-white"></div>
-          <p className="text-sm">
+          <p className=" garde_ghotic_semibold">
             “Lorem ipsum dolor sit amet consectetur. Ullamcorper elementum risus
             faucibus faucibus arcu libero pellentesque vitae dignissim. Mattis
             risus nisi aliquam molestie enim etiam. Facilisis scelerisque

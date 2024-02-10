@@ -10,7 +10,9 @@ export default function Ourteam() {
         <h1 className="text-3xl">
           Conoce a los creativos que te ayudan a potenciar tu luz
         </h1>
-        <p>Somos un equipo capacitado para entender tus necesidades</p>
+        <p className="garde_ghotic_semibold">
+          Somos un equipo capacitado para entender tus necesidades
+        </p>
       </div>
       <ul className="grid grid-cols-4 grid-rows-2 gap-5 ">
         {teamMember.map((member, index) => (

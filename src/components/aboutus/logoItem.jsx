@@ -1,7 +1,7 @@
 export default function LogoItem({ urlImagen }) {
   return (
-    <li className="bg-black h-14">
-      <img src={urlImagen} alt="" />
+    <li className="grid justify-center ">
+      <img src={urlImagen} alt="" className="select-none" />
     </li>
   );
 }
