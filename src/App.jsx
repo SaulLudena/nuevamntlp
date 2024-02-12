@@ -7,6 +7,7 @@ import Ourteam from "./components/ourteam/ourteam";
 import Contact from "./components/contact/contact";
 import Testimonials from "./components/testimonials/testimonials";
 import Faq from "./components/FAQ/faq";
+
 function App() {
   return (
     <div>

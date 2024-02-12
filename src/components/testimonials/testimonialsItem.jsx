@@ -1,7 +1,7 @@
 import TestimonialImg from "../../../public/testimonials/testimonialAuthor1.png";
 export default function TestimonialsItem() {
   return (
-    <div className="grid w-full grid-cols-12 p-10 ">
+    <div className="grid grid-cols-12 p-10 ">
       <div className="flex justify-end col-span-5 ">
         <img
           src={TestimonialImg}

@@ -1,50 +1,45 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import TestimonialsItem from "./testimonialsItem";
-import { MdNavigateNext } from "react-icons/md";
-import { GrFormPrevious } from "react-icons/gr";
-function SamplePrevArrow(props) {
-  const { onClick } = props;
-  return (
-    <div
-      onClick={onClick}
-      className="absolute z-40 top-1/2 text-[#DC4242] -translate-x-32"
-    >
-      <GrFormPrevious size={150} />
-    </div>
-  );
-}
-function SampleNextArrow(props) {
-  const { onClick } = props;
-  return (
-    <div
-      onClick={onClick}
-      className="absolute right-0  top-1/2 text-[#DC4242] translate-x-32 "
-    >
-      <MdNavigateNext size={210} />
-    </div>
-  );
-}
+
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 export default function TestimonialCarousel() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-  };
   return (
-    <div className="w-[80%] w-max-[1500px] m-auto slider-container  ">
-      <Slider {...settings}>
-        <TestimonialsItem />
-        <TestimonialsItem />
-        <TestimonialsItem />
-        <TestimonialsItem />
-        <TestimonialsItem />
-      </Slider>
-    </div>
+    <Swiper
+      // install Swiper modules
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={1}
+      navigation
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log("slide change")}
+    >
+      <SwiperSlide>
+        <div className="border-2 border-black">
+          <TestimonialsItem />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="border-2 border-black">
+          <TestimonialsItem />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="border-2 border-black">
+          <TestimonialsItem />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="border-2 border-black">
+          <TestimonialsItem />
+        </div>
+      </SwiperSlide>
+    </Swiper>
   );
 }
