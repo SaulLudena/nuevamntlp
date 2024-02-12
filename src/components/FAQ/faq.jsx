@@ -1,5 +1,6 @@
 import { FaChevronRight } from "react-icons/fa";
-import TopnavContact from "../Topnav/topnavContact";
+
+import TopnavContact from "../topnav/topnavContact";
 import FaqItem from "./faqItem";
 
 export default function Faq() {
