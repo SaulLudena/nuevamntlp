@@ -1,6 +1,5 @@
 import { Fragment, useRef } from "react";
 import ServiceSliderItem from "./serviceSliderItem";
-import TopnavContact from "../topnav/topnavContact";
 
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import { Tab } from "@headlessui/react";
@@ -13,10 +12,18 @@ import { AiOutlineTeam } from "react-icons/ai";
 import { MdComputer } from "react-icons/md";
 import { FaCamera } from "react-icons/fa";
 import { FaBox } from "react-icons/fa";
-
 import collageImagen1 from "../../../public/collage_1.png";
 import ServicesDetailItem from "./servicesDetailItem";
 
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 export default function ServiceSlider() {
   const containerRef = useRef(null);
 
@@ -168,45 +175,85 @@ export default function ServiceSlider() {
           </Tab.Panel>
         </Tab.Panels>
       </Tab.Group>
+
+      {/*
+	      <Tab.Group>
+        <Tab.List className="flex overflow-x-hidden transition-transform duration-300 ease-in-out ">
+          <Swiper
+            // install Swiper modules
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={0}
+            navigation
+            pagination
+            slidesPerView={3}
+          >
+            <SwiperSlide>
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  <button className="outline-none">
+                    <ServiceSliderItem
+                      selected={selected}
+                      label="Diseño gráfico"
+                      icon={<SiMaterialdesignicons size={30} />}
+                    />
+                  </button>
+                )}
+              </Tab>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  <button className="outline-none">
+                    <ServiceSliderItem
+                      selected={selected}
+                      label="Diseño gráfico"
+                      icon={<SiMaterialdesignicons size={30} />}
+                    />
+                  </button>
+                )}
+              </Tab>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  <button className="outline-none">
+                    <ServiceSliderItem
+                      selected={selected}
+                      label="Diseño gráfico"
+                      icon={<SiMaterialdesignicons size={30} />}
+                    />
+                  </button>
+                )}
+              </Tab>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  <button className="outline-none">
+                    <ServiceSliderItem
+                      selected={selected}
+                      label="Diseño gráfico"
+                      icon={<SiMaterialdesignicons size={30} />}
+                    />
+                  </button>
+                )}
+              </Tab>
+            </SwiperSlide>
+          </Swiper>
+        </Tab.List>
+        <Tab.Panels>
+          <Tab.Panel>
+            <p>hijo 1</p>
+          </Tab.Panel>
+          <Tab.Panel>
+            <p>hijo 2</p>
+          </Tab.Panel>
+          <Tab.Panel>
+            <p>hijo 3</p>
+          </Tab.Panel>
+        </Tab.Panels>
+      </Tab.Group>
+	*/}
     </>
   );
 }
-
-const servicesItem = [
-  {
-    label: "Diseño gráfico",
-    icon: <SiMaterialdesignicons size={30} />,
-  },
-  {
-    label: "Redes sociales",
-    icon: <LuMonitorSmartphone size={30} />,
-  },
-  {
-    label: "Desarrollo de Páginas web",
-    icon: <MdComputer size={30} />,
-  },
-  {
-    label: "Coaching de Marca Personal",
-    icon: <RiTeamFill size={30} />,
-  },
-  {
-    label: "Creación de Logos",
-    icon: <MdStars size={30} />,
-  },
-  {
-    label: "Fotografía",
-    icon: <FaCamera size={30} />,
-  },
-  {
-    label: "Videografía",
-    icon: <FaVideo size={30} />,
-  },
-  {
-    label: "Imagen corporativa",
-    icon: <AiOutlineTeam size={30} />,
-  },
-  {
-    label: "Packaing",
-    icon: <FaBox size={30} />,
-  },
-];

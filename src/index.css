@@ -28,3 +28,11 @@ body {
 .garde_ghotic_semibold {
   font-family: "Garde_ghotic_2";
 }
+.swiper-button-next {
+  color: #dc4242;
+  font-weight: bold;
+}
+.swiper-button-prev {
+  color: #dc4242;
+  font-weight: bold;
+}

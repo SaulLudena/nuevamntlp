@@ -21,7 +21,7 @@ export default function presentation() {
               <h1 className="text-8xl text-[#EDCA21]">
                 Comparte tu luz con el mundo
               </h1>
-              <p className="text-3xl text-white">
+              <p className="text-3xl text-white garde_ghotic_semibold">
                 Somos la única aceleradora de negocios especializada en venta
                 directa multinivel
               </p>

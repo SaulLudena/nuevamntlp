@@ -21,24 +21,16 @@ export default function TestimonialCarousel() {
       onSlideChange={() => console.log("slide change")}
     >
       <SwiperSlide>
-        <div className="border-2 border-black">
-          <TestimonialsItem />
-        </div>
+        <TestimonialsItem />
       </SwiperSlide>
       <SwiperSlide>
-        <div className="border-2 border-black">
-          <TestimonialsItem />
-        </div>
+        <TestimonialsItem />
       </SwiperSlide>
       <SwiperSlide>
-        <div className="border-2 border-black">
-          <TestimonialsItem />
-        </div>
+        <TestimonialsItem />
       </SwiperSlide>
       <SwiperSlide>
-        <div className="border-2 border-black">
-          <TestimonialsItem />
-        </div>
+        <TestimonialsItem />
       </SwiperSlide>
     </Swiper>
   );

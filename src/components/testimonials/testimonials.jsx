@@ -22,7 +22,9 @@ export default function Testimonials() {
         </div>
       </div>
 
-      <TestimonialCarousel />
+      <div className="w-[80%] max-w-[1500px] m-auto">
+        <TestimonialCarousel />
+      </div>
       <div className="w-[80%] max-w-[1500px] m-auto py-20 grid gap-10">
         <OurClients />
       </div>
