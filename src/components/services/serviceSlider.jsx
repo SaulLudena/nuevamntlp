@@ -29,7 +29,7 @@ export default function ServiceSlider() {
   return (
     <>
       <Tab.Group>
-        <Tab.List className="flex px-10 mb-10 overflow-x-hidden transition-transform duration-300 ease-in-out">
+        <Tab.List className="flex mb-10 overflow-x-hidden transition-transform duration-300 ease-in-out ">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
