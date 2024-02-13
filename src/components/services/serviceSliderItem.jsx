@@ -1,9 +1,7 @@
-import { FaArrowRight } from "react-icons/fa";
-
 export default function ServiceSliderItem({ selected, label, icon }) {
   return (
     <li
-      className={`w-[20rem] border-4 flex items-center cursor-pointer ${
+      className={`w-full border-4 flex items-center cursor-pointer ${
         selected ? "border-[#DC4242] " : "border-[#EDCA21] "
       }`}
     >
@@ -15,10 +13,7 @@ export default function ServiceSliderItem({ selected, label, icon }) {
         {icon}
       </div>
       <div className="flex items-center justify-between w-full px-4">
-        <p className="text-black">{label}</p>
-        <div className={` ${selected ? "text-[#DC4242]" : "text-[#EDCA21]"}`}>
-          <FaArrowRight />
-        </div>
+        <p className="text-left text-black select-none">{label}</p>
       </div>
     </li>
   );
