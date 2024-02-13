@@ -17,7 +17,7 @@ import ServicesDetailItem from "./servicesDetailItem";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade } from "swiper/modules";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css";
@@ -32,10 +32,9 @@ export default function ServiceSlider() {
         <Tab.List className="flex mb-10 overflow-x-hidden transition-transform duration-300 ease-in-out ">
           <Swiper
             // install Swiper modules
-            modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={30}
             slidesPerView={3}
-            effect="fade"
           >
             <SwiperSlide>
               <Tab as={Fragment}>
