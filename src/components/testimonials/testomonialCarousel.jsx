@@ -17,20 +17,19 @@ export default function TestimonialCarousel() {
       spaceBetween={50}
       slidesPerView={1}
       navigation
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
+      pagination={{ clickable: true }}
     >
       <SwiperSlide>
-        <TestimonialsItem />
+        <TestimonialsItem color="#DC4242" />
       </SwiperSlide>
       <SwiperSlide>
-        <TestimonialsItem />
+        <TestimonialsItem color="#EDCA21" />
       </SwiperSlide>
       <SwiperSlide>
-        <TestimonialsItem />
+        <TestimonialsItem color="black" />
       </SwiperSlide>
       <SwiperSlide>
-        <TestimonialsItem />
+        <TestimonialsItem color="#DC4242" />
       </SwiperSlide>
     </Swiper>
   );

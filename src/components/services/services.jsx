@@ -3,7 +3,7 @@ import ServiceSlider from "./serviceSlider";
 export default function Services() {
   return (
     <div
-      className="w-[80%] max-w-[1500px] m-auto pt-40 pb-20  grid gap-10"
+      className="w-[80%] max-w-[1500px] m-auto pt-40 pb-20  grid "
       id="Servicios"
     >
       <div className="flex items-center gap-3">

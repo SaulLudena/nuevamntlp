@@ -29,12 +29,18 @@ export default function ServiceSlider() {
   return (
     <>
       <Tab.Group>
-        <Tab.List className="flex mb-10 overflow-x-hidden transition-transform duration-300 ease-in-out ">
+        <Tab.List className="flex mb-10 overflow-x-hidden transition-transform duration-300 ease-in-out">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={30}
+            spaceBetween={90}
             slidesPerView={3}
+            navigation
+            pagination={{
+              clickable: true,
+              el: ".swiper-pagination",
+            }}
+            className="px-20 py-10 "
           >
             <SwiperSlide>
               <Tab as={Fragment}>
@@ -140,6 +146,7 @@ export default function ServiceSlider() {
                 )}
               </Tab>
             </SwiperSlide>
+            <div className="swiper-pagination "></div>
           </Swiper>
         </Tab.List>
         <Tab.Panels>

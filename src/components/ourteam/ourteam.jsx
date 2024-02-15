@@ -2,7 +2,7 @@ import TeamMemberItem from "./teamMemberItem";
 import memberImage from "../../../public/teammemberexample.png";
 export default function Ourteam() {
   return (
-    <div className="w-[80%] max-w-[1500px] m-auto py-20 grid gap-10">
+    <div className="w-[70%] max-w-[1500px] m-auto py-20 grid gap-10">
       <div className="grid justify-center gap-3 text-center">
         <h1 className="text-8xl better_yesterday text-[#DC4242]">
           Nuestro team

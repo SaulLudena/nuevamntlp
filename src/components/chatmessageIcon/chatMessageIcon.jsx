@@ -11,7 +11,7 @@ export default function ChatMessageIcon() {
   return (
     <>
       {open ? <ChatMessageOpen /> : null}
-      <div className="fixed bottom-10 right-10">
+      <div className="fixed select-none bottom-10 right-10">
         <div
           className="p-3 text-white bg-[#25D366] rounded-full shadow-xl transition cursor-pointer duration-200"
           onClick={() => handleOpen()}

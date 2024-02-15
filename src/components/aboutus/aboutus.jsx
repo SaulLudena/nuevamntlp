@@ -8,7 +8,7 @@ import LogoItem from "./logoItem";
 export default function Aboutus() {
   return (
     <div className=" bg-[#EDCA21] " id="Nosotros">
-      <div className="w-[80%] max-w-[1500px] m-auto grid gap-5  pt-20 ">
+      <div className="w-[80%] max-w-[1500px] m-auto grid gap-5  pt-40 ">
         <div className="grid justify-center w-full text-center">
           <h1 className="text-5xl  w-[50rem]">
             Somos la opción #1 de los Networkers más TOP de Venta Directa

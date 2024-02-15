@@ -36,3 +36,7 @@ body {
   color: #dc4242;
   font-weight: bold;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #dc4242;
+}
