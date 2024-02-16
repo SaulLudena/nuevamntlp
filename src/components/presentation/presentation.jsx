@@ -18,7 +18,7 @@ export default function presentation() {
         <div className=" w-[80%] max-w-[1500px] m-auto  -translate-y-20">
           <div className="flex items-center justify-between ">
             <div className=" w-[50rem] grid gap-10">
-              <h1 className="text-8xl text-[#EDCA21]">
+              <h1 className="text-8xl text-[#EDCA21] min-2xl:text-8xl">
                 Comparte tu luz con el mundo
               </h1>
               <p className="text-3xl text-white garde_ghotic_semibold">

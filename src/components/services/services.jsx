@@ -1,6 +1,6 @@
 import { FaChevronRight } from "react-icons/fa6";
 import ServiceSlider from "./serviceSlider";
-export default function Services() {
+export default function Services({ index, mostradoEnSlide }) {
   return (
     <div
       className="w-[80%] max-w-[1500px] m-auto pt-40 pb-20  grid "
@@ -18,7 +18,7 @@ export default function Services() {
         </div>
       </div>
 
-      <ServiceSlider />
+      <ServiceSlider index={index} mostradoEnSlide={mostradoEnSlide} />
     </div>
   );
 }

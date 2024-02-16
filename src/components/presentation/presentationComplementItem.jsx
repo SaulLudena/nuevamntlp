@@ -1,13 +1,17 @@
-import { MdOutlineHomeRepairService } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa";
 export default function PresentationComplementItem({
   label,
   icon,
   onClick,
   isSelected,
+  index,
+  onShowIndex,
 }) {
+  const showIndex = () => {
+    onShowIndex();
+  };
   return (
-    <li>
+    <li onClick={showIndex}>
       <a
         href="#Servicios"
         onClick={onClick}

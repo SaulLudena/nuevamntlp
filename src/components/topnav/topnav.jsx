@@ -12,12 +12,15 @@ export default function Topnav() {
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen);
   };
 
   const handleItemClick = (index) => {
     setElementoSeleccionado(index);
     handleOpen();
+  };
+  const handleClose = () => {
+    console.log("cerrado");
+    setIsOpen(true);
   };
 
   const elementos = [
@@ -47,14 +50,14 @@ export default function Topnav() {
 
         <div className="hidden max-lg:flex">
           <div
-            className="p-3 rounded-xl bg-[#F3CF00] shadow-xl cursor-pointer fixed top-8 right-10 z-50 transition duration-500 select-none"
+            className="fixed z-50 p-3 text-white transition duration-500 bg-black shadow-xl cursor-pointer select-none rounded-xl top-2 right-10"
             onClick={handleOpen}
           >
             {isOpen ? <IoClose size={20} /> : <FaBars size={20} />}
           </div>
         </div>
       </div>
-      <ResponsiveTopnav isOpen={isOpen} />
+      <ResponsiveTopnav isOpen={isOpen} handleClose={handleClose} />
     </div>
   );
 }

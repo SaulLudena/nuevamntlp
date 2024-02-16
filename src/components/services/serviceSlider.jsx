@@ -1,12 +1,10 @@
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import ServiceSliderItem from "./serviceSliderItem";
-
 import { Tab } from "@headlessui/react";
 import { SiMaterialdesignicons } from "react-icons/si";
 import { RiTeamFill } from "react-icons/ri";
 import { FaVideo } from "react-icons/fa6";
 import { LuMonitorSmartphone } from "react-icons/lu";
-
 import { AiOutlineTeam } from "react-icons/ai";
 import { MdComputer } from "react-icons/md";
 import { FaCamera } from "react-icons/fa";
@@ -25,10 +23,21 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
-export default function ServiceSlider() {
+
+export default function ServiceSlider({ index, mostradoEnSlide }) {
+  const [selectedIndex, setSelectedIndex] = useState(index);
+
+  useEffect(() => {
+    setSelectedIndex(index);
+  }, [index]);
+
+  const handleTabChange = (newIndex) => {
+    setSelectedIndex(newIndex);
+  };
+  console.log(`el elemento: ${index}, pertenece al slide:${mostradoEnSlide}`);
   return (
     <>
-      <Tab.Group>
+      <Tab.Group selectedIndex={selectedIndex} onChange={handleTabChange}>
         <Tab.List className="flex mb-10 overflow-x-hidden transition-transform duration-300 ease-in-out">
           <Swiper
             // install Swiper modules
@@ -89,6 +98,19 @@ export default function ServiceSlider() {
                       selected={selected}
                       label="Coaching de Marca Personal"
                       icon={<RiTeamFill size={30} />}
+                    />
+                  </button>
+                )}
+              </Tab>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  <button className="w-full outline-none">
+                    <ServiceSliderItem
+                      selected={selected}
+                      label="Creación de logos"
+                      icon={<FaCamera size={30} />}
                     />
                   </button>
                 )}
@@ -178,6 +200,14 @@ export default function ServiceSlider() {
             <ServicesDetailItem
               collageImagen1={collageImagen1}
               title="Coaching de Marca Personal"
+              paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
+              paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
+            />
+          </Tab.Panel>
+          <Tab.Panel>
+            <ServicesDetailItem
+              collageImagen1={collageImagen1}
+              title="Creación de logos"
               paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
               paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
             />

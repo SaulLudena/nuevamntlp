@@ -16,56 +16,80 @@ import { FaBox } from "react-icons/fa";
 
 export default function PresentationComplement() {
   const [elementoSeleccionado, setElementoSeleccionado] = useState(null);
+  const [mostradoEnSlide, setMostradoEnSlide] = useState(1);
+  const [presentationItemIndex, setPresentationItemIndex] = useState(0);
 
   const handleItemClick = (index) => {
     setElementoSeleccionado(index);
   };
+  const handleShowIndex = (index, showedInSlide) => {
+    setPresentationItemIndex(index);
+    setMostradoEnSlide(showedInSlide);
+  };
   const iconSize = 30;
   const items = [
     {
+      id: 0,
       to: "/",
       label: "Diseño Gráfico",
       icon: <SiMaterialdesignicons size={iconSize} />,
+      showedInSlide: 0,
     },
     {
-      to: "/",
-      label: "Diseño Web",
-      icon: <MdComputer size={iconSize} />,
-    },
-    {
-      to: "/",
-      label: "Diseño de Apps",
-      icon: <LuMonitorSmartphone size={iconSize} />,
-    },
-    {
-      to: "/",
-      label: "Fotografía",
-      icon: <FaCamera size={iconSize} />,
-    },
-    {
-      to: "/",
-      label: "Video",
-      icon: <FaVideo size={iconSize} />,
-    },
-    {
+      id: 1,
       to: "/",
       label: "Redes Sociales",
+      icon: <MdComputer size={iconSize} />,
+      showedInSlide: 0,
+    },
+    {
+      id: 2,
+      to: "/",
+      label: "Desarrollo de Páginas Web",
+      icon: <LuMonitorSmartphone size={iconSize} />,
+      showedInSlide: 0,
+    },
+    {
+      id: 3,
+      to: "/",
+      label: "Coaching de Marca Personal",
+      icon: <FaCamera size={iconSize} />,
+      showedInSlide: 1,
+    },
+    {
+      id: 4,
+      to: "/",
+      label: "Creación de Logos",
+      icon: <FaVideo size={iconSize} />,
+      showedInSlide: 1,
+    },
+    {
+      id: 5,
+      to: "/",
+      label: "Fotografía",
       icon: <RiTeamFill size={iconSize} />,
+      showedInSlide: 1,
     },
     {
+      id: 6,
       to: "/",
-      label: "Estrategia de Ventas",
+      label: "Videgrafía",
       icon: <MdStars size={iconSize} />,
+      showedInSlide: 2,
     },
     {
+      id: 7,
       to: "/",
-      label: "Desarrollo de Marca",
+      label: "Imagen corporativa",
       icon: <FaBox size={iconSize} />,
+      showedInSlide: 2,
     },
     {
+      id: 8,
       to: "/",
-      label: "Capacitación",
+      label: "Packaing",
       icon: <AiOutlineTeam size={iconSize} />,
+      showedInSlide: 2,
     },
   ];
 
@@ -94,6 +118,7 @@ export default function PresentationComplement() {
                   icon={item.icon}
                   onClick={() => handleItemClick(index)}
                   isSelected={index === elementoSeleccionado}
+                  onShowIndex={() => handleShowIndex(index, item.showedInSlide)}
                 />
               ))}
             </ul>
@@ -102,7 +127,10 @@ export default function PresentationComplement() {
       </div>
 
       <Aboutus />
-      <Services />
+      <Services
+        index={presentationItemIndex}
+        mostradoEnSlide={mostradoEnSlide}
+      />
     </>
   );
 }

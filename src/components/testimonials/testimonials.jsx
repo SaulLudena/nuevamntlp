@@ -6,7 +6,7 @@ export default function Testimonials() {
   return (
     <>
       <div
-        className="w-[80%] max-w-[1500px] pt-40 pb-20 m-auto grid gap-10"
+        className="w-[80%] max-w-[1500px] pt-40 pb-20 m-auto grid "
         id="Testimonios"
       >
         <div className="flex items-center gap-3">
@@ -25,7 +25,7 @@ export default function Testimonials() {
       <div className="w-[80%] max-w-[1500px] m-auto">
         <TestimonialCarousel />
       </div>
-      <div className="w-[80%] max-w-[1500px] m-auto py-20 grid gap-10">
+      <div className="w-[80%] max-w-[1500px] m-auto py-20 grid gap-10 mt-20">
         <OurClients />
       </div>
     </>
