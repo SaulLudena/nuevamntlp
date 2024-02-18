@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import ServiceSliderItem from "./serviceSliderItem";
 import { Tab } from "@headlessui/react";
 import { SiMaterialdesignicons } from "react-icons/si";
@@ -25,16 +25,21 @@ import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
 
 export default function ServiceSlider({ index, mostradoEnSlide }) {
+  const swiperRef = useRef(null);
   const [selectedIndex, setSelectedIndex] = useState(index);
 
   useEffect(() => {
     setSelectedIndex(index);
-  }, [index]);
+    // Al cambiar la prop initialSlide, ajusta el slide actual
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideTo(mostradoEnSlide * 3);
+    }
+  }, [index, mostradoEnSlide]);
 
   const handleTabChange = (newIndex) => {
     setSelectedIndex(newIndex);
   };
-  console.log(`el elemento: ${index}, pertenece al slide:${mostradoEnSlide}`);
+  console.log(index, mostradoEnSlide);
   return (
     <>
       <Tab.Group selectedIndex={selectedIndex} onChange={handleTabChange}>
@@ -49,6 +54,9 @@ export default function ServiceSlider({ index, mostradoEnSlide }) {
               clickable: true,
               el: ".swiper-pagination",
             }}
+            //deslizar el slide mostrado en base al indice del estado
+            ref={swiperRef}
+            nagivation
             className="px-20 py-10 "
           >
             <SwiperSlide>
