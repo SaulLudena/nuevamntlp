@@ -9,7 +9,7 @@ export default function ServicesDetailItem({
   return (
     <div className="grid grid-cols-12 gap-20">
       <div className="grid items-center col-span-6 ">
-        <div className="grid gap-12 px-10">
+        <div className="grid px-10 gap-7">
           <h1 className="text-5xl text-[#DC4242] ">{title}</h1>
           <p className="garde_ghotic_semibold animate-fadeIn">{paragraph1}</p>
 

@@ -96,7 +96,11 @@ export default function PresentationComplement() {
   return (
     <>
       <div className="bg-[#130202] w-full h-full relative flex items-center justify-center">
-        <img src={bloque2} alt="" className="w-full h-[50rem] object-cover" />
+        <img
+          src={bloque2}
+          alt=""
+          className="w-full h-[50rem] object-cover max-xl:h-[60rem] max-lg:h-[85rem]"
+        />
         <div className="absolute w-full h-full pt-32 pb-20 border-2 border-black">
           <div className="w-[80%] max-w-[1500px] m-auto grid gap-10">
             <div className="grid justify-center w-full">
@@ -109,7 +113,7 @@ export default function PresentationComplement() {
                 directa multinivel. Brindamos los siguientes servicios:
               </p>
             </div>
-            <ul className="grid grid-cols-3 grid-rows-3 gap-5">
+            <ul className="grid grid-cols-3 grid-rows-3 gap-5 max-xl:grid-cols-2 max-lg:grid-cols-1">
               {items.map((item, index) => (
                 <PresentationComplementItem
                   key={index}

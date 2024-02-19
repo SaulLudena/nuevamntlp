@@ -39,7 +39,6 @@ export default function ServiceSlider({ index, mostradoEnSlide }) {
   const handleTabChange = (newIndex) => {
     setSelectedIndex(newIndex);
   };
-  console.log(index, mostradoEnSlide);
   return (
     <>
       <Tab.Group selectedIndex={selectedIndex} onChange={handleTabChange}>
@@ -49,14 +48,26 @@ export default function ServiceSlider({ index, mostradoEnSlide }) {
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={90}
             slidesPerView={3}
-            navigation
+            navigation={true}
             pagination={{
               clickable: true,
               el: ".swiper-pagination",
             }}
-            //deslizar el slide mostrado en base al indice del estado
             ref={swiperRef}
-            nagivation
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 90,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 90,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 90,
+              },
+            }}
             className="px-20 py-10 "
           >
             <SwiperSlide>
