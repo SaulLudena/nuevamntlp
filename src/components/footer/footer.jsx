@@ -19,7 +19,7 @@ export default function Footer() {
       <div className="absolute w-full ">
         <div className=" w-[90%] max-w-[1700px] m-auto  -translate-1/2">
           <div className="flex items-center justify-between ">
-            <ul className="flex justify-between w-full gap-20 text-sm text-white border-2 border-black max-xl:grid max-2xl:grid-cols-3 max-xl:justify-center max-md:grid-cols-2">
+            <ul className="flex justify-between w-full gap-20 text-sm text-white max-xl:grid max-2xl:grid-cols-3 max-xl:justify-center max-md:grid-cols-2">
               <li className="">
                 <ul>
                   <li className="mb-5">
