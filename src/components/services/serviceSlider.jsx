@@ -55,15 +55,15 @@ export default function ServiceSlider({ index, mostradoEnSlide }) {
             }}
             ref={swiperRef}
             breakpoints={{
-              640: {
+              740: {
                 slidesPerView: 1,
                 spaceBetween: 90,
               },
-              768: {
+              1280: {
                 slidesPerView: 2,
                 spaceBetween: 90,
               },
-              1024: {
+              1380: {
                 slidesPerView: 3,
                 spaceBetween: 90,
               },

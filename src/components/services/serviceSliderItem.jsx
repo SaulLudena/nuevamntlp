@@ -13,7 +13,7 @@ export default function ServiceSliderItem({ selected, label, icon }) {
         {icon}
       </div>
       <div className="flex items-center justify-between w-full px-4">
-        <p className="text-left text-black select-none">{label}</p>
+        <p className="text-left text-black text-ellipsis">{label}</p>
       </div>
     </li>
   );

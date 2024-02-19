@@ -1,3 +1,4 @@
+import { FaWhatsapp } from "react-icons/fa";
 import TopnavContact from "../topnav/topnavContact";
 
 export default function ServicesDetailItem({
@@ -7,7 +8,7 @@ export default function ServicesDetailItem({
   paragraph2,
 }) {
   return (
-    <div className="grid grid-cols-12 gap-20">
+    <div className="grid grid-cols-12 gap-20 max-xl:flex max-xl:flex-col">
       <div className="grid items-center col-span-6 ">
         <div className="grid px-10 gap-7">
           <h1 className="text-5xl text-[#DC4242] ">{title}</h1>
@@ -21,7 +22,10 @@ export default function ServicesDetailItem({
               ¿Lo quieres?
             </p>
             <div className="text-center animate-fadeIn">
-              <TopnavContact />
+              <div className="px-5 py-3 bg-gradient-to-r bg-[#dc4242] text-white text-sm flex items-center gap-3 justify-center">
+                <p>Contáctanos</p>
+                <FaWhatsapp />
+              </div>
             </div>
           </div>
         </div>

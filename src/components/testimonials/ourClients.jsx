@@ -16,7 +16,7 @@ export default function OurClients() {
       <p className="text-center garde_ghotic_semibold">
         Contamos con más de 10 clientes que ya han confiado en NuevaMnt
       </p>
-      <ul className="grid grid-cols-5 gap-5">
+      <ul className="grid grid-cols-5 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1 max-md:justify-center">
         <OurClientItem clienteImagen={LogoNetworkers6} />
         <OurClientItem clienteImagen={LogoNetowkers2} />
         <OurClientItem clienteImagen={LogoNetworkers7} />

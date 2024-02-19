@@ -14,7 +14,7 @@ export default function Ourteam() {
           Somos un equipo capacitado para entender tus necesidades
         </p>
       </div>
-      <ul className="grid grid-cols-4 grid-rows-2 gap-5 ">
+      <ul className="grid grid-cols-4 grid-rows-2 gap-5 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1">
         {teamMember.map((member, index) => (
           <TeamMemberItem
             key={index}

@@ -11,17 +11,17 @@ export default function TestimonialsItem({ color }) {
 
   return (
     <div className=" w-[90%] max-w-[1500px] m-auto">
-      <div className="grid grid-cols-12 p-10 ">
-        <div className="flex justify-end col-span-5 ">
+      <div className="grid grid-cols-12 p-10 max-lg:flex max-lg:flex-col">
+        <div className="flex justify-end col-span-5">
           <img
             src={TestimonialImg}
             alt=""
-            className="object-cover h-full w-96 "
+            className="object-cover object-top h-full w-96 max-lg:w-full max-lg:h-[37rem]"
           />
         </div>
-        <div className="grid items-center h-full col-span-7 py-10">
+        <div className="grid items-center h-full col-span-7 py-10 max-lg:py-0">
           <div
-            className={`grid items-center h-full col-span-7 py-10 ${backgroundColorClass} p-10 grid gap-10`}
+            className={`grid items-center h-full col-span-7 py-10  ${backgroundColorClass} p-10 grid gap-10`}
           >
             <div>
               <p className="mb-4 text-2xl">Networker</p>

@@ -11,13 +11,13 @@ export default function PresentationComplementItem({
     onShowIndex();
   };
   return (
-    <li onClick={showIndex}>
+    <li onClick={showIndex} className="w-full ">
       <a
         href="#Servicios"
         onClick={onClick}
-        className={` border-4  flex items-center$ ${
+        className={`border-4 flex w-full items-center ${
           isSelected ? "border-[#dc4242]" : "border-[#EDCA21]"
-        }`}
+        } sm:w-auto md:w-auto lg:w-auto xl:w-auto`}
       >
         <div
           className={`${

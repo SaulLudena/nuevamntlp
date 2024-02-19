@@ -2,8 +2,8 @@ export default function Contact() {
   return (
     <div className="bg-black">
       <div className="w-[80%] max-w-[1500px] m-auto py-20 grid gap-10 ">
-        <div className="flex items-center ">
-          <div className="text-[#EDCA21]  grid gap-5">
+        <div className="flex items-center max-lg:flex-col">
+          <div className="text-[#EDCA21]  grid gap-5 max-lg:text-center">
             <p className="text-4xl">Lorem ipsum dolor sit amet consectetur.</p>
             <p className="garde_ghotic_semibold">
               Lorem ipsum dolor sit amet consectetur. Donec diam massa augue

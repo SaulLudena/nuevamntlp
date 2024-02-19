@@ -6,7 +6,7 @@ export default function Testimonials() {
   return (
     <>
       <div
-        className="w-[80%] max-w-[1500px] pt-40 pb-20 m-auto grid "
+        className="w-[80%] max-w-[1500px] pt-32  m-auto grid "
         id="Testimonios"
       >
         <div className="flex items-center gap-3">

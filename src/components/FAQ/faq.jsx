@@ -19,7 +19,7 @@ export default function Faq() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-5 px-10 ">
+      <div className="grid grid-cols-2 gap-5 px-10 max-lg:grid-cols-1 ">
         <FaqItem />
         <FaqItem />
         <FaqItem />
