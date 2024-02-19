@@ -3,7 +3,7 @@ export default function Contact() {
     <div className="bg-black">
       <div className="w-[80%] max-w-[1500px] m-auto py-20 grid gap-10 ">
         <div className="flex items-center max-lg:flex-col">
-          <div className="text-[#EDCA21]  grid gap-5 max-lg:text-center">
+          <div className="text-[#EDCA21]  grid gap-5">
             <p className="text-4xl">Lorem ipsum dolor sit amet consectetur.</p>
             <p className="garde_ghotic_semibold">
               Lorem ipsum dolor sit amet consectetur. Donec diam massa augue
@@ -25,6 +25,7 @@ export default function Contact() {
                 margin: 0,
                 backgroundColor: "transparent",
               }}
+              className="w-[480px] max-md:w-[100%]"
               title="Embedded Content"
             ></iframe>
           </div>

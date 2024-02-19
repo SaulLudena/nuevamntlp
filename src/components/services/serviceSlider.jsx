@@ -48,27 +48,34 @@ export default function ServiceSlider({ index, mostradoEnSlide }) {
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={90}
             slidesPerView={3}
-            navigation={true}
             pagination={{
               clickable: true,
               el: ".swiper-pagination",
             }}
             ref={swiperRef}
             breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 90,
+                navigation: false,
+              },
               740: {
                 slidesPerView: 1,
                 spaceBetween: 90,
+                navigation: false,
               },
               1280: {
                 slidesPerView: 2,
                 spaceBetween: 90,
+                navigation: true,
               },
               1380: {
                 slidesPerView: 3,
                 spaceBetween: 90,
+                navigation: true,
               },
             }}
-            className="px-20 py-10 "
+            className="px-20 py-10 max-md:px-10 max-sm:px-0"
           >
             <SwiperSlide>
               <Tab as={Fragment}>

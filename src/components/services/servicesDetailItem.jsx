@@ -10,12 +10,12 @@ export default function ServicesDetailItem({
   return (
     <div className="grid grid-cols-12 gap-20 max-xl:flex max-xl:flex-col">
       <div className="grid items-center col-span-6 ">
-        <div className="grid px-10 gap-7">
-          <h1 className="text-5xl text-[#DC4242] ">{title}</h1>
-          <p className="garde_ghotic_semibold animate-fadeIn">{paragraph1}</p>
+        <div className="grid px-10 gap-7 max-md:px-0">
+          <h1 className="text-5xl text-[#DC4242] max-md:text-4xl">{title}</h1>
+          <p className="garde_ghotic_semibold max-md:text-sm">{paragraph1}</p>
 
           <h2 className="text-[#434343] text-2xl animate-fadeIn">Incluye:</h2>
-          <p className="garde_ghotic_semibold animate-fadeIn">{paragraph2}</p>
+          <p className="garde_ghotic_semibold max-md:text-sm">{paragraph2}</p>
           <div className="w-full h-[2px] bg-[#DC4242] animate-fadeIn"></div>
           <div className="flex items-center justify-center gap-10 animate-fadeIn">
             <p className="text-5xl better_yesterday animate-fadeIn">

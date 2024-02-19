@@ -27,7 +27,7 @@ export default function PresentationComplementItem({
           {icon}
         </div>
         <div className="flex items-center justify-between w-full px-4">
-          <p className="text-white">{label}</p>
+          <p className="text-white max-sm:text-sm">{label}</p>
           <div className={isSelected ? "text-[#dc4242]" : "text-[#EDCA21]"}>
             <FaArrowRight />
           </div>

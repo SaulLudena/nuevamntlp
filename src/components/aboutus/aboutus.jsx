@@ -10,12 +10,12 @@ export default function Aboutus() {
     <div className=" bg-[#EDCA21] " id="Nosotros">
       <div className="w-[80%] max-w-[1500px] m-auto grid gap-5  pt-40 ">
         <div className="grid justify-center w-full text-center">
-          <h1 className="text-5xl  w-[50rem] max-lg:w-auto">
+          <h1 className="text-5xl  w-[50rem] max-lg:w-auto max-md:text-2xl">
             Somos la opción #1 de los Networkers más TOP de Venta Directa
             Multinivel
           </h1>
         </div>
-        <p className="text-2xl text-center">
+        <p className="text-2xl text-center max-md:text-sm">
           Ayudamos a nuestros clientes a compartir su luz y mensaje con el mundo
         </p>
         <ul className="grid grid-cols-5 w-[80%] max-w-[1500px] m-auto">

@@ -13,13 +13,13 @@ export default function Footer() {
       <img
         src={FooterBackground}
         alt=""
-        className="object-cover w-full select-none h-96 max-xl:h-[40rem]"
+        className="object-cover w-full select-none h-96 max-xl:h-[35rem] max-lg:h-[50rem]  max-sm:h-[75rem]"
       />
 
       <div className="absolute w-full ">
         <div className=" w-[90%] max-w-[1700px] m-auto  -translate-1/2">
           <div className="flex items-center justify-between ">
-            <ul className="flex justify-between w-full gap-20 text-sm text-white max-xl:grid max-2xl:grid-cols-3 max-xl:justify-center max-md:grid-cols-2">
+            <ul className="flex justify-between w-full gap-20 text-sm text-white max-xl:grid max-2xl:grid-cols-3 max-xl:justify-center max-md:grid-cols-2 max-sm:grid-cols-1">
               <li className="">
                 <ul>
                   <li className="mb-5">

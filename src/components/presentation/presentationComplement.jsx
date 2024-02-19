@@ -107,11 +107,11 @@ export default function PresentationComplement() {
               <img
                 src={TopnavLogo2}
                 alt=""
-                className="w-[500px] max-lg:w-[400px] "
+                className="w-[500px] max-lg:w-[400px] max-sm:w-[300px]"
               />
             </div>
             <div className="m-auto text-center ">
-              <p className="text-center text-white garde_ghotic_semibold ">
+              <p className="text-center text-white garde_ghotic_semibold max-sm:text-sm">
                 Somos una agencia creativa, con más de 5 años en el mercado,
                 especializada en generar CREATIVIDAD e INNOVACIÓN para la venta
                 directa multinivel. Brindamos los siguientes servicios:
