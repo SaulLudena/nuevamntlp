@@ -1,7 +1,7 @@
 export default function ServiceSliderItem({ selected, label, icon }) {
   return (
     <li
-      className={`w-full border-2 flex items-center cursor-pointer  ${
+      className={`w-full border-4 max-xl:border-2 flex items-center cursor-pointer select-none ${
         selected ? "border-[#DC4242] " : "border-[#EDCA21] "
       }`}
     >
@@ -13,7 +13,9 @@ export default function ServiceSliderItem({ selected, label, icon }) {
         {icon}
       </div>
       <div className="flex items-center justify-between w-full px-4">
-        <p className="text-left text-black text-ellipsis">{label}</p>
+        <p className="text-left text-black select-none text-ellipsis">
+          {label}
+        </p>
       </div>
     </li>
   );

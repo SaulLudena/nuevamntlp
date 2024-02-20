@@ -30,11 +30,17 @@ export default function ServiceSlider({ index, mostradoEnSlide }) {
 
   useEffect(() => {
     setSelectedIndex(index);
+
     // Al cambiar la prop initialSlide, ajusta el slide actual
     if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideTo(mostradoEnSlide * 3);
+      const slidesPerView = swiperRef.current.swiper.params.slidesPerView;
+
+      // Calcula el índice del slide según la cantidad de elementos por slide
+      const adjustedIndex = Math.floor(index / slidesPerView) * slidesPerView;
+
+      swiperRef.current.swiper.slideTo(adjustedIndex);
     }
-  }, [index, mostradoEnSlide]);
+  }, [index]);
 
   const handleTabChange = (newIndex) => {
     setSelectedIndex(newIndex);
