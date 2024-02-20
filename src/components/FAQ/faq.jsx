@@ -7,19 +7,19 @@ export default function Faq() {
   return (
     <div className="w-[80%] max-w-[1500px] m-auto py-20 grid gap-14">
       <div className="flex items-center gap-3">
-        <div className="text-[#DC4242]">
-          <FaChevronRight size={55} />
+        <div className="text-[#DC4242] ">
+          <FaChevronRight className="text-5xl max-sm:text-5xl" />
         </div>
         <div className="grid gap-2">
-          <h1 className="text-6xl">FAQ</h1>
-          <p className="text-md garde_ghotic_semibold">
+          <h1 className="text-6xl max-lg:text-4xl">FAQ</h1>
+          <p className="text-md garde_ghotic_semibold max-lg:text-sm max-sm:w-[12rem]">
             ¿Dudas? Encuentra respuestas a nuestro flujo de trabajo, tiempo de
             entrega y más.
           </p>
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-5 px-10 max-lg:grid-cols-1 ">
+      <div className="grid grid-cols-2 gap-5 px-10 max-md:p-0 max-lg:grid-cols-1 ">
         <FaqItem />
         <FaqItem />
         <FaqItem />

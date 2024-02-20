@@ -8,10 +8,7 @@ export default function FaqItem() {
         {({ open }) => (
           <>
             <Disclosure.Button className="flex justify-between w-full p-5 text-sm font-medium text-left text-black bg-[#EDCA21] focus:outline-none  ">
-              <p className="text-2xl">
-                Lorem ipsum dolor sit amet consectetur. Sed phasellus lorem
-                fusce interdum.
-              </p>
+              <p className="text-2xl max-md:text-xl">Item 1</p>
               <FaChevronUp
                 className={`${
                   open ? "rotate-180 transform" : ""

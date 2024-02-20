@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function TopnavItem({ href, label, onClick, isSelected }) {
   return (
     <li>
