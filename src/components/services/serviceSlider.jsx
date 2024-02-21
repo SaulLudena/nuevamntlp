@@ -6,7 +6,7 @@ import { RiTeamFill } from "react-icons/ri";
 import { FaVideo } from "react-icons/fa6";
 import { LuMonitorSmartphone } from "react-icons/lu";
 import { AiOutlineTeam } from "react-icons/ai";
-import { MdComputer } from "react-icons/md";
+import { MdComputer, MdStars } from "react-icons/md";
 import { FaCamera } from "react-icons/fa";
 import { FaBox } from "react-icons/fa";
 import collageImagen1 from "../../../public/collage_1.png";
@@ -81,7 +81,7 @@ export default function ServiceSlider({ index, mostradoEnSlide }) {
                 navigation: true,
               },
             }}
-            className="px-20 py-10 max-md:px-10 max-sm:px-0"
+            className="px-20 pt-10 pb-14 max-md:px-10 max-sm:px-0"
           >
             <SwiperSlide>
               <Tab as={Fragment}>
@@ -142,7 +142,7 @@ export default function ServiceSlider({ index, mostradoEnSlide }) {
                     <ServiceSliderItem
                       selected={selected}
                       label="Creación de logos"
-                      icon={<FaCamera size={30} />}
+                      icon={<MdStars size={30} />}
                     />
                   </button>
                 )}

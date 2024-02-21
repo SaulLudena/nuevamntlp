@@ -26,7 +26,7 @@ export default function PresentationComplement() {
     setPresentationItemIndex(index);
     setMostradoEnSlide(showedInSlide);
   };
-  const iconSize = 30;
+  const iconSize = 40;
   const items = [
     {
       id: 0,
@@ -39,56 +39,56 @@ export default function PresentationComplement() {
       id: 1,
       to: "/",
       label: "Redes Sociales",
-      icon: <MdComputer size={iconSize} />,
+      icon: <LuMonitorSmartphone size={iconSize} />,
       showedInSlide: 0,
     },
     {
       id: 2,
       to: "/",
       label: "Desarrollo de Páginas Web",
-      icon: <LuMonitorSmartphone size={iconSize} />,
+      icon: <MdComputer size={iconSize} />,
       showedInSlide: 0,
     },
     {
       id: 3,
       to: "/",
       label: "Coaching de Marca Personal",
-      icon: <FaCamera size={iconSize} />,
+      icon: <RiTeamFill size={iconSize} />,
       showedInSlide: 1,
     },
     {
       id: 4,
       to: "/",
       label: "Creación de Logos",
-      icon: <FaVideo size={iconSize} />,
+      icon: <MdStars size={iconSize} />,
       showedInSlide: 1,
     },
     {
       id: 5,
       to: "/",
       label: "Fotografía",
-      icon: <RiTeamFill size={iconSize} />,
+      icon: <FaCamera size={iconSize} />,
       showedInSlide: 1,
     },
     {
       id: 6,
       to: "/",
       label: "Videgrafía",
-      icon: <MdStars size={iconSize} />,
+      icon: <FaVideo size={iconSize} />,
       showedInSlide: 2,
     },
     {
       id: 7,
       to: "/",
       label: "Imagen corporativa",
-      icon: <FaBox size={iconSize} />,
+      icon: <AiOutlineTeam size={iconSize} />,
       showedInSlide: 2,
     },
     {
       id: 8,
       to: "/",
       label: "Packaing",
-      icon: <AiOutlineTeam size={iconSize} />,
+      icon: <FaBox size={iconSize} />,
       showedInSlide: 2,
     },
   ];

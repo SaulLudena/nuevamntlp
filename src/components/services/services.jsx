@@ -4,7 +4,7 @@ export default function Services({ index, mostradoEnSlide }) {
   return (
     <>
       <div
-        className="w-[80%] max-w-[1500px] m-auto pt-32 pb-20  grid "
+        className="w-[80%] max-w-[1500px] m-auto pt-32   grid "
         id="Servicios"
       >
         <div className="flex items-center gap-3">
