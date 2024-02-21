@@ -6,7 +6,7 @@ export default function TopnavLogo() {
       <img
         src={TopnavLogoSrc}
         alt="NuevamenteLogo"
-        className="w-48 h-auto max-sm:w-20"
+        className="w-48 h-auto max-sm:w-28"
       />
     </div>
   );

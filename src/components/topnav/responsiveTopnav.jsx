@@ -24,17 +24,17 @@ export default function ResponsiveTopnav({ isOpen, handleClose }) {
             <TopnavItem
               href="#Inicio"
               label="Inicio"
-              handleClose={handleClose}
+              onItemClick={handleClose}
             />
             <TopnavItem
               href="#Servicios"
               label="Servicios"
-              handleClose={handleClose}
+              onItemClick={handleClose}
             />
             <TopnavItem
               href="#Testimonios"
               label="Testimonios"
-              handleClose={handleClose}
+              onItemClick={handleClose}
             />
             <TopnavContact />
           </ul>

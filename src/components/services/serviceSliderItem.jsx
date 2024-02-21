@@ -1,7 +1,7 @@
 export default function ServiceSliderItem({ selected, label, icon }) {
   return (
     <li
-      className={`w-full border-4 max-xl:border-2 flex items-center cursor-pointer select-none ${
+      className={` w-full border-4 max-xl:border-2 flex items-center cursor-pointer select-none ${
         selected ? "border-[#DC4242] " : "border-[#EDCA21] "
       }`}
     >

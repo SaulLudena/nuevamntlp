@@ -11,18 +11,18 @@ export default function ChatMessageIcon() {
   return (
     <>
       {open ? <ChatMessageOpen /> : null}
-      <div className="fixed select-none bottom-10 right-10">
+      <div className="fixed z-50 select-none bottom-10 right-10 max-md:right-5 max-md:bottom-5">
         <div
           className="p-3 text-white bg-[#25D366] rounded-full shadow-xl transition cursor-pointer duration-200"
           onClick={() => handleOpen()}
         >
           {!open ? (
             <div className="transition duration-200">
-              <FaWhatsapp size={40} />
+              <FaWhatsapp className="text-5xl max-md:text-4xl" />
             </div>
           ) : (
             <div>
-              <IoMdClose size={40} />
+              <IoMdClose className="text-5xl max-md:text-4xl" />
             </div>
           )}
         </div>

@@ -7,7 +7,7 @@ export default function presentation() {
       <img
         src={PresentationBackground4}
         alt=""
-        className="object-cover w-full h-full select-none max-sm:h-[30rem] max-lg:h-[40rem] max-sm:opacity-20 max-lg:opacity-20"
+        className="object-cover w-full h-full select-none max-sm:h-[30rem] max-lg:h-[40rem] max-sm:opacity-20 max-lg:opacity-40 max-lg:object-right"
       />
 
       <div

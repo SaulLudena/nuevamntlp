@@ -48,7 +48,7 @@ export default function ServiceSlider({ index, mostradoEnSlide }) {
   return (
     <>
       <Tab.Group selectedIndex={selectedIndex} onChange={handleTabChange}>
-        <Tab.List className="flex mb-10 overflow-x-hidden transition-transform duration-300 ease-in-out">
+        <Tab.List className="flex mb-10 overflow-x-hidden transition-transform duration-300 ease-in-out w-[80%] max-w-[1500px] m-auto">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}

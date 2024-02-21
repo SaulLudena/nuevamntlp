@@ -1,5 +1,18 @@
+import { useState } from "react";
 import TestimonialImg from "../../../public/testimonials/testimonialAuthor1.png";
-export default function TestimonialsItem({ color }) {
+import { FaChevronDown } from "react-icons/fa";
+import { FaChevronUp } from "react-icons/fa";
+export default function TestimonialsItem({
+  color,
+  TestomialImage,
+  category,
+  name,
+  testimonial,
+}) {
+  console.log(testimonial);
+  const [toggleText, setToggleText] = useState(false);
+  const shortTestimonial = testimonial.split(" ").slice(0, 70).join(" ");
+
   const backgroundColorClass =
     color === "#DC4242"
       ? "bg-[#DC4242] text-white"
@@ -8,40 +21,46 @@ export default function TestimonialsItem({ color }) {
       : color === "black"
       ? "bg-black text-white"
       : "bg-[#DC4242] text-white";
-
+  const toggleTextHandler = () => {
+    setToggleText(!toggleText);
+  };
   return (
-    <div className=" w-[90%] max-w-[1500px] m-auto">
-      <div className="grid grid-cols-12 p-20 max-lg:flex max-lg:flex-col max-sm:px-0 max-sm:pt-10">
+    <div className=" w-[90%] max-w-[1500px] m-auto max-sm:w-[100%]">
+      <div className="grid grid-cols-12 p-10 max-lg:flex max-lg:flex-col max-sm:px-0 max-sm:pt-10">
         <div className="flex justify-end col-span-5">
           <img
             src={TestimonialImg}
             alt=""
-            className="object-cover object-top h-full w-96 max-lg:w-full max-lg:h-[37rem] max-sm:h-[20rem] max-sm:w-full "
+            className="object-cover max-sm:object-top max-md:object-center object-top h-full w-96 max-lg:w-full max-lg:h-[37rem] max-sm:h-[20rem] max-sm:w-full "
           />
         </div>
         <div className="grid items-center h-full col-span-7 py-10 max-lg:py-0">
           <div
-            className={`grid items-center h-full col-span-7 py-10  ${backgroundColorClass} p-10 max-sm:p-6 grid gap-10 max-sm:gap-5`}
+            className={`grid items-center  h-full col-span-7 py-10  ${backgroundColorClass} p-10 max-sm:p-6 grid gap-10 max-sm:gap-5`}
           >
             <div>
-              <p className="mb-4 text-2xl">Networker</p>
-              <h1 className="text-5xl">Jimmy Garcia</h1>
+              <p className="mb-4 text-2xl max-sm:text-sm">Networker</p>
+              <h1 className="text-5xl max-sm:text-3xl">Jimmy Garcia</h1>
             </div>
-            <div className="w-full h-[0.5px] bg-white"></div>
-            <p className=" garde_ghotic_semibold">
-              “Lorem ipsum dolor sit amet consectetur. Ullamcorper elementum
-              risus faucibus faucibus arcu libero pellentesque vitae dignissim.
-              Mattis risus nisi aliquam molestie enim etiam. Facilisis
-              scelerisque lacinia augue facilisis placerat eget dui pellentesque
-              gravida. Euismod purus turpis odio mi eu eu quam urna et.
-              Penatibus adipiscing at non sed vitae a non. Tristique a
-              sollicitudin nunc ac sollicitudin. eu eu quam urna et. Penatibus
-              adipiscing at non sed vitae a non. Tristique a sollicitudin nunc
-              ac sollic eu eu q n. Tristique a sollicitudin nunc ac
-              sollicitudin. eu eu quam urna et. Penatibus adipiscing at non sed
-              vitae a non. Tristique a sollicitudin nunc ac sollic eu eu quam
-              urna et”
-            </p>
+            <div className="w-full h-[0.5px] bg-white "></div>
+            <div className="w-full">
+              <p className="garde_ghotic_semibold max-sm:text-md max-sm:hidden">
+                {testimonial}
+              </p>
+              <div className="hidden max-sm:block">
+                <p className=" garde_ghotic_semibold max-sm:text-md">
+                  {toggleText ? testimonial : shortTestimonial + "..."}
+                </p>
+                <div
+                  className="grid justify-center py-3 cursor-pointer "
+                  onClick={() => {
+                    toggleTextHandler();
+                  }}
+                >
+                  {toggleText ? <FaChevronUp /> : <FaChevronDown />}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

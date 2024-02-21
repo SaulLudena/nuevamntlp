@@ -10,7 +10,11 @@ export default function TeamMemberItem({
   return (
     <div>
       <div>
-        <img src={memberImage} alt="" className="object-cover w-full h-80" />
+        <img
+          src={memberImage}
+          alt=""
+          className="object-cover w-full h-80 max-md:h-[35rem] max-sm:h-[25rem]"
+        />
       </div>
       <div className="bg-[#EDCA21]">
         <div className="bg-[#EDCA21] h-full p-5 flex flex-col justify-between gap-4">
@@ -30,6 +34,7 @@ export default function TeamMemberItem({
           </ul>
         </div>
       </div>
+      <div className="bg-white h-14"></div>
     </div>
   );
 }

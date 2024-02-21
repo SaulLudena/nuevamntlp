@@ -8,8 +8,8 @@ export default function ServicesDetailItem({
   paragraph2,
 }) {
   return (
-    <div className="grid grid-cols-12 gap-20 max-xl:flex max-xl:flex-col">
-      <div className="grid items-center col-span-6 ">
+    <div className="grid grid-cols-12 gap-20 max-xl:flex max-xl:flex-col ">
+      <div className="grid items-center col-span-6 w-[80%] max-w-[1500px] m-auto">
         <div className="grid px-10 gap-7 max-md:px-0">
           <h1 className="text-5xl text-[#DC4242] max-md:text-4xl">{title}</h1>
           <p className="garde_ghotic_semibold max-md:text-sm">{paragraph1}</p>
@@ -30,7 +30,7 @@ export default function ServicesDetailItem({
           </div>
         </div>
       </div>
-      <div className="col-span-6 animate-fadeIn">
+      <div className="col-span-6 animate-fadeIn max-lg:w-[100%] w-[80%] max-w-[1500px] m-auto">
         <img src={collageImagen1} alt="" className="w-full" />
       </div>
     </div>

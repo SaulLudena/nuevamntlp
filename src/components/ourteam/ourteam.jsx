@@ -1,32 +1,67 @@
 import TeamMemberItem from "./teamMemberItem";
 import memberImage from "../../../public/teammemberexample.png";
+
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/effect-fade";
+
 export default function Ourteam() {
   return (
-    <div className="w-[70%] max-w-[1500px] m-auto py-20 grid gap-10">
-      <div className="grid justify-center gap-3 text-center">
-        <h1 className="text-8xl better_yesterday text-[#DC4242]">
-          Nuestro team
-        </h1>
-        <h1 className="text-3xl">
-          Conoce a los creativos que te ayudan a potenciar tu luz
-        </h1>
-        <p className="garde_ghotic_semibold">
-          Somos un equipo capacitado para entender tus necesidades
-        </p>
+    <>
+      <div className="w-[70%] max-w-[1500px] m-auto pt-20 pb-10 grid gap-10">
+        <div className="grid justify-center gap-3 text-center">
+          <h1 className="text-8xl better_yesterday text-[#DC4242] max-md:mb-4">
+            Nuestro team
+          </h1>
+          <h1 className="text-3xl max-md:text-xl">
+            Conoce a los creativos que te ayudan a potenciar tu luz
+          </h1>
+          <p className="garde_ghotic_semibold max-md:text-sm">
+            Somos un equipo capacitado para entender tus necesidades
+          </p>
+        </div>
+        <ul className="grid grid-cols-4 grid-rows-2 gap-5 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 max-md:hidden">
+          {teamMember.map((member, index) => (
+            <TeamMemberItem
+              key={index}
+              nombre={member.nombre}
+              cargo={member.cargo}
+              instagram={member.instagram}
+              behance={member.behance}
+              memberImage={member.memberImage}
+            />
+          ))}
+        </ul>
       </div>
-      <ul className="grid grid-cols-4 grid-rows-2 gap-5 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1">
-        {teamMember.map((member, index) => (
-          <TeamMemberItem
-            key={index}
-            nombre={member.nombre}
-            cargo={member.cargo}
-            instagram={member.instagram}
-            behance={member.behance}
-            memberImage={member.memberImage}
-          />
-        ))}
-      </ul>
-    </div>
+      <div className="w-[70%] max-w-[1500px] m-auto  pb-20 max-md:w-[100%] max-md:block hidden">
+        <Swiper
+          className="hiddenmax-md:block" // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+        >
+          {teamMember.map((member, index) => (
+            <SwiperSlide key={index}>
+              <TeamMemberItem
+                nombre={member.nombre}
+                cargo={member.cargo}
+                instagram={member.instagram}
+                behance={member.behance}
+                memberImage={member.memberImage}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </>
   );
 }
 

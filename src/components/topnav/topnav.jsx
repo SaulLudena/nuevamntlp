@@ -30,7 +30,7 @@ export default function Topnav() {
   ];
 
   return (
-    <div className="fixed z-40 w-full px-10 py-3 text-xl bg-black ">
+    <div className="fixed z-40 w-full px-10 py-3 text-xl bg-black max-lg:py-6">
       <div className="flex items-center justify-between ">
         <TopnavLogo />
         <div>
@@ -50,7 +50,7 @@ export default function Topnav() {
 
         <div className="hidden max-lg:flex">
           <div
-            className="fixed z-50 p-3 text-white transition duration-500 bg-black shadow-xl cursor-pointer select-none rounded-xl top-2 right-9 max-sm:p-0"
+            className="fixed z-50 p-3 text-white transition duration-500 bg-black shadow-xl cursor-pointer select-none rounded-xl top-6 right-9 max-sm:p-0"
             onClick={handleOpen}
           >
             {isOpen ? <IoClose size={20} /> : <FaBars size={20} />}

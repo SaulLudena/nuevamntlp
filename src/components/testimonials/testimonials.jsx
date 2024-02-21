@@ -22,10 +22,10 @@ export default function Testimonials() {
         </div>
       </div>
 
-      <div className="w-[80%] max-w-[1500px] m-auto">
+      <div className="w-[100%] max-sm:w-[100%] max-w-[1500px] m-auto">
         <TestimonialCarousel />
       </div>
-      <div className="w-[80%] max-w-[1500px] m-auto py-20 grid gap-10 mt-20">
+      <div className="w-[80%] max-w-[1500px] m-auto  grid gap-10 mt-20">
         <OurClients />
       </div>
     </>

@@ -16,20 +16,74 @@ export default function TestimonialCarousel() {
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={1}
-      navigation
       pagination={{ clickable: true }}
     >
       <SwiperSlide>
-        <TestimonialsItem color="#DC4242" />
+        <TestimonialsItem
+          color="#DC4242"
+          TestomialImage={"someurl"}
+          category={"Networker"}
+          name={"Jimmy Garcia"}
+          testimonial=" “Lorem ipsum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus fucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus paucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus arcu libero pellentesque vitae
+                  dignissim...”"
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <TestimonialsItem color="#EDCA21" />
+        <TestimonialsItem
+          color="#EDCA21"
+          testimonial=" “Lorem ipsum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus fucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus paucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus arcu libero pellentesque vitae
+                  dignissim...”"
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <TestimonialsItem color="black" />
+        <TestimonialsItem
+          color="black"
+          testimonial=" “Lorem ipsum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus fucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus paucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus arcu libero pellentesque vitae
+                  dignissim...”"
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <TestimonialsItem color="#DC4242" />
+        <TestimonialsItem
+          color="#DC4242"
+          testimonial=" “Lorem ipsum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus fucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus paucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
+                  risus faucibus faucibus arcu libero pellentesque vitae
+                  dignissim...”"
+        />
       </SwiperSlide>
     </Swiper>
   );
