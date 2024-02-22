@@ -3,7 +3,16 @@ import TopnavContact from "./topnavContact";
 import TopnavItem from "./topnavItem";
 import TopnavLogoSrc from "../../../public/TopnavLogo2.png";
 
-export default function ResponsiveTopnav({ isOpen, handleClose }) {
+export default function ResponsiveTopnav({ isOpen, handleOpen }) {
+  const handleItemClick = () => {
+    handleOpen();
+  };
+  const elementos = [
+    { href: "#Inicio", label: "Inicio" },
+    { href: "#Servicios", label: "Servicios" },
+    { href: "#Testimonios", label: "Testimonios" },
+  ];
+
   return (
     <div
       className={`${
@@ -21,29 +30,19 @@ export default function ResponsiveTopnav({ isOpen, handleClose }) {
 
         <div className="w-[50%]">
           <ul className="flex flex-col justify-around w-full gap-5 text-xl text-left">
-            <TopnavItem
-              href="#Inicio"
-              label="Inicio"
-              onItemClick={handleClose}
-            />
-            <TopnavItem
-              href="#Servicios"
-              label="Servicios"
-              onItemClick={handleClose}
-            />
-            <TopnavItem
-              href="#Testimonios"
-              label="Testimonios"
-              onItemClick={handleClose}
-            />
+            {elementos.map((elemento, index) => (
+              <TopnavItem
+                key={index}
+                href={elemento.href}
+                label={elemento.label}
+                onClick={handleItemClick}
+              />
+            ))}
             <TopnavContact />
           </ul>
         </div>
         <div className="flex w-[50%] ">
-          <div
-            className="px-5 py-3 bg-gradient-to-r bg-[#dc4242] text-white text-sm max-lg:flex flex items-center gap-3 justify-center "
-            onClick={handleClose}
-          >
+          <div className="px-5 py-3 bg-gradient-to-r bg-[#dc4242] text-white text-sm max-lg:flex flex items-center gap-3 justify-center ">
             <p>Contáctanos</p>
             <FaWhatsapp />
           </div>

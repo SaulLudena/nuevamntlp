@@ -18,10 +18,6 @@ export default function Topnav() {
     setElementoSeleccionado(index);
     handleOpen();
   };
-  const handleClose = () => {
-    console.log("cerrado");
-    setIsOpen(true);
-  };
 
   const elementos = [
     { href: "#Inicio", label: "Inicio" },
@@ -57,7 +53,7 @@ export default function Topnav() {
           </div>
         </div>
       </div>
-      <ResponsiveTopnav isOpen={isOpen} handleClose={handleClose} />
+      <ResponsiveTopnav isOpen={isOpen} handleOpen={handleOpen} />
     </div>
   );
 }
