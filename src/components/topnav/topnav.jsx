@@ -46,7 +46,7 @@ export default function Topnav() {
 
         <div className="hidden max-lg:flex">
           <div
-            className="fixed z-50 p-3 text-white transition duration-500 bg-black shadow-xl cursor-pointer select-none rounded-xl top-6 right-9 max-sm:p-0"
+            className="fixed z-50 p-3 text-white transition duration-200 bg-black shadow-xl cursor-pointer select-none rounded-xl top-3 right-9 max-sm:p-3"
             onClick={handleOpen}
           >
             {isOpen ? <IoClose size={20} /> : <FaBars size={20} />}

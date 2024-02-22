@@ -3,7 +3,7 @@ import { FaFacebookF, FaTiktok, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function ChatMessageOpen() {
   return (
-    <div className="fixed z-50 select-none bottom-10 right-32">
+    <div className="fixed z-30 select-none bottom-10 right-32 max-md:right-24">
       <div className="grid w-full gap-2 py-3 px-7 bg-gray-50 ">
         <div>
           <img src={Logo} alt="logo" className="w-20 h-auto" />

@@ -17,7 +17,7 @@ export default function ResponsiveTopnav({ isOpen, handleOpen }) {
     <div
       className={`${
         isOpen ? "-translate-x-20 max-md:-translate-x-0" : "-translate-x-[120%]"
-      } z-40 w-[80%]  text-xl bg-black backdrop-blur-2xl  transition duration-700 fixed   flex-col items-center justify-start hidden  max-lg:flex h-[100vh] top-0 left-0 border-2 border-black `}
+      }  w-[80%]  text-xl bg-black backdrop-blur-2xl  transition duration-700 fixed z-50  flex-col items-center justify-start hidden  max-lg:flex h-[100vh] top-0 left-0 border-2 border-black `}
     >
       <div className="flex flex-col items-center justify-between w-full h-full py-20">
         <div className="">

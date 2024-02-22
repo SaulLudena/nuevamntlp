@@ -17,7 +17,7 @@ export default function ChatMessageIcon() {
           onClick={() => handleOpen()}
         >
           {!open ? (
-            <div className="transition duration-200">
+            <div className="transition duration-200 ">
               <FaWhatsapp className="text-5xl max-md:text-4xl" />
             </div>
           ) : (
