@@ -24,65 +24,25 @@ export default function TestimonialCarousel() {
           TestomialImage={"someurl"}
           category={"Networker"}
           name={"Jimmy Garcia"}
-          testimonial=" “Lorem ipsum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus fucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus paucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus arcu libero pellentesque vitae
-                  dignissim...”"
+          testimonial=" “Quiero expresar mi gratitud hacia esta increíble empresa. Desde el primer contacto, su equipo demostró un compromiso excepcional. La atención meticulosa a los detalles y la calidad del trabajo entregado superaron ampliamente mis expectativas. Cada miembro del equipo mostró una dedicación impresionante, lo que convirtió mi proyecto en un verdadero éxito. ¡Recomendaré sus servicios a todos mis colegas y amigos!”"
         />
       </SwiperSlide>
       <SwiperSlide>
         <TestimonialsItem
           color="#EDCA21"
-          testimonial=" “Lorem ipsum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus fucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus paucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus arcu libero pellentesque vitae
-                  dignissim...”"
+          testimonial=" “Mi experiencia con esta empresa fue simplemente fenomenal. Desde la fase inicial hasta la entrega final, cada etapa fue manejada con un profesionalismo excepcional. Me impresionó la habilidad del equipo para comprender y llevar a cabo mis ideas de manera creativa. Estoy completamente satisfecho con los resultados obtenidos y definitivamente consideraré trabajar con ellos en futuros proyectos.”"
         />
       </SwiperSlide>
       <SwiperSlide>
         <TestimonialsItem
           color="black"
-          testimonial=" “Lorem ipsum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus fucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus paucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus arcu libero pellentesque vitae
-                  dignissim...”"
+          testimonial=" “Contratar a este equipo fue la mejor decisión que tomé para mi proyecto. La atención personalizada y la comunicación clara hicieron que todo el proceso fuera fluido y sin complicaciones. Su capacidad para enfrentar desafíos y encontrar soluciones efectivas fue destacable. Los resultados finales superaron mis expectativas y dejaron una impresión duradera. ¡Gracias por transformar mi visión en realidad!”"
         />
       </SwiperSlide>
       <SwiperSlide>
         <TestimonialsItem
           color="#DC4242"
-          testimonial=" “Lorem ipsum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus fucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus pucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus paucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus psum dolor sit amet consectetur. Ullamcorper elementum
-                  risus faucibus faucibus arcu libero pellentesque vitae
-                  dignissim...”"
+          testimonial=" “No tengo más que elogios para esta empresa. Su enfoque centrado en el cliente y su dedicación incansable se reflejaron en cada fase de nuestro proyecto conjunto. La calidad del trabajo entregado habla por sí misma, y estoy agradecido por el nivel de compromiso que demostraron. Trabajar con ellos fue una experiencia gratificante, y no dudaré en recomendar sus servicios a otros.”"
         />
       </SwiperSlide>
     </Swiper>

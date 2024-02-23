@@ -11,7 +11,7 @@ export default function TestimonialsItem({
 }) {
   console.log(testimonial);
   const [toggleText, setToggleText] = useState(false);
-  const shortTestimonial = testimonial.split(" ").slice(0, 70).join(" ");
+  const shortTestimonial = testimonial.split(" ").slice(0, 40).join(" ");
 
   const backgroundColorClass =
     color === "#DC4242"
@@ -36,7 +36,7 @@ export default function TestimonialsItem({
         </div>
         <div className="grid items-center h-full col-span-7 py-10 max-lg:py-0">
           <div
-            className={`grid items-center  h-full col-span-7 py-10  ${backgroundColorClass} p-10 max-sm:p-6 grid gap-10 max-sm:gap-5`}
+            className={`grid items-center  h-full col-span-7 py-10  ${backgroundColorClass} p-10 max-sm:p-6 grid gap-0 max-sm:gap-5`}
           >
             <div>
               <p className="mb-4 text-2xl max-sm:text-sm">Networker</p>
@@ -51,14 +51,16 @@ export default function TestimonialsItem({
                 <p className=" garde_ghotic_semibold max-sm:text-md">
                   {toggleText ? testimonial : shortTestimonial + "..."}
                 </p>
-                <div
-                  className="grid justify-center py-3 cursor-pointer "
-                  onClick={() => {
-                    toggleTextHandler();
-                  }}
-                >
-                  {toggleText ? <FaChevronUp /> : <FaChevronDown />}
-                </div>
+                {testimonial.split(" ").length > 40 ? (
+                  <div
+                    className="grid justify-center py-3 cursor-pointer "
+                    onClick={() => {
+                      toggleTextHandler();
+                    }}
+                  >
+                    {toggleText ? <FaChevronUp /> : <FaChevronDown />}
+                  </div>
+                ) : null}
               </div>
             </div>
           </div>
