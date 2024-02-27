@@ -36,7 +36,7 @@ export default function TestimonialsItem({
         </div>
         <div className="grid items-center h-full col-span-7 py-10 max-lg:py-0">
           <div
-            className={`grid items-center  h-full col-span-7 py-10  ${backgroundColorClass} p-10 max-sm:p-6 grid gap-0 max-sm:gap-5`}
+            className={`grid items-center  h-full col-span-7 py-10  ${backgroundColorClass} p-10 max-sm:p-6 grid gap-0 max-xl:gap-5`}
           >
             <div>
               <p className="mb-4 text-2xl max-sm:text-sm">Networker</p>

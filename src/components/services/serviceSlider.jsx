@@ -64,22 +64,34 @@ export default function ServiceSlider({ index }) {
               320: {
                 slidesPerView: 1,
                 spaceBetween: 90,
-                navigation: false,
+                navigation: {
+                  enabled: false,
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
               },
               740: {
                 slidesPerView: 1,
                 spaceBetween: 90,
-                navigation: false,
+                navigation: {
+                  enabled: false,
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
               },
               1280: {
                 slidesPerView: 2,
                 spaceBetween: 90,
-                navigation: true,
+                navigation: {
+                  enabled: true,
+                },
               },
               1380: {
                 slidesPerView: 3,
                 spaceBetween: 90,
-                navigation: true,
+                navigation: {
+                  enabled: true,
+                },
               },
             }}
             className="px-20 pt-10 pb-14 max-md:px-[3rem]"
