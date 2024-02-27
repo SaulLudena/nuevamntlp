@@ -11,7 +11,7 @@ export default function presentation() {
       />
 
       <div className="absolute w-full ">
-        <div className=" w-[80%]  m-auto   -translate-y-[-2rem] max-xl:translate-y-16 max-sm:translate-y-10 max-w-[1500px]   ">
+        <div className=" w-[80%]  m-auto    max-w-[1500px]   ">
           <div className="flex items-center justify-between">
             <div className=" w-[50rem] grid  gap-6 ">
               <h1 className="text-8xl  text-[#EDCA21] max-lg:text-6xl max-lg:w-[35rem] max-sm:text-4xl max-sm:w-[20rem] ">
