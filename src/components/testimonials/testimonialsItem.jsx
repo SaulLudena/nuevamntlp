@@ -25,7 +25,7 @@ export default function TestimonialsItem({
     setToggleText(!toggleText);
   };
   return (
-    <div className=" w-[90%] max-w-[1500px] m-auto max-sm:w-[100%]">
+    <div className=" w-[90%] max-w-[1500px] m-auto max-sm:w-[100%] ">
       <div className="grid grid-cols-12 p-10 max-lg:flex max-lg:flex-col max-sm:px-0 max-sm:pt-10">
         <div className="flex justify-end col-span-5">
           <img

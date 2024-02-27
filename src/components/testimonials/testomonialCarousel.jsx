@@ -16,7 +16,13 @@ export default function TestimonialCarousel() {
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={1}
+      navigation
       pagination={{ clickable: true }}
+      breakpoints={{
+        640: {
+          navigation: null,
+        },
+      }}
     >
       <SwiperSlide>
         <TestimonialsItem

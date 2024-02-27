@@ -24,7 +24,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
 
-export default function ServiceSlider({ index, mostradoEnSlide }) {
+export default function ServiceSlider({ index }) {
   const swiperRef = useRef(null);
   const [selectedIndex, setSelectedIndex] = useState(index);
 
@@ -48,12 +48,13 @@ export default function ServiceSlider({ index, mostradoEnSlide }) {
   return (
     <>
       <Tab.Group selectedIndex={selectedIndex} onChange={handleTabChange}>
-        <Tab.List className="flex mb-10 overflow-x-hidden transition-transform duration-300 ease-in-out w-[80%] max-w-[1500px] m-auto">
+        <Tab.List className="flex mb-10 overflow-x-hidden transition-transform duration-300 ease-in-out w-[80%] max-w-[1500px] m-auto max-md:w-[95%]">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={90}
             slidesPerView={3}
+            navigation
             pagination={{
               clickable: true,
               el: ".swiper-pagination",
@@ -81,7 +82,7 @@ export default function ServiceSlider({ index, mostradoEnSlide }) {
                 navigation: true,
               },
             }}
-            className="px-20 pt-10 pb-14 max-md:px-10 max-sm:px-0"
+            className="px-20 pt-10 pb-14 max-md:px-[3rem]"
           >
             <SwiperSlide>
               <Tab as={Fragment}>
