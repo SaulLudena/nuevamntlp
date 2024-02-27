@@ -18,11 +18,6 @@ export default function TestimonialCarousel() {
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      breakpoints={{
-        640: {
-          navigation: null,
-        },
-      }}
     >
       <SwiperSlide>
         <TestimonialsItem
