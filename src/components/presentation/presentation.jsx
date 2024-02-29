@@ -3,7 +3,7 @@ import PresentationBackground4 from "../../../public/presentationBackground4.jpg
 
 export default function presentation() {
   return (
-    <div className="grid items-center bg-[#0B0101] h-[100vh]" id="Inicio">
+    <div className="grid items-center bg-[#0B0101] h-screen " id="Inicio">
       <img
         src={PresentationBackground4}
         alt=""

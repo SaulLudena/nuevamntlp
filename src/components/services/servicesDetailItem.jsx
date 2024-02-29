@@ -14,14 +14,12 @@ export default function ServicesDetailItem({
           <h1 className="text-5xl text-[#DC4242] max-md:text-4xl">{title}</h1>
           <p className="garde_ghotic_semibold max-md:text-sm">{paragraph1}</p>
 
-          <h2 className="text-[#434343] text-2xl animate-fadeIn">Incluye:</h2>
+          <h2 className="text-[#434343] text-2xl ">Incluye:</h2>
           <p className="garde_ghotic_semibold max-md:text-sm">{paragraph2}</p>
-          <div className="w-full h-[2px] bg-[#DC4242] animate-fadeIn"></div>
-          <div className="flex items-center justify-center gap-10 animate-fadeIn">
-            <p className="text-5xl better_yesterday animate-fadeIn">
-              ¿Lo quieres?
-            </p>
-            <div className="text-center animate-fadeIn">
+          <div className="w-full h-[2px] bg-[#DC4242] "></div>
+          <div className="flex items-center justify-center gap-10">
+            <p className="text-5xl better_yesterday ">¿Lo quieres?</p>
+            <div className="text-center ">
               <div className="px-5 py-3 bg-gradient-to-r bg-[#dc4242] text-white text-sm flex items-center gap-3 justify-center">
                 <p>Contáctanos</p>
                 <FaWhatsapp />
@@ -30,7 +28,7 @@ export default function ServicesDetailItem({
           </div>
         </div>
       </div>
-      <div className="col-span-6 animate-fadeIn max-xl:w-[100%] w-[80%] max-w-[1500px] m-auto">
+      <div className="col-span-6  max-xl:w-[100%] w-[80%] max-w-[1500px] m-auto border-2 border-black">
         <img src={collageImagen1} alt="" className="w-full" />
       </div>
     </div>
