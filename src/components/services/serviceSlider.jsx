@@ -26,6 +26,7 @@ import "swiper/css/effect-fade";
 
 export default function ServiceSlider({ index }) {
   const swiperRef = useRef(null);
+  const swiperRef2 = useRef(null);
   const [selectedIndex, setSelectedIndex] = useState(index);
 
   useEffect(() => {
@@ -40,15 +41,24 @@ export default function ServiceSlider({ index }) {
 
       swiperRef.current.swiper.slideTo(adjustedIndex);
     }
+
+    //cambiar el index del slide2
+    if (swiperRef2.current && swiperRef2.current.swiper) {
+      swiperRef2.current.swiper.slideTo(index);
+    }
   }, [index]);
 
   const handleTabChange = (newIndex) => {
     setSelectedIndex(newIndex);
+    //cambiar el index del slide2
+    if (swiperRef2.current && swiperRef2.current.swiper) {
+      swiperRef2.current.swiper.slideTo(newIndex);
+    }
   };
   return (
     <>
       <Tab.Group selectedIndex={selectedIndex} onChange={handleTabChange}>
-        <Tab.List className="flex mb-10 overflow-x-hidden transition-transform duration-300 ease-in-out w-[80%] max-w-[1500px] m-auto max-md:w-[95%]">
+        <Tab.List className="flex mb-10 overflow-x-hidden  w-[80%] max-w-[1500px] m-auto max-md:w-[95%]">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -64,34 +74,18 @@ export default function ServiceSlider({ index }) {
               320: {
                 slidesPerView: 1,
                 spaceBetween: 90,
-                navigation: {
-                  enabled: false,
-                  nextEl: ".swiper-button-next",
-                  prevEl: ".swiper-button-prev",
-                },
               },
               740: {
                 slidesPerView: 1,
                 spaceBetween: 90,
-                navigation: {
-                  enabled: false,
-                  nextEl: ".swiper-button-next",
-                  prevEl: ".swiper-button-prev",
-                },
               },
               1280: {
                 slidesPerView: 2,
                 spaceBetween: 90,
-                navigation: {
-                  enabled: true,
-                },
               },
               1380: {
                 slidesPerView: 3,
                 spaceBetween: 90,
-                navigation: {
-                  enabled: true,
-                },
               },
             }}
             className="px-20 pt-10 pb-14 max-md:px-[3rem]"
@@ -217,78 +211,104 @@ export default function ServiceSlider({ index }) {
           </Swiper>
         </Tab.List>
         <Tab.Panels>
-          <Tab.Panel>
-            <ServicesDetailItem
-              collageImagen1={collageImagen1}
-              title="Diseño grafico"
-              paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
-              paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
-            />
-          </Tab.Panel>
-          <Tab.Panel>
-            <ServicesDetailItem
-              collageImagen1={collageImagen1}
-              title="Redes sociales"
-              paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
-              paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
-            />
-          </Tab.Panel>
-          <Tab.Panel>
-            <ServicesDetailItem
-              collageImagen1={collageImagen1}
-              title="Desarrollo de Páginas web"
-              paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
-              paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
-            />
-          </Tab.Panel>
-          <Tab.Panel>
-            <ServicesDetailItem
-              collageImagen1={collageImagen1}
-              title="Coaching de Marca Personal"
-              paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
-              paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
-            />
-          </Tab.Panel>
-          <Tab.Panel>
-            <ServicesDetailItem
-              collageImagen1={collageImagen1}
-              title="Creación de logos"
-              paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
-              paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
-            />
-          </Tab.Panel>
-          <Tab.Panel>
-            <ServicesDetailItem
-              collageImagen1={collageImagen1}
-              title="Fotografía"
-              paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
-              paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
-            />
-          </Tab.Panel>
-          <Tab.Panel>
-            <ServicesDetailItem
-              collageImagen1={collageImagen1}
-              title="Videografía"
-              paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
-              paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
-            />
-          </Tab.Panel>
-          <Tab.Panel>
-            <ServicesDetailItem
-              collageImagen1={collageImagen1}
-              title="Imagen corporativa"
-              paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
-              paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
-            />
-          </Tab.Panel>
-          <Tab.Panel>
-            <ServicesDetailItem
-              collageImagen1={collageImagen1}
-              title="Packaing"
-              paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
-              paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
-            />
-          </Tab.Panel>
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            slidesPerView={1}
+            allowTouchMove={false}
+            noSwiping={false}
+            ref={swiperRef2}
+          >
+            <SwiperSlide>
+              <Tab.Panel>
+                <ServicesDetailItem
+                  collageImagen1={collageImagen1}
+                  title="Diseño grafico"
+                  paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
+                  paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
+                />
+              </Tab.Panel>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Tab.Panel>
+                <ServicesDetailItem
+                  collageImagen1={collageImagen1}
+                  title="Redes sociales"
+                  paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
+                  paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
+                />
+              </Tab.Panel>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Tab.Panel>
+                <ServicesDetailItem
+                  collageImagen1={collageImagen1}
+                  title="Desarrollo de Páginas web"
+                  paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
+                  paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
+                />
+              </Tab.Panel>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Tab.Panel>
+                <ServicesDetailItem
+                  collageImagen1={collageImagen1}
+                  title="Coaching de Marca Personal"
+                  paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
+                  paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
+                />
+              </Tab.Panel>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Tab.Panel>
+                <ServicesDetailItem
+                  collageImagen1={collageImagen1}
+                  title="Creación de logos"
+                  paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
+                  paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
+                />
+              </Tab.Panel>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Tab.Panel>
+                <ServicesDetailItem
+                  collageImagen1={collageImagen1}
+                  title="Fotografía"
+                  paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
+                  paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
+                />
+              </Tab.Panel>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Tab.Panel>
+                <ServicesDetailItem
+                  collageImagen1={collageImagen1}
+                  title="Videografía"
+                  paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
+                  paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
+                />
+              </Tab.Panel>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Tab.Panel>
+                <ServicesDetailItem
+                  collageImagen1={collageImagen1}
+                  title="Imagen corporativa"
+                  paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
+                  paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
+                />
+              </Tab.Panel>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Tab.Panel>
+                <ServicesDetailItem
+                  collageImagen1={collageImagen1}
+                  title="Packaing"
+                  paragraph1="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros."
+                  paragraph2="Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros Diseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otrosDiseño de logotipos, tarjetas de presentación, flyers, banners, publicaciones para redes sociales, entre otros"
+                />
+              </Tab.Panel>
+            </SwiperSlide>
+          </Swiper>
         </Tab.Panels>
       </Tab.Group>
     </>

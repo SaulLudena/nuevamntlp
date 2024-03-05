@@ -19,32 +19,6 @@ export default function TestimonialCarousel() {
       navigation
       pagination={{ clickable: true }}
       className="mx-20 max-md:mx-0"
-      breakpoints={{
-        320: {
-          navigation: {
-            enabled: false,
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        },
-        740: {
-          navigation: {
-            enabled: false,
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        },
-        1280: {
-          navigation: {
-            enabled: true,
-          },
-        },
-        1380: {
-          navigation: {
-            enabled: true,
-          },
-        },
-      }}
     >
       <SwiperSlide>
         <TestimonialsItem

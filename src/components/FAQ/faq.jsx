@@ -1,11 +1,10 @@
 import { FaChevronRight, FaWhatsapp } from "react-icons/fa";
 
-import TopnavContact from "../topnav/topnavContact";
 import FaqItem from "./faqItem";
 
 export default function Faq() {
   return (
-    <div className="w-[80%] max-w-[1500px] m-auto py-20 grid gap-14">
+    <div className="w-[80%]  max-md:w-[100%]  max-w-[1500px] m-auto py-20 grid gap-14">
       <div className="flex items-center gap-3">
         <div className="text-[#DC4242] ">
           <FaChevronRight className="text-5xl max-sm:text-5xl" />
@@ -19,7 +18,7 @@ export default function Faq() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-5 px-10 max-md:p-0 max-lg:grid-cols-1 ">
+      <div className="grid grid-cols-2 gap-5 px-10 max-md:p-0 max-lg:grid-cols-1  max-md:w-[90%] max-md:m-auto ">
         <FaqItem />
         <FaqItem />
         <FaqItem />

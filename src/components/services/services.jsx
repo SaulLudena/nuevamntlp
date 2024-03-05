@@ -4,10 +4,10 @@ export default function Services({ index, mostradoEnSlide }) {
   return (
     <>
       <div
-        className="w-[80%] max-w-[1500px] m-auto pt-32   grid "
+        className="w-[80%] max-md:w-[100%] max-w-[1500px] m-auto pt-32   grid "
         id="Servicios"
       >
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 ">
           <div className="text-[#DC4242] ">
             <FaChevronRight className="text-5xl max-sm:text-5xl" />
           </div>

@@ -1,9 +1,9 @@
 import Networkers from "../../../public/logos/Networkers.png";
-import LogoNetowkers1 from "../../../public/logos/Logo Networkers-1.png";
-import LogoNetowkers2 from "../../../public/logos/Logo Networkers-2.png";
-import LogoNetowkers3 from "../../../public/logos/Logo Networkers-3.png";
-import LogoNetowkers4 from "../../../public/logos/Logo Networkers-4.png";
-import LogoNetowkers5 from "../../../public/logos/Logo Networkers-5.png";
+import LazaroAmbulay from "../../../public/logos/lazaroambulay.png";
+import RosaLopez from "../../../public/logos/rosalopez.png";
+import UnaVezMas from "../../../public/logos/unavezmas.png";
+import MarleniGarcia from "../../../public/logos/marlenigarcia.png";
+import JimmyGarcia from "../../../public/logos/jimmygarcia.png";
 import LogoItem from "./logoItem";
 export default function Aboutus() {
   return (
@@ -19,17 +19,17 @@ export default function Aboutus() {
           Ayudamos a nuestros clientes a compartir su luz y mensaje con el mundo
         </p>
         <ul className="grid grid-cols-5 max-md:w-[95%] w-[80%] max-w-[1500px] m-auto">
-          <LogoItem urlImagen={LogoNetowkers5} />
-          <LogoItem urlImagen={LogoNetowkers4} />
-          <LogoItem urlImagen={LogoNetowkers1} />
-          <LogoItem urlImagen={LogoNetowkers2} />
-          <LogoItem urlImagen={LogoNetowkers3} />
+          <LogoItem urlImagen={LazaroAmbulay} />
+          <LogoItem urlImagen={RosaLopez} />
+          <LogoItem urlImagen={UnaVezMas} />
+          <LogoItem urlImagen={MarleniGarcia} />
+          <LogoItem urlImagen={JimmyGarcia} />
         </ul>
         <div>
           <img
             src={Networkers}
             alt="networkers"
-            className="object-cover max-md:w-[70rem] w-full h-full select-none"
+            className="object-cover max-md:w-[80rem] w-full h-full select-none"
           />
         </div>
       </div>
