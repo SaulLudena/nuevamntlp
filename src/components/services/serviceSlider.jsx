@@ -214,18 +214,19 @@ export default function ServiceSlider({ index }) {
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             slidesPerView={1}
-            allowTouchMove={false}
-            noSwiping={false}
+            //quiero que al momento de hacer un slide a la izquierda o derecha, el slide 1 tambien se actualice al elemento actual y tambien que el slide 1 haga scroll automatico y que se posicione en el centro
+            onSlideChange={(swiper) => {
+              setSelectedIndex(swiper.activeIndex);
+              if (swiperRef.current && swiperRef.current.swiper) {
+                swiperRef.current.swiper.slideTo(swiper.activeIndex);
+              }
+            }}
             ref={swiperRef2}
           >
             {servicesDetailItems.map((servicessliderItem, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <Tab.Panel>
-                    <ServicesDetailItem
-                      servicessliderItem={servicessliderItem}
-                    />
-                  </Tab.Panel>
+                  <ServicesDetailItem servicessliderItem={servicessliderItem} />
                 </SwiperSlide>
               );
             })}
