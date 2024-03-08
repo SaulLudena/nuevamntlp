@@ -24,9 +24,9 @@ export default function TestimonialCarousel() {
         <TestimonialsItem
           color="#DC4242"
           TestomialImage={"someurl"}
-          category={"Networker"}
-          name={"Jimmy Garcia"}
-          testimonial=" “Quiero expresar mi gratitud hacia esta increíble empresa. Desde el primer contacto, su equipo demostró un compromiso excepcional. La atención meticulosa a los detalles y la calidad del trabajo entregado superaron ampliamente mis expectativas. Cada miembro del equipo mostró una dedicación impresionante, lo que convirtió mi proyecto en un verdadero éxito. ¡Recomendaré sus servicios a todos mis colegas y amigos!”"
+          category={"Light – Trading "}
+          name={"Rafael Labarta"}
+          testimonial="“La alianza que hemos mantenido desde hace más de un año con Nuevamente ha sido un impulso para la academia. Su creatividad, organización y enfoque han llevado la marca a nuevos públicos y estamos encantados con los resultados y sin duda lo recomendaría a otros emprendedores y empresa que quieran impactar en las redes.”"
         />
       </SwiperSlide>
       <SwiperSlide>

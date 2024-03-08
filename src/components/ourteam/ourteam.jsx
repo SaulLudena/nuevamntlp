@@ -27,7 +27,7 @@ export default function Ourteam() {
             Somos un equipo capacitado para entender tus necesidades
           </p>
         </div>
-        <ul className="grid grid-cols-4 grid-rows-2 gap-5 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 max-md:hidden">
+        <ul className="grid grid-cols-3 grid-rows-2 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1 max-md:hidden">
           {teamMember.map((member, index) => (
             <TeamMemberItem
               key={index}
@@ -40,7 +40,7 @@ export default function Ourteam() {
           ))}
         </ul>
       </div>
-      <div className="w-[70%] max-w-[1500px] m-auto  pb-20 max-md:w-[100%] max-md:block hidden">
+      <div className="w-[80%] max-w-[1500px] m-auto  pb-20 max-md:w-[100%] max-md:block hidden">
         <Swiper
           className="hiddenmax-md:block" // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -81,8 +81,8 @@ const teamMember = [
     memberImage: memberImage,
   },
   {
-    nombre: "Jesus Villacorta",
-    cargo: "Director creativo",
+    nombre: "Leslie Cervera",
+    cargo: "Senior Graphic Designer / Directora creativa",
     instagram: "",
     behance: "",
     memberImage: memberImage,
@@ -94,13 +94,7 @@ const teamMember = [
     behance: "",
     memberImage: memberImage,
   },
-  {
-    nombre: "Leslie Cervera",
-    cargo: "Senior Graphic Designer",
-    instagram: "",
-    behance: "",
-    memberImage: memberImage,
-  },
+
   {
     nombre: "Carlos Pacaya",
     cargo: "Graphic Designer",
@@ -111,13 +105,6 @@ const teamMember = [
   {
     nombre: "Maico Rodriguez",
     cargo: "Video Editor",
-    instagram: "",
-    behance: "",
-    memberImage: memberImage,
-  },
-  {
-    nombre: "Wilson Cornejo",
-    cargo: "Software Developer",
     instagram: "",
     behance: "",
     memberImage: memberImage,
