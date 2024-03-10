@@ -39,8 +39,8 @@ export default function TestimonialsItem({
             className={`grid items-center  h-full col-span-7 py-10  ${backgroundColorClass} p-10 max-sm:p-6 grid gap-0 max-xl:gap-5`}
           >
             <div>
-              <p className="mb-4 text-2xl max-sm:text-sm">Networker</p>
-              <h1 className="text-5xl max-sm:text-3xl">Jimmy Garcia</h1>
+              <p className="mb-4 text-2xl max-sm:text-sm">{category}</p>
+              <h1 className="text-5xl max-sm:text-3xl">{name}</h1>
             </div>
             <div className="w-full h-[0.5px] bg-white "></div>
             <div className="w-full">

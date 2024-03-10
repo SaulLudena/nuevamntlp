@@ -78,6 +78,7 @@ export default function ServiceSlider({ index }) {
               clickable: true,
               el: ".swiper-pagination",
             }}
+            style={{ "--swiper-navigation-size": "50px" }}
             ref={swiperRef}
             breakpoints={{
               320: {
@@ -97,7 +98,7 @@ export default function ServiceSlider({ index }) {
                 spaceBetween: 90,
               },
             }}
-            className="px-20 pt-10 pb-14 max-md:px-[3rem]"
+            className="services-item-slider px-20 pt-10 pb-14 max-md:px-[3rem] "
           >
             <SwiperSlide>
               <Tab as={Fragment}>
