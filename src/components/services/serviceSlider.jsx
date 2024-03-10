@@ -9,12 +9,7 @@ import { AiOutlineTeam } from "react-icons/ai";
 import { MdComputer, MdStars } from "react-icons/md";
 import { FaCamera } from "react-icons/fa";
 import { FaBox } from "react-icons/fa";
-import collageImagen1 from "../../../public/collage_1.png";
 import ServicesDetailItem from "./servicesDetailItem";
-
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -23,6 +18,20 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+//importando imagenes
+import redes_sociales_1 from "../../../public/services/redes_sociales/1.png";
+import redes_sociales_2 from "../../../public/services/redes_sociales/2.png";
+import redes_sociales_3 from "../../../public/services/redes_sociales/3.png";
+import desarrollo_de_paginas_web_1 from "../../../public/services/desarrollo_de_paginas_web/1.png";
+import desarrollo_de_paginas_web_2 from "../../../public/services/desarrollo_de_paginas_web/2.png";
+import desarrollo_de_paginas_web_3 from "../../../public/services/desarrollo_de_paginas_web/3.png";
+
+import packaing_1 from "../../../public/services/packaing/1.png";
+import packaing_2 from "../../../public/services/packaing/2.png";
+import packaing_3 from "../../../public/services/packaing/3.png";
 
 export default function ServiceSlider({ index }) {
   const swiperRef = useRef(null);
@@ -239,7 +248,6 @@ export default function ServiceSlider({ index }) {
 
 const servicesDetailItems = [
   {
-    collageImagen1: collageImagen1,
     title: "Diseño grafico",
     paragraph1:
       "Creemos que el diseño gráfico es una poderosa herramienta para comunicar mensajes, valores e información; que represente la identidad de tu marca a tu público objetivo para, así, generar recordación",
@@ -265,9 +273,13 @@ const servicesDetailItems = [
           "Implementamos estrategias de marketing digital, grillas de contenido, análisis de resultados y anuncios personalizados para atraer a tu público objetivo y convertirlo en clientes.",
       },
     ],
+    images: [
+      { image1: undefined },
+      { image2: undefined },
+      { image3: undefined },
+    ],
   },
   {
-    collageImagen1: collageImagen1,
     title: "Redes sociales",
     paragraph1:
       " Conecta con tu Público Objetivo en un Infinito de Posibilidades. En Nuevamente, somos expertos en crear estrategias para redes sociales que te ayudan a",
@@ -293,9 +305,13 @@ const servicesDetailItems = [
           "Fortalece la relación con tus clientes y crea una comunidad comprometida con tu marca.",
       },
     ],
+    images: [
+      { image1: redes_sociales_1 },
+      { image2: redes_sociales_2 },
+      { image3: redes_sociales_3 },
+    ],
   },
   {
-    collageImagen1: collageImagen1,
     title: "Desarrollo de Páginas web",
     paragraph1:
       "Tu página web es más que una simple presencia online, es una puerta de entrada a un universo de posibilidades para tu marca. Nuestro equipo de apasionados desarrolladores está listo para crear una página web que te ayude a :",
@@ -321,9 +337,13 @@ const servicesDetailItems = [
           "Te ayudamos a llegar a nuevos mercados y hacer crecer tu negocio a través de una página web optimizada para el SEO",
       },
     ],
+    images: [
+      { image1: desarrollo_de_paginas_web_1 },
+      { image2: desarrollo_de_paginas_web_2 },
+      { image3: desarrollo_de_paginas_web_3 },
+    ],
   },
   {
-    collageImagen1: collageImagen1,
     title: "Coaching de Marca Personal",
     paragraph1:
       "El coaching de marca personal es la llave para desbloquear tu potencial y convertirte en un referente en tu sector. Nuestro equipo de coaches expertos te ayudará a:",
@@ -349,9 +369,13 @@ const servicesDetailItems = [
           "Creamos una estrategia de comunicación que refuerza tu reputación y te posiciona como un referente en tu industria",
       },
     ],
+    images: [
+      { image1: undefined },
+      { image2: undefined },
+      { image3: undefined },
+    ],
   },
   {
-    collageImagen1: collageImagen1,
     title: "Creación de logos",
     paragraph1:
       "Tu logo es la cara de tu marca, la primera impresión que tus clientes tendrán de ti. Nuestro equipo de diseñadores expertos está listo para ayudarte a:",
@@ -377,9 +401,13 @@ const servicesDetailItems = [
           "Diseñamos logos versátiles que se adaptan a cualquier formato y te permiten expandir tu universo de posibilidades.",
       },
     ],
+    images: [
+      { image1: "../../../public/services/creacion_de_logos/1.jpg" },
+      { image2: "../../../public/services/creacion_de_logos/2.jpg" },
+      { image3: "../../../public/services/creacion_de_logos/3.jpg" },
+    ],
   },
   {
-    collageImagen1: collageImagen1,
     title: "Fotografía",
     paragraph1:
       "Nuestro equipo de fotógrafos apasionados está listo para ayudarte a: ",
@@ -405,9 +433,13 @@ const servicesDetailItems = [
           "Creamos contenido visual atractivo que te diferencia de la competencia y te permite conectar con tu público en las redes sociales.",
       },
     ],
+    images: [
+      { image1: "../../../public/services/fotografía/1.jpg" },
+      { image2: "../../../public/services/fotografía/2.jpg" },
+      { image3: "../../../public/services/fotografía/3.jpg" },
+    ],
   },
   {
-    collageImagen1: collageImagen1,
     title: "Videografía",
     paragraph1:
       "Nuestro equipo de apasionados videógrafos está listo para ayudarte a: ",
@@ -433,9 +465,13 @@ const servicesDetailItems = [
           "Inmortalizamos los momentos más especiales de tu negocio con videos que te transportarán a ese instante cada vez que los veas.",
       },
     ],
+    images: [
+      { image1: "../../../public/services/videografía/1.jpg" },
+      { image2: "../../../public/services/videografía/2.jpg" },
+      { image3: "../../../public/services/videografía/3.jpg" },
+    ],
   },
   {
-    collageImagen1: collageImagen1,
     title: "Imagen corporativa",
     paragraph1: "Nuestro equipo de artistas visuales te ayudará a: ",
     include: [
@@ -460,9 +496,13 @@ const servicesDetailItems = [
           "Implementamos estrategias innovadoras que te permiten llegar a nuevos mercados y explorar un futuro infinito de posibilidades para tu marca.",
       },
     ],
+    images: [
+      { image1: "../../../public/services/imagen_corporativa/1.jpg" },
+      { image2: "../../../public/services/imagen_corporativa/2.jpg" },
+      { image3: "../../../public/services/imagen_corporativa/3.jpg" },
+    ],
   },
   {
-    collageImagen1: collageImagen1,
     title: "Packaing",
     paragraph1: "Nuestro equipo de artistas apasionados te ayudará a: ",
     include: [
@@ -486,6 +526,11 @@ const servicesDetailItems = [
         description:
           "Implementamos estrategias innovadoras que te permiten llegar a nuevos mercados y explorar un futuro infinito de posibilidades para tu marca.",
       },
+    ],
+    images: [
+      { image1: packaing_1 },
+      { image2: packaing_2 },
+      { image3: packaing_3 },
     ],
   },
 ];

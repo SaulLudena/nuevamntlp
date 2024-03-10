@@ -40,3 +40,12 @@ body {
 .swiper-pagination-bullet-active {
   background-color: #dc4242;
 }
+
+/* Estilos personalizados para los botones next y previous */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white; /* Fondo blanco */
+  color: #dc4242; /* Color original de los botones */
+  padding: 30px; /* Ajusta el valor según el padding que desees agregar */
+  /* Otros estilos que desees agregar */
+}

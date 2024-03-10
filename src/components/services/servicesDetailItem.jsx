@@ -2,16 +2,14 @@ import { FaWhatsapp } from "react-icons/fa";
 import TopnavContact from "../topnav/topnavContact";
 
 export default function ServicesDetailItem({ servicessliderItem }) {
-  const { title, paragraph1, collageImagen1, include } = servicessliderItem;
-  console.log(include);
+  const { title, paragraph1, include, images } = servicessliderItem;
+  console.log(images[0].image1);
   return (
-    <div className="grid grid-cols-12 max-xl:gap-20 max-xl:flex max-xl:flex-col w-full max-w-[2800px] m-auto ">
+    <div className="grid grid-cols-12 max-xl:gap-20 max-xl:flex max-2xl:flex-col w-full max-w-[2800px] m-auto ">
       <div className="grid items-center col-span-6 w-[80%] max-w-[1500px] m-auto ">
         <div className="grid px-10 gap-7 max-md:px-0">
           <h1 className="text-5xl text-[#DC4242] max-md:text-4xl">{title}</h1>
           <p className="garde_ghotic_semibold max-md:text-sm">{paragraph1}</p>
-
-          <h2 className="text-[#434343] text-2xl ">Incluye:</h2>
 
           <ul className="grid gap-3">
             {include?.map((item, index) => (
@@ -40,8 +38,16 @@ export default function ServicesDetailItem({ servicessliderItem }) {
           </div>
         </div>
       </div>
-      <div className="col-span-6  max-xl:w-[100%] w-[100%] max-w-[1500px] m-auto  ">
-        <img src={collageImagen1} alt="" className="w-full h-full" />
+      <div className="col-span-6  max-xl:w-[100%] w-[100%] max-w-[1500px] m-auto grid grid-cols-6 ">
+        <div className="col-span-6 ">
+          <img src={images[0].image1} alt={images[0].image1} />
+        </div>
+        <div className="col-span-3 max-md:col-span-6">
+          <img src={images[1].image2} alt={images[0].image1} />
+        </div>
+        <div className="col-span-3 max-md:col-span-6">
+          <img src={images[2].image3} alt={images[0].image1} />
+        </div>
       </div>
     </div>
   );

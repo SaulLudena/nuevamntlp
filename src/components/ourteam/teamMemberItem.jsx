@@ -13,7 +13,7 @@ export default function TeamMemberItem({
         <img
           src={memberImage}
           alt=""
-          className="object-cover w-full h-80 max-md:h-[35rem] max-sm:h-[25rem]"
+          className="object-cover w-full h-96 max-md:h-[35rem] max-sm:h-[25rem] max-sm:object-top"
         />
       </div>
       <div className="bg-[#EDCA21]">
@@ -34,7 +34,7 @@ export default function TeamMemberItem({
           </ul>
         </div>
       </div>
-      <div className="bg-white h-14"></div>
+      <div className="hidden w-full h-20 bg-white max-md:block"></div>
     </div>
   );
 }

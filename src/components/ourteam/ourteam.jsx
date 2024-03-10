@@ -1,5 +1,11 @@
 import TeamMemberItem from "./teamMemberItem";
 import memberImage from "../../../public/teammemberexample.png";
+import Jeff from "../../../public/team/Jeff.png";
+
+import Leslie from "../../../public/team/Leslie.png";
+import Alba from "../../../public/team/Alba.png";
+import Carlos from "../../../public/team/Carlos.png";
+import Maico from "../../../public/team/Maico.png";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -27,7 +33,7 @@ export default function Ourteam() {
             Somos un equipo capacitado para entender tus necesidades
           </p>
         </div>
-        <ul className="grid grid-cols-3 grid-rows-2 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1 max-md:hidden">
+        <ul className="grid grid-cols-3 grid-rows-2 gap-5 max-xl:grid-cols-2 max-md:grid-cols-1 max-md:hidden w-[90%]  max-lg:w-[100%] max-w-[1500px] m-auto">
           {teamMember.map((member, index) => (
             <TeamMemberItem
               key={index}
@@ -51,6 +57,7 @@ export default function Ourteam() {
           {teamMember.map((member, index) => (
             <SwiperSlide key={index}>
               <TeamMemberItem
+                key={index}
                 nombre={member.nombre}
                 cargo={member.cargo}
                 instagram={member.instagram}
@@ -71,7 +78,7 @@ const teamMember = [
     cargo: "CEO y Director General",
     instagram: "",
     behance: "",
-    memberImage: memberImage,
+    memberImage: Jeff,
   },
   {
     nombre: "Rafael del Solar",
@@ -85,14 +92,14 @@ const teamMember = [
     cargo: "Senior Graphic Designer / Directora creativa",
     instagram: "",
     behance: "",
-    memberImage: memberImage,
+    memberImage: Leslie,
   },
   {
     nombre: "Alba Saavedra",
     cargo: "Content Manager",
     instagram: "",
     behance: "",
-    memberImage: memberImage,
+    memberImage: Alba,
   },
 
   {
@@ -100,13 +107,13 @@ const teamMember = [
     cargo: "Graphic Designer",
     instagram: "",
     behance: "",
-    memberImage: memberImage,
+    memberImage: Carlos,
   },
   {
     nombre: "Maico Rodriguez",
     cargo: "Video Editor",
     instagram: "",
     behance: "",
-    memberImage: memberImage,
+    memberImage: Maico,
   },
 ];
