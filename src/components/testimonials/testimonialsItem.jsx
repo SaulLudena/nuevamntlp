@@ -43,7 +43,7 @@ export default function TestimonialsItem({
               <h1 className="text-5xl max-sm:text-3xl">{name}</h1>
             </div>
             <div className="w-full h-[0.5px] bg-white "></div>
-            <div className="w-full">
+            <div className="w-full border-2 border-black">
               <p className="garde_ghotic_semibold max-sm:text-md max-sm:hidden">
                 {testimonial}
               </p>

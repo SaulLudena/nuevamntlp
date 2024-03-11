@@ -74,13 +74,6 @@ export default function Ourteam() {
 
 const teamMember = [
   {
-    nombre: "Jeff Blass",
-    cargo: "CEO y Director General",
-    instagram: "",
-    behance: "",
-    memberImage: Jeff,
-  },
-  {
     nombre: "Rafael del Solar",
     cargo: "Gerente de ventas",
     instagram: "",
@@ -101,7 +94,6 @@ const teamMember = [
     behance: "",
     memberImage: Alba,
   },
-
   {
     nombre: "Carlos Pacaya",
     cargo: "Graphic Designer",
@@ -115,5 +107,12 @@ const teamMember = [
     instagram: "",
     behance: "",
     memberImage: Maico,
+  },
+  {
+    nombre: "Jeff Blass",
+    cargo: "CEO y Director General",
+    instagram: "",
+    behance: "",
+    memberImage: Jeff,
   },
 ];
