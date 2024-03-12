@@ -52,7 +52,6 @@ export default function Ourteam() {
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
           slidesPerView={1}
-          pagination={{ clickable: true }}
         >
           {teamMember.map((member, index) => (
             <SwiperSlide key={index}>

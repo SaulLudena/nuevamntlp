@@ -28,10 +28,12 @@ import redes_sociales_3 from "../../../public/services/redes_sociales/3.png";
 import desarrollo_de_paginas_web_1 from "../../../public/services/desarrollo_de_paginas_web/1.png";
 import desarrollo_de_paginas_web_2 from "../../../public/services/desarrollo_de_paginas_web/2.png";
 import desarrollo_de_paginas_web_3 from "../../../public/services/desarrollo_de_paginas_web/3.png";
-
 import packaing_1 from "../../../public/services/packaing/1.png";
 import packaing_2 from "../../../public/services/packaing/2.png";
 import packaing_3 from "../../../public/services/packaing/3.png";
+import fotografia_1 from "../../../public/services/fotografia/1.png";
+import fotografia_2 from "../../../public/services/fotografia/2.png";
+import fotografia_3 from "../../../public/services/fotografia/3.png";
 
 export default function ServiceSlider({ index }) {
   const swiperRef = useRef(null);
@@ -403,9 +405,9 @@ const servicesDetailItems = [
       },
     ],
     images: [
-      { image1: "../../../public/services/creacion_de_logos/1.jpg" },
-      { image2: "../../../public/services/creacion_de_logos/2.jpg" },
-      { image3: "../../../public/services/creacion_de_logos/3.jpg" },
+      { image1: undefined },
+      { image2: undefined },
+      { image3: undefined },
     ],
   },
   {
@@ -435,9 +437,9 @@ const servicesDetailItems = [
       },
     ],
     images: [
-      { image1: "../../../public/services/fotografía/1.jpg" },
-      { image2: "../../../public/services/fotografía/2.jpg" },
-      { image3: "../../../public/services/fotografía/3.jpg" },
+      { image1: fotografia_1 },
+      { image2: fotografia_2 },
+      { image3: fotografia_3 },
     ],
   },
   {
@@ -467,9 +469,9 @@ const servicesDetailItems = [
       },
     ],
     images: [
-      { image1: "../../../public/services/videografía/1.jpg" },
-      { image2: "../../../public/services/videografía/2.jpg" },
-      { image3: "../../../public/services/videografía/3.jpg" },
+      { image1: undefined },
+      { image2: undefined },
+      { image3: undefined },
     ],
   },
   {
@@ -498,9 +500,9 @@ const servicesDetailItems = [
       },
     ],
     images: [
-      { image1: "../../../public/services/imagen_corporativa/1.jpg" },
-      { image2: "../../../public/services/imagen_corporativa/2.jpg" },
-      { image3: "../../../public/services/imagen_corporativa/3.jpg" },
+      { image1: undefined },
+      { image2: undefined },
+      { image3: undefined },
     ],
   },
   {

@@ -17,7 +17,6 @@ export default function TestimonialCarousel() {
       spaceBetween={50}
       slidesPerView={1}
       navigation
-      pagination={{ clickable: true }}
       className="mx-20 swiper-testimonials max-md:mx-0"
     >
       {testimonials.map((testimonial, index) => (

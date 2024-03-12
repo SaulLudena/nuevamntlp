@@ -31,19 +31,19 @@ export default function TestimonialsItem({
           <img
             src={TestimonialImg}
             alt=""
-            className="object-cover max-sm:object-top max-md:object-center object-top h-full w-96 max-lg:w-full max-lg:h-[37rem] max-sm:h-[20rem] max-sm:w-full "
+            className="object-cover max-sm:object-top max-md:object-center object-top   w-96 max-lg:w-full max-lg:h-[37rem] max-sm:h-[20rem] max-sm:w-full "
           />
         </div>
-        <div className="grid items-center h-full col-span-7 py-10 max-lg:py-0">
+        <div className="grid items-center col-span-7 py-10 max-lg:py-0">
           <div
-            className={`grid items-center  h-full col-span-7 py-10  ${backgroundColorClass} p-10 max-sm:p-6 grid gap-0 max-xl:gap-5`}
+            className={`grid items-center  col-span-7 py-10   h-full ${backgroundColorClass} p-10 max-sm:p-6 grid gap-0 max-xl:gap-5`}
           >
             <div>
               <p className="mb-4 text-2xl max-sm:text-sm">{category}</p>
               <h1 className="text-5xl max-sm:text-3xl">{name}</h1>
             </div>
             <div className="w-full h-[0.5px] bg-white "></div>
-            <div className="w-full border-2 border-black">
+            <div className="w-full ">
               <p className="garde_ghotic_semibold max-sm:text-md max-sm:hidden">
                 {testimonial}
               </p>
