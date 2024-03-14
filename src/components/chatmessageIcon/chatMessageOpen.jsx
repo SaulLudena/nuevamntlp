@@ -14,7 +14,7 @@ export default function ChatMessageOpen() {
           <ul className="mt-5 ">
             <li>
               <a
-                href="https://wa.me/51972146904?text=Hola,%20estoy%20interesado%20en%20sus%20servicios"
+                href={`https://api.whatsapp.com/send?phone=+51972146904&text=Hola,%20me%20interesan%20sus%20servicios.`}
                 target="_blank"
                 rel="noreferrer noopener"
                 className="flex items-center gap-2 px-2 py-4 hover:bg-[#DC4242] hover:text-white"

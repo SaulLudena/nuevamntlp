@@ -18,13 +18,7 @@ export default function Aboutus() {
         <p className="text-2xl text-center max-md:text-sm">
           Ayudamos a nuestros clientes a compartir su luz y mensaje con el mundo
         </p>
-        <ul className="grid grid-cols-5 max-md:w-[95%] w-[80%] max-w-[1500px] m-auto">
-          <LogoItem urlImagen={LazaroAmbulay} />
-          <LogoItem urlImagen={RosaLopez} />
-          <LogoItem urlImagen={UnaVezMas} />
-          <LogoItem urlImagen={MarleniGarcia} />
-          <LogoItem urlImagen={JimmyGarcia} />
-        </ul>
+
         <div>
           <img
             src={Networkers}

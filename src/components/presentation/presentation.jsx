@@ -22,10 +22,15 @@ export default function presentation() {
                 directa multinivel
               </p>
               <div className="flex max-lg:justify-center">
-                <div className="px-6 py-4 bg-gradient-to-r bg-[#dc4242] text-white items-center gap-3 justify-center flex text-xl">
+                <a
+                  href={`https://api.whatsapp.com/send?phone=+51972146904&text=Hola,%20me%20interesan%20sus%20servicios.`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-6 py-4 bg-gradient-to-r bg-[#dc4242] text-white items-center gap-3 justify-center flex text-xl"
+                >
                   <p>Contáctanos</p>
                   <FaWhatsapp />
-                </div>
+                </a>
               </div>
             </div>
           </div>
