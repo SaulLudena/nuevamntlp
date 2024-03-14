@@ -13,7 +13,7 @@ export default function Footer() {
       <img
         src={FooterBackground}
         alt=""
-        className="object-cover w-full select-none h-96 max-xl:h-[35rem] max-lg:h-[50rem]  max-sm:h-[75rem]"
+        className="object-cover w-full select-none h-[calc(25rem)] max-xl:h-[35rem] max-lg:h-[50rem]  max-sm:h-[75rem]"
       />
 
       <div className="absolute w-full ">

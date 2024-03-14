@@ -4,11 +4,11 @@ export default function Contact() {
       <div className="w-[80%] max-w-[1500px] m-auto py-20 grid gap-10 ">
         <div className="flex items-center max-lg:flex-col">
           <div className="text-[#EDCA21]  grid gap-5">
-            <p className="text-4xl">Lorem ipsum dolor sit amet consectetur.</p>
+            <p className="text-4xl">Mantente informado en todo momento</p>
             <p className="garde_ghotic_semibold">
-              Lorem ipsum dolor sit amet consectetur. Donec diam massa augue
-              convallis enim. Neque tincidunt enim aliquam sed diam donec quis
-              eget.
+              Puedes suscribirte a nuesto boletín semanal para recibir las
+              últimas noticias y actualizaciones. También puedes seguirnos en
+              nuestras redes sociales.
             </p>
           </div>
           <div className="">
