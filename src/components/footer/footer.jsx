@@ -67,8 +67,15 @@ export default function Footer() {
                     <p className="garde_ghotic_semibold">correo@correo.com</p>
                   </li>
                   <li className="flex items-center gap-2 ">
-                    <FaPhoneAlt size={20} className="text-[#EDCA21]" />
-                    <p className="garde_ghotic_semibold">+51 999999999</p>
+                    <a
+                      href={`https://api.whatsapp.com/send?phone=+51972146904&text=Hola,%20me%20interesan%20sus%20servicios.`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      <FaPhoneAlt size={20} className="text-[#EDCA21]" />
+                      <p className="garde_ghotic_semibold">+51 972146904</p>
+                    </a>
                   </li>
                   <ul className="flex gap-5 text-[#EDCA21]">
                     <li>

@@ -1,10 +1,5 @@
 import Networkers from "../../../public/logos/Networkers.png";
-import LazaroAmbulay from "../../../public/logos/lazaroambulay.png";
-import RosaLopez from "../../../public/logos/rosalopez.png";
-import UnaVezMas from "../../../public/logos/unavezmas.png";
-import MarleniGarcia from "../../../public/logos/marlenigarcia.png";
-import JimmyGarcia from "../../../public/logos/jimmygarcia.png";
-import LogoItem from "./logoItem";
+
 export default function Aboutus() {
   return (
     <div className=" bg-[#EDCA21] " id="Nosotros">

@@ -28,13 +28,28 @@ import redes_sociales_3 from "../../../public/services/redes_sociales/3.png";
 import desarrollo_de_paginas_web_1 from "../../../public/services/desarrollo_de_paginas_web/1.png";
 import desarrollo_de_paginas_web_2 from "../../../public/services/desarrollo_de_paginas_web/2.png";
 import desarrollo_de_paginas_web_3 from "../../../public/services/desarrollo_de_paginas_web/3.png";
+import diseño_grafico_1 from "../../../public/services/diseño_grafico/1.jpg";
+import diseño_grafico_2 from "../../../public/services/diseño_grafico/2.jpg";
+import diseño_grafico_3 from "../../../public/services/diseño_grafico/3.jpg";
+import coaching_de_marca_personal_1 from "../../../public/services/coaching_de_marca_personal/1.jpg";
+import coaching_de_marca_personal_2 from "../../../public/services/coaching_de_marca_personal/2.jpg";
+import coaching_de_marca_personal_3 from "../../../public/services/coaching_de_marca_personal/3.jpg";
+import creacion_de_logos_1 from "../../../public/services/creacion_de_logos/1.jpg";
+import creacion_de_logos_2 from "../../../public/services/creacion_de_logos/2.jpg";
+import creacion_de_logos_3 from "../../../public/services/creacion_de_logos/3.jpg";
+
 import packaing_1 from "../../../public/services/packaing/1.png";
 import packaing_2 from "../../../public/services/packaing/2.png";
 import packaing_3 from "../../../public/services/packaing/3.png";
 import fotografia_1 from "../../../public/services/fotografia/1.png";
 import fotografia_2 from "../../../public/services/fotografia/2.png";
 import fotografia_3 from "../../../public/services/fotografia/3.png";
-
+import videografia_1 from "../../../public/services/videografia/1.jpg";
+import videografia_2 from "../../../public/services/videografia/2.jpg";
+import videografia_3 from "../../../public/services/videografia/3.jpg";
+import imagen_corporativa_1 from "../../../public/services/imagen_corporativa/1.jpg";
+import imagen_corporativa_2 from "../../../public/services/imagen_corporativa/2.jpg";
+import imagen_corporativa_3 from "../../../public/services/imagen_corporativa/3.jpg";
 export default function ServiceSlider({ index }) {
   const swiperRef = useRef(null);
   const swiperRef2 = useRef(null);
@@ -277,9 +292,9 @@ const servicesDetailItems = [
       },
     ],
     images: [
-      { image1: undefined },
-      { image2: undefined },
-      { image3: undefined },
+      { image1: diseño_grafico_1 },
+      { image2: diseño_grafico_2 },
+      { image3: diseño_grafico_3 },
     ],
   },
   {
@@ -373,9 +388,9 @@ const servicesDetailItems = [
       },
     ],
     images: [
-      { image1: undefined },
-      { image2: undefined },
-      { image3: undefined },
+      { image1: coaching_de_marca_personal_1 },
+      { image2: coaching_de_marca_personal_2 },
+      { image3: coaching_de_marca_personal_3 },
     ],
   },
   {
@@ -405,9 +420,9 @@ const servicesDetailItems = [
       },
     ],
     images: [
-      { image1: undefined },
-      { image2: undefined },
-      { image3: undefined },
+      { image1: creacion_de_logos_1 },
+      { image2: creacion_de_logos_2 },
+      { image3: creacion_de_logos_3 },
     ],
   },
   {
@@ -469,9 +484,9 @@ const servicesDetailItems = [
       },
     ],
     images: [
-      { image1: undefined },
-      { image2: undefined },
-      { image3: undefined },
+      { image1: videografia_1 },
+      { image2: videografia_2 },
+      { image3: videografia_3 },
     ],
   },
   {
@@ -500,9 +515,9 @@ const servicesDetailItems = [
       },
     ],
     images: [
-      { image1: undefined },
-      { image2: undefined },
-      { image3: undefined },
+      { image1: imagen_corporativa_1 },
+      { image2: imagen_corporativa_2 },
+      { image3: imagen_corporativa_3 },
     ],
   },
   {
