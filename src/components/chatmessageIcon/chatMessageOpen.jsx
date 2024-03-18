@@ -4,8 +4,8 @@ import { BiLogoInstagramAlt } from "react-icons/bi";
 import { IoLogoWhatsapp } from "react-icons/io";
 export default function ChatMessageOpen() {
   return (
-    <div className="fixed z-30 select-none bottom-10 right-32 max-md:right-24">
-      <div className="grid w-full gap-2 py-3 px-7 bg-gray-50 ">
+    <div className="fixed z-30 select-none bottom-10 right-32 max-md:bottom-24 max-md:w-full max-md:right-0">
+      <div className="grid w-full gap-2 py-3 px-7 bg-gray-50 max-md:w-[90%] max-md:max-w-[1500px] max-md:m-auto">
         <div>
           <img src={Logo} alt="logo" className="w-20 h-auto" />
         </div>

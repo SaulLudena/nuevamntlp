@@ -31,8 +31,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <p className="garde_ghotic_semibold">
-                      Lorem ipsum dolor sit amet consectetur. Praesent imperdiet
-                      sodales nec nibh eu turpis id.
+                      El infinito de posibilidades para tu marca
                     </p>
                   </li>
                 </ul>
@@ -64,7 +63,9 @@ export default function Footer() {
                   <li className="text-2xl text-[#EDCA21]">Contácto</li>
                   <li className="flex items-center gap-2 ">
                     <MdEmail size={20} className="text-[#EDCA21]" />
-                    <p className="garde_ghotic_semibold">correo@correo.com</p>
+                    <p className="garde_ghotic_semibold">
+                      holanuevamnt@gmail.com
+                    </p>
                   </li>
                   <li className="flex items-center gap-2 ">
                     <a
@@ -79,16 +80,40 @@ export default function Footer() {
                   </li>
                   <ul className="flex gap-5 text-[#EDCA21]">
                     <li>
-                      <AiFillInstagram size={30} />
+                      <a
+                        href="https://www.instagram.com/nuevamnt?igsh=MWRqMXJ5ajFpd2tvbA=="
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <AiFillInstagram size={30} />
+                      </a>
                     </li>
                     <li>
-                      <FaTiktok size={30} />
+                      <a
+                        href="https://www.tiktok.com/@nuevamnt?_t=8kIPxEILRq9&_r=1 "
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <FaTiktok size={30} />
+                      </a>
                     </li>
                     <li>
-                      <IoLogoWhatsapp size={30} />
+                      <a
+                        href={`https://api.whatsapp.com/send?phone=+51972146904&text=Hola,%20me%20interesan%20sus%20servicios.`}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <IoLogoWhatsapp size={30} />
+                      </a>
                     </li>
                     <li>
-                      <FaFacebook size={30} />
+                      <a
+                        href="https://www.facebook.com/nuevamnt?mibextid=ZbWKwL"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <FaFacebook size={30} />
+                      </a>
                     </li>
                   </ul>
                 </ul>
@@ -101,7 +126,13 @@ export default function Footer() {
                   <p className="text-[#E6CF32]">
                     Si quieres comunicarte con nosotros da
                   </p>
-                  <a href="">CLICK aquí</a>
+                  <a
+                    href={`https://api.whatsapp.com/send?phone=+51972146904&text=Hola,%20me%20interesan%20sus%20servicios.`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    CLICK aquí
+                  </a>
                 </div>
               </li>
             </ul>

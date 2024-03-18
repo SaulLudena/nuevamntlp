@@ -7,7 +7,7 @@ export default function presentation() {
       <img
         src={PresentationBackground4}
         alt=""
-        className="object-bottom w-full select-none max-sm:h-[30rem] max-lg:h-[40rem] max-sm:opacity-20 max-lg:opacity-40 max-lg:object-right max-xl:object-cover"
+        className="object-bottom w-full select-none max-sm:h-[30rem] max-lg:h-[40rem] max-sm:opacity-20 max-lg:opacity-40 max-lg:object-right max-xl:object-cover "
       />
 
       <div className="absolute flex items-center justify-center w-full -translate-y-10 max-lg:translate-y-0">
