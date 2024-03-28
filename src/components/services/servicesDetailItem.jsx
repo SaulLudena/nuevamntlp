@@ -41,26 +41,71 @@ export default function ServicesDetailItem({ servicessliderItem }) {
           </div>
         </div>
       </div>
-      <div className="col-span-6  max-xl:w-[100%] w-[80%] max-w-[1500px] m-auto grid grid-cols-6 ">
+      <div className="col-span-6  max-xl:w-[100%] w-[100%] max-w-[1500px] m-auto grid grid-cols-6 ">
         <div className="col-span-6 ">
-          {images[0].image1 !== undefined ? (
-            <img src={images[0].image1} alt={images[0].image1} />
+          {servicessliderItem.title === "Videografía" ? (
+            <iframe
+              width="100%"
+              height="550rem"
+              src={servicessliderItem.videos[0].video_1}
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           ) : (
-            <img src={TestImage} alt={images[0].image1} />
+            <>
+              {images[0].image1 !== undefined ? (
+                <img src={images[0].image1} alt={images[0].image1} />
+              ) : (
+                <img src={TestImage} alt={images[0].image1} />
+              )}
+            </>
           )}
         </div>
         <div className="col-span-3 max-md:col-span-6">
-          {images[1].image2 !== undefined ? (
-            <img src={images[1].image2} alt={images[0].image1} />
+          {servicessliderItem.title === "Videografía" ? (
+            <iframe
+              width="100%"
+              height="350rem"
+              src={servicessliderItem.videos[0].video_2}
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           ) : (
-            <img src={TestImage} alt={images[0].image1} />
+            <>
+              {images[1].image2 !== undefined ? (
+                <img src={images[1].image2} alt={images[0].image1} />
+              ) : (
+                <img src={TestImage} alt={images[0].image1} />
+              )}
+            </>
           )}
         </div>
         <div className="col-span-3 max-md:col-span-6">
-          {images[2].image3 !== undefined ? (
-            <img src={images[2].image3} alt={images[0].image1} />
+          {servicessliderItem.title === "Videografía" ? (
+            <iframe
+              width="100%"
+              height="350rem"
+              src={servicessliderItem.videos[0].video_3}
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           ) : (
-            <img src={TestImage} alt={images[0].image1} />
+            <>
+              {images[2].image3 !== undefined ? (
+                <img src={images[2].image3} alt={images[0].image1} />
+              ) : (
+                <img src={TestImage} alt={images[0].image1} />
+              )}
+            </>
           )}
         </div>
       </div>

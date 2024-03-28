@@ -2,6 +2,7 @@ import TeamMemberItem from "./teamMemberItem";
 import memberImage from "../../../public/teammemberexample.png";
 import Jeff from "../../../public/team/Jeff.png";
 
+import Rafael from "../../../public/team/Rafael.png";
 import Leslie from "../../../public/team/Leslie.png";
 import Alba from "../../../public/team/Alba.png";
 import Carlos from "../../../public/team/Carlos.png";
@@ -77,7 +78,7 @@ const teamMember = [
     cargo: "Gerente de ventas",
     instagram: "",
     behance: "",
-    memberImage: memberImage,
+    memberImage: Rafael,
   },
   {
     nombre: "Leslie Cervera",

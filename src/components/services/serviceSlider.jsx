@@ -28,15 +28,15 @@ import redes_sociales_3 from "../../../public/services/redes_sociales/3.png";
 import desarrollo_de_paginas_web_1 from "../../../public/services/desarrollo_de_paginas_web/1.png";
 import desarrollo_de_paginas_web_2 from "../../../public/services/desarrollo_de_paginas_web/2.png";
 import desarrollo_de_paginas_web_3 from "../../../public/services/desarrollo_de_paginas_web/3.png";
-import diseño_grafico_1 from "../../../public/services/diseño_grafico/1.jpg";
-import diseño_grafico_2 from "../../../public/services/diseño_grafico/2.jpg";
-import diseño_grafico_3 from "../../../public/services/diseño_grafico/3.jpg";
-import coaching_de_marca_personal_1 from "../../../public/services/coaching_de_marca_personal/1.jpg";
-import coaching_de_marca_personal_2 from "../../../public/services/coaching_de_marca_personal/2.jpg";
-import coaching_de_marca_personal_3 from "../../../public/services/coaching_de_marca_personal/3.jpg";
-import creacion_de_logos_1 from "../../../public/services/creacion_de_logos/1.jpg";
-import creacion_de_logos_2 from "../../../public/services/creacion_de_logos/2.jpg";
-import creacion_de_logos_3 from "../../../public/services/creacion_de_logos/3.jpg";
+import diseño_grafico_1 from "../../../public/services/diseño_grafico/1.png";
+import diseño_grafico_2 from "../../../public/services/diseño_grafico/2.png";
+import diseño_grafico_3 from "../../../public/services/diseño_grafico/3.png";
+import coaching_de_marca_personal_1 from "../../../public/services/coaching_de_marca_personal/1.png";
+import coaching_de_marca_personal_2 from "../../../public/services/coaching_de_marca_personal/2.png";
+import coaching_de_marca_personal_3 from "../../../public/services/coaching_de_marca_personal/3.png";
+import creacion_de_logos_1 from "../../../public/services/creacion_de_logos/1.png";
+import creacion_de_logos_2 from "../../../public/services/creacion_de_logos/2.png";
+import creacion_de_logos_3 from "../../../public/services/creacion_de_logos/3.png";
 
 import packaing_1 from "../../../public/services/packaing/1.png";
 import packaing_2 from "../../../public/services/packaing/2.png";
@@ -395,28 +395,27 @@ const servicesDetailItems = [
   },
   {
     title: "Creación de logos",
-    paragraph1:
-      "Tu logo es la cara de tu marca, la primera impresión que tus clientes tendrán de ti. Nuestro equipo de diseñadores expertos está listo para ayudarte a:",
+    paragraph1: "Nuestro equipo de artistas apasionados te ayudará a: ",
     include: [
       {
         title: "Destilar tu esencia",
         description:
-          "Creamos logos que reflejan la esencia de tu marca y transmiten tus valores de forma efectiva.",
+          "Definimos tu identidad visual única, extrayendo lo más representativo de tu marca y traduciéndolo en un símbolo",
       },
       {
-        title: "Destacar en tu industria",
+        title: "Tejer historias cautivadoras",
         description:
-          "Diseñamos logos que te diferencian de la competencia y te ayudan a destacar en tu industria.",
+          "Creamos un logo que narra la historia de tu marca, transmitiendo sus valores y su propósito de forma recordable.",
       },
       {
-        title: "Conectar con tu audiencia",
+        title: "Construir experiencias memorables:",
         description:
-          "Creamos logos que conectan con tu audiencia a nivel emocional, generando una conexión profunda y duradera.",
+          "Diseñamos un logo que conecta directamente con las emociones de tu público, creando experiencias coherentes e inolvidables, según los valores de tu marca.",
       },
       {
         title: "Expandir tu universo",
         description:
-          "Diseñamos logos versátiles que se adaptan a cualquier formato y te permiten expandir tu universo de posibilidades.",
+          "Implementamos un diseño innovador y creativo para que tu logo conquiste nuevos mercados y explore un futuro infinito de posibilidades.",
       },
     ],
     images: [
@@ -487,6 +486,16 @@ const servicesDetailItems = [
       { image1: videografia_1 },
       { image2: videografia_2 },
       { image3: videografia_3 },
+    ],
+    videos: [
+      {
+        video_1:
+          "https://www.youtube.com/embed/bDAH0nozN4U?si=Xt4bEUoj7BBiqenH",
+        video_2:
+          "https://www.youtube.com/embed/xjk8XkIuq0E?si=5KAoWmKIaGXcNtPC",
+        video_3:
+          "https://www.youtube.com/embed/9eqUGqw-2lk?si=E4aQs1DdmNFDCzvI",
+      },
     ],
   },
   {
