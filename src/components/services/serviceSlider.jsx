@@ -44,9 +44,9 @@ import packaing_3 from "../../../public/services/packaing/3.png";
 import fotografia_1 from "../../../public/services/fotografia/1.png";
 import fotografia_2 from "../../../public/services/fotografia/2.png";
 import fotografia_3 from "../../../public/services/fotografia/3.png";
-import videografia_1 from "../../../public/services/videografia/1.jpg";
-import videografia_2 from "../../../public/services/videografia/2.jpg";
-import videografia_3 from "../../../public/services/videografia/3.jpg";
+import videografia_1 from "../../../public/services/videografia/1.png";
+import videografia_2 from "../../../public/services/videografia/2.png";
+import videografia_3 from "../../../public/services/videografia/3.png";
 import imagen_corporativa_1 from "../../../public/services/imagen_corporativa/1.jpg";
 import imagen_corporativa_2 from "../../../public/services/imagen_corporativa/2.jpg";
 import imagen_corporativa_3 from "../../../public/services/imagen_corporativa/3.jpg";
@@ -490,11 +490,11 @@ const servicesDetailItems = [
     videos: [
       {
         video_1:
-          "https://www.youtube.com/embed/bDAH0nozN4U?si=Xt4bEUoj7BBiqenH",
+          "https://www.youtube.com/embed/bDAH0nozN4U?si=UTuPsTu2Yjncf0_J",
         video_2:
-          "https://www.youtube.com/embed/xjk8XkIuq0E?si=5KAoWmKIaGXcNtPC",
+          "https://www.youtube.com/embed/xjk8XkIuq0E?si=ma4uin7GabODZn4d",
         video_3:
-          "https://www.youtube.com/embed/9eqUGqw-2lk?si=E4aQs1DdmNFDCzvI",
+          "https://www.youtube.com/embed/9eqUGqw-2lk?si=F-Nd8eI9OikORLwK",
       },
     ],
   },

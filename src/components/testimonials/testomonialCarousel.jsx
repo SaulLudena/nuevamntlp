@@ -46,7 +46,7 @@ const testimonials = [
     name: "Juan Diego Nicolalde",
     testominalImage: JuanDiegoNicoLalde,
     testimonial:
-      "La alianza que hemos mantenido desde hace más de un año con Nuevamente ha sido un impulso para la academia. Su creatividad, organización y enfoque han llevado la marca a nuevos públicos y estamos encantados con los resultados y sin duda lo recomendaría a otros emprendedores y empresa que quieran impactar en las redes.",
+      "❝La alianza que hemos mantenido desde hace más de un año con Nuevamente ha sido un impulso para la academia. Su creatividad, organización y enfoque han llevado la marca a nuevos públicos y estamos encantados con los resultados y sin duda lo recomendaría a otros emprendedores y empresa que quieran impactar en las redes.",
   },
   {
     color: "#EDCA21",
@@ -56,7 +56,7 @@ const testimonials = [
 
     testominalImage: RosaLopez,
     testimonial:
-      "Mi experiencia con esta empresa fue simplemente fenomenal. Desde la fase inicial hasta la entrega final, cada etapa fue manejada con un profesionalismo excepcional. Me impresionó la habilidad del equipo para comprender y llevar a cabo mis ideas de manera creativa. Estoy completamente satisfecho con los resultados obtenidos y definitivamente consideraré trabajar con ellos en futuros proyectos.",
+      "❝Mi experiencia con esta empresa fue simplemente fenomenal. Desde la fase inicial hasta la entrega final, cada etapa fue manejada con un profesionalismo excepcional. Me impresionó la habilidad del equipo para comprender y llevar a cabo mis ideas de manera creativa. Estoy completamente satisfecho con los resultados obtenidos y definitivamente consideraré trabajar con ellos en futuros proyectos.❞",
   },
   {
     color: "black",
@@ -66,7 +66,7 @@ const testimonials = [
 
     testominalImage: KennetMansilla,
     testimonial:
-      "Contratar a este equipo fue la mejor decisión que tomé para mi proyecto. La atención personalizada y la comunicación clara hicieron que todo el proceso fuera fluido y sin complicaciones. Su capacidad para enfrentar desafíos y encontrar soluciones efectivas fue destacable. Los resultados finales superaron mis expectativas y dejaron una impresión duradera. ¡Gracias por transformar mi visión en realidad!",
+      "❝Agradecer es una virtud fundamental en el desarrollo profesional. Una experiencia excepcional en el servicio al cliente, productos y servicios competitivos, cumplimiento a calidad de plazos.❞",
   },
   {
     color: "#DC4242",
@@ -76,6 +76,6 @@ const testimonials = [
 
     testominalImage: RafaelLabarta,
     testimonial:
-      "La alianza que hemos mantenido desde hace más de un año con Nuevamente ha sido un impulso para la academia. Su creatividad, organización y enfoque han llevado la marca a nuevos públicos y estamos encantados con los resultados y sin duda lo recomendaría a otros emprendedores y empresa que quieran impactar en las redes. ",
+      "❝La alianza que hemos mantenido desde hace más de un año con Nuevamente ha sido un impulso para la academia. Su creatividad, organización y enfoque han llevado la marca a nuevos públicos y estamos encantados con los resultados y sin duda lo recomendaría a otros emprendedores y empresa que quieran impactar en las redes.❞",
   },
 ];
