@@ -84,7 +84,7 @@ export default function ServiceSlider({ index }) {
   return (
     <>
       <Tab.Group selectedIndex={selectedIndex} onChange={handleTabChange}>
-        <Tab.List className="flex mb-10 overflow-x-hidden  w-[80%] max-w-[1500px] m-auto max-md:w-[95%]">
+        <Tab.List className="flex  overflow-x-hidden  w-[80%] max-w-[1500px] m-auto max-md:w-[95%]">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -97,6 +97,15 @@ export default function ServiceSlider({ index }) {
             }}
             style={{ "--swiper-navigation-size": "50px" }}
             ref={swiperRef}
+            onSlideChange={() => {
+              /*quiero que se haga un slide del panel cuando haga un slide a los SwiperSliders */
+
+              if (swiperRef2.current && swiperRef2.current.swiper) {
+                swiperRef2.current.swiper.slideTo(
+                  swiperRef.current.swiper.activeIndex
+                );
+              }
+            }}
             breakpoints={{
               320: {
                 slidesPerView: 1,
@@ -115,7 +124,7 @@ export default function ServiceSlider({ index }) {
                 spaceBetween: 90,
               },
             }}
-            className="services-item-slider px-20 pt-10 pb-14 max-md:px-[3rem] "
+            className="services-item-slider px-20 mb-16 pt-10 pb-10 max-md:px-[3rem] "
           >
             <SwiperSlide>
               <Tab as={Fragment}>
@@ -241,7 +250,6 @@ export default function ServiceSlider({ index }) {
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             slidesPerView={1}
-            //quiero que al momento de hacer un slide a la izquierda o derecha, el slide 1 tambien se actualice al elemento actual y tambien que el slide 1 haga scroll automatico y que se posicione en el centro
             onSlideChange={(swiper) => {
               setSelectedIndex(swiper.activeIndex);
               if (swiperRef.current && swiperRef.current.swiper) {
@@ -515,7 +523,7 @@ const servicesDetailItems = [
       {
         title: "Construir experiencias memorables",
         description:
-          "Diseñamos elementos visuales que impactan en cada punto de contacto, desde tu logotipo hasta tu página web, creando una experiencia coherente e inolvidable. ",
+          "Diseñamos elementos visuales que impactan en cada punto de contacto, desde tu logotipo hasta tu página web, creando una experiencia inolvidable. ",
       },
       {
         title: "Expandir tu universo",

@@ -20,9 +20,9 @@ export default function Topnav() {
   };
 
   const elementos = [
-    { href: "#Inicio", label: "Inicio" },
-    { href: "#Servicios", label: "Servicios" },
-    { href: "#Testimonios", label: "Testimonios" },
+    { href: "/#Inicio", label: "Inicio" },
+    { href: "/#Servicios", label: "Servicios" },
+    { href: "/#Testimonios", label: "Testimonios" },
   ];
 
   return (

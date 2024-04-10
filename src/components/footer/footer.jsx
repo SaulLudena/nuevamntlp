@@ -7,22 +7,25 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import FooterLogo from "../../../public/TopnavLogo2.png";
 import { FaWhatsapp } from "react-icons/fa6";
+
+import PrivatePolicyPDF from "../../../public/politics/privacidad-nuevamnt.pdf";
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div className="grid items-center" id="Inicio">
       <img
         src={FooterBackground}
         alt=""
-        className="object-cover w-full select-none h-[calc(25rem)] max-xl:h-[35rem] max-lg:h-[50rem]  max-sm:h-[75rem]"
+        className="object-cover w-full select-none h-[calc(20rem)] max-xl:h-[35rem] max-lg:h-[50rem]  max-sm:h-[75rem]"
       />
 
       <div className="absolute w-full ">
-        <div className=" w-[90%] max-w-[1700px] m-auto  -translate-1/2">
+        <div className=" w-[90%] max-w-[1700px] m-auto  ">
           <div className="flex items-center justify-between ">
             <ul className="flex justify-between w-full gap-20 text-sm text-white max-xl:grid max-2xl:grid-cols-3 max-xl:justify-center max-md:grid-cols-2 max-sm:grid-cols-1 max-md:p-5">
               <li className="">
                 <ul>
-                  <li className="mb-5">
+                  <li className="mb-5 max-sm:mt-10">
                     <img
                       src={FooterLogo}
                       alt="awd"
@@ -48,7 +51,9 @@ export default function Footer() {
                 <ul className="grid gap-5">
                   <li className="text-2xl text-[#EDCA21]">Información</li>
                   <li className="garde_ghotic_semibold">
-                    Políticas de privacidad
+                    <Link to="/politicas/Politica_de_privacidad">
+                      Políticas de privacidad
+                    </Link>
                   </li>
                   <li className="garde_ghotic_semibold">
                     Políticas de cookies

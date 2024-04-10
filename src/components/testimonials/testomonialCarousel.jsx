@@ -42,11 +42,11 @@ const testimonials = [
   {
     color: "#DC4242",
 
-    category: "CEO Legacy Ecuador - Networker",
+    category: "Country manager Legacy Ecuador – Networker ",
     name: "Juan Diego Nicolalde",
     testominalImage: JuanDiegoNicoLalde,
     testimonial:
-      "❝La alianza que hemos mantenido desde hace más de un año con Nuevamente ha sido un impulso para la academia. Su creatividad, organización y enfoque han llevado la marca a nuevos públicos y estamos encantados con los resultados y sin duda lo recomendaría a otros emprendedores y empresa que quieran impactar en las redes.",
+      "❝La alianza que hemos mantenido desde hace más de un año con Nuevamente ha sido un impulso para la academia. Su creatividad, organización y enfoque han llevado la marca a nuevos públicos y estamos encantados con los resultados y sin duda lo recomendaría a otros emprendedores y empresa que quieran impactar en las redes.❞",
   },
   {
     color: "#EDCA21",
@@ -61,7 +61,7 @@ const testimonials = [
   {
     color: "black",
 
-    category: "CEO  Legacy Bolivia – Networker  ",
+    category: "Country manager Legacy Bolivia – Networker",
     name: "Kennet Mansilla",
 
     testominalImage: KennetMansilla,
@@ -71,7 +71,7 @@ const testimonials = [
   {
     color: "#DC4242",
 
-    category: "Light - Trading ",
+    category: "Socio fundador de Light – Trader ",
     name: "Emilio Labarta",
 
     testominalImage: RafaelLabarta,

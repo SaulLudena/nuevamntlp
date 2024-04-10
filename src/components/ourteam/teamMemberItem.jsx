@@ -3,6 +3,7 @@ import { FaBehanceSquare } from "react-icons/fa";
 export default function TeamMemberItem({
   nombre,
   cargo,
+  cargo2,
   instagram,
   behance,
   memberImage,
@@ -17,9 +18,14 @@ export default function TeamMemberItem({
         />
       </div>
       <div className="bg-[#EDCA21]">
-        <div className="bg-[#EDCA21] h-full p-5 flex flex-col justify-between gap-4">
+        <div className="bg-[#EDCA21] p-5 flex flex-col justify-between gap-4">
           <h1 className="text-2xl truncate ">{nombre}</h1>
-          <h1 className="truncate garde_ghotic_semibold">{cargo}</h1>
+          <div>
+            <h1 className="truncate garde_ghotic_semibold">{cargo}</h1>
+            <h1 className="truncate garde_ghotic_semibold">
+              {cargo2.length <= 0 ? "‎ " : cargo2}
+            </h1>
+          </div>
           <ul className="flex justify-end w-full gap-5 ">
             <li>
               <a href={instagram} target="_blank" rel="noreferrer">
@@ -34,7 +40,6 @@ export default function TeamMemberItem({
           </ul>
         </div>
       </div>
-      <div className="hidden w-full h-20 bg-white max-md:block"></div>
     </div>
   );
 }

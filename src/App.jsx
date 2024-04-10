@@ -1,26 +1,17 @@
-import Topnav from "./components/topnav/topnav";
-import Footer from "./components/footer/footer";
-import Presentation from "./components/presentation/presentation";
-import PresentationComplement from "./components/presentation/presentationComplement";
-import ChatMessageIcon from "./components/chatmessageIcon/chatMessageIcon";
-import Ourteam from "./components/ourteam/ourteam";
-import Contact from "./components/contact/contact";
-import Testimonials from "./components/testimonials/testimonials";
-import Faq from "./components/FAQ/faq";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/home";
+import PrivacyPolicyPage from "./pages/policy/privacyPolicyPage";
 function App() {
   return (
-    <div>
-      <Topnav />
-      <Presentation />
-      <PresentationComplement />
-      <Ourteam />
-      <Contact />
-      <Testimonials />
-      <Faq />
-      <Footer />
-      <ChatMessageIcon />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route
+          path="/politicas/Politica_de_privacidad"
+          element={<PrivacyPolicyPage />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

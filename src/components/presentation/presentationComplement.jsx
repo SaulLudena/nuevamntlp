@@ -102,10 +102,11 @@ export default function PresentationComplement() {
               />
             </div>
             <div className="m-auto text-center ">
-              <p className="text-center text-white garde_ghotic_semibold max-sm:text-sm">
+              <p className="text-center text-white border-2 border-white garde_ghotic_semibold max-sm:text-sm max-xl:w-full w-[65rem]">
                 Somos una agencia creativa, con más de 5 años en el mercado,
                 especializada en generar CREATIVIDAD e INNOVACIÓN para la venta
-                directa multinivel. Brindamos los siguientes servicios:
+                directa multinivel.{" "}
+                <strong>Brindamos los siguientes servicios:</strong>
               </p>
             </div>
             <ul className="grid grid-cols-3 grid-rows-3 gap-5 max-xl:grid-cols-2 max-lg:grid-cols-1 ">

@@ -40,6 +40,7 @@ export default function Ourteam() {
               key={index}
               nombre={member.nombre}
               cargo={member.cargo}
+              cargo2={member.cargo2}
               instagram={member.instagram}
               behance={member.behance}
               memberImage={member.memberImage}
@@ -47,7 +48,7 @@ export default function Ourteam() {
           ))}
         </ul>
       </div>
-      <div className="w-[80%] max-w-[1500px] m-auto  pb-20 max-md:w-[100%] max-md:block hidden">
+      <div className="w-[80%] max-w-[1500px] m-auto  max-md:w-[100%] max-md:block hidden">
         <Swiper
           className="hiddenmax-md:block" // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -60,6 +61,7 @@ export default function Ourteam() {
                 key={index}
                 nombre={member.nombre}
                 cargo={member.cargo}
+                cargo2={member.cargo2}
                 instagram={member.instagram}
                 behance={member.behance}
                 memberImage={member.memberImage}
@@ -76,13 +78,15 @@ const teamMember = [
   {
     nombre: "Rafael del Solar",
     cargo: "Gerente de ventas",
+    cargo2: "",
     instagram: "",
     behance: "",
     memberImage: Rafael,
   },
   {
     nombre: "Leslie Cervera",
-    cargo: "Senior Graphic Designer / Directora creativa",
+    cargo: "Senior Graphic Designer",
+    cargo2: "Directora creativa",
     instagram: "",
     behance: "",
     memberImage: Leslie,
@@ -90,6 +94,7 @@ const teamMember = [
   {
     nombre: "Alba Saavedra",
     cargo: "Content Manager",
+    cargo2: "",
     instagram: "",
     behance: "",
     memberImage: Alba,
@@ -97,6 +102,7 @@ const teamMember = [
   {
     nombre: "Carlos Pacaya",
     cargo: "Graphic Designer",
+    cargo2: "",
     instagram: "",
     behance: "",
     memberImage: Carlos,
@@ -104,13 +110,15 @@ const teamMember = [
   {
     nombre: "Maico Rodriguez",
     cargo: "Video Editor",
+    cargo2: "",
     instagram: "",
     behance: "",
     memberImage: Maico,
   },
   {
     nombre: "Jeff Blass",
-    cargo: "CEO y Director General",
+    cargo: "CEO",
+    cargo2: "Director General",
     instagram: "",
     behance: "",
     memberImage: Jeff,

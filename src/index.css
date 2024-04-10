@@ -68,3 +68,10 @@ body {
     --swiper-navigation-size: 30px; /* Cambiar el tamaño en el breakpoint md */
   }
 }
+
+//correcciones para SAFARI
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    height: -webkit-fill-available;
+  }
+}
