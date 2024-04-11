@@ -7,7 +7,11 @@ import Ourteam from "../components/ourteam/ourteam";
 import Contact from "../components/contact/contact";
 import Testimonials from "../components/testimonials/testimonials";
 import Faq from "../components/FAQ/faq";
+import { useLayoutEffect } from "react";
 export default function Home() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div>
       <Topnav />

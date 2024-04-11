@@ -1,13 +1,17 @@
+import { Link } from "react-router-dom";
 import TopnavLogoSrc from "../../../public/TopnavLogo2.png";
 
 export default function TopnavLogo() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
-    <div>
+    <Link to="/#Inicio" onClick={scrollToTop}>
       <img
         src={TopnavLogoSrc}
         alt="NuevamenteLogo"
         className="w-48 h-auto max-sm:w-28"
       />
-    </div>
+    </Link>
   );
 }

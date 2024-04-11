@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
         />
 
         <div className="absolute top-[10rem] flex items-center justify-center w-full max-xl:top-[13rem]">
-          <div className="w-[80%] max-w-[1500px]">
+          <div className="w-[80%] max-w-[1500px] ">
             <div className="flex items-center justify-between">
               <div className="w-[100rem] max-md:w-full grid gap-6">
                 <h1 className="text-8xl  text-[#EDCA21] max-xl:text-6xl max-lg:text-center max-sm:text-4xl w-[45rem] max-xl:w-[32rem] max-lg:w-full ">
@@ -25,7 +25,7 @@ export default function PrivacyPolicy() {
           </div>
         </div>
       </div>
-      <ul className="w-[80%] max-w-[1500px] m-auto py-28 gap-16 grid">
+      <ul className="w-[80%] max-md:w-[100%] max-w-[1500px] m-auto py-28 gap-16 grid ">
         {privacy_policys.map((privacy_policy_item) => {
           return (
             <PrivacyPolicyItem
