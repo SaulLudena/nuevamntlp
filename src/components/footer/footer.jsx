@@ -7,9 +7,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import FooterLogo from "../../../public/TopnavLogo2.png";
 import { FaWhatsapp } from "react-icons/fa6";
-
-import PrivatePolicyPDF from "../../../public/politics/privacidad-nuevamnt.pdf";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 export default function Footer() {
   return (
     <div className="grid items-center" id="Inicio">
@@ -26,11 +24,13 @@ export default function Footer() {
               <li className="">
                 <ul>
                   <li className="mb-5 max-sm:mt-10">
-                    <img
-                      src={FooterLogo}
-                      alt="awd"
-                      className="w-[20rem] h-full"
-                    />
+                    <Link to="/#Inicio">
+                      <img
+                        src={FooterLogo}
+                        alt="awd"
+                        className="w-[20rem] h-full"
+                      />
+                    </Link>
                   </li>
                   <li>
                     <p className="garde_ghotic_semibold">
@@ -42,9 +42,15 @@ export default function Footer() {
               <li>
                 <ul className="grid gap-5">
                   <li className="text-2xl text-[#EDCA21]">Ventana</li>
-                  <li className="garde_ghotic_semibold">Inicio</li>
-                  <li className="garde_ghotic_semibold">Servicios</li>
-                  <li className="garde_ghotic_semibold">Testimonios</li>
+                  <li className="garde_ghotic_semibold">
+                    <Link to="/#Inicio">Inicio</Link>
+                  </li>
+                  <li className="garde_ghotic_semibold">
+                    <Link to="/#Servicios">Servicios</Link>
+                  </li>
+                  <li className="garde_ghotic_semibold">
+                    <Link to="/#Testimonios">Testimonios</Link>
+                  </li>
                 </ul>
               </li>
               <li>
@@ -56,10 +62,14 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li className="garde_ghotic_semibold">
-                    Políticas de cookies
+                    <Link to="/politicas/Politica_de_privacidad">
+                      Políticas de cookies
+                    </Link>
                   </li>
                   <li className="garde_ghotic_semibold">
-                    Libro de reclamaciones
+                    <Link to="/Libro_de_reclamaciones">
+                      Libro de reclamaciones
+                    </Link>
                   </li>
                 </ul>
               </li>
