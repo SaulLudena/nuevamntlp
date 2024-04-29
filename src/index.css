@@ -52,7 +52,7 @@ body {
 .swiper-testimonials .swiper-button-prev {
   background-color: white; /* Fondo blanco */
   color: #dc4242; /* Color original de los botones */
-  padding: 30px; /* Ajusta el valor según el padding que desees agregar */
+  padding: 20px; /* Ajusta el valor según el padding que desees agregar */
   /* Otros estilos que desees agregar */
 }
 
@@ -61,11 +61,11 @@ body {
   color: #dc4242;
   transform: translateY(-0.4rem);
   @media (max-width: 640px) {
-    --swiper-navigation-size: 30px; /* Cambiar el tamaño en el breakpoint sm */
+    --swiper-navigation-size: 620px; /* Cambiar el tamaño en el breakpoint sm */
   }
 
   @media (min-width: 641px) and (max-width: 768px) {
-    --swiper-navigation-size: 30px; /* Cambiar el tamaño en el breakpoint md */
+    --swiper-navigation-size: 10px; /* Cambiar el tamaño en el breakpoint md */
   }
 }
 

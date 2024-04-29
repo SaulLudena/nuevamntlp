@@ -10,7 +10,7 @@ export default function TestimonialsItem({
   testominalImage,
 }) {
   const [toggleText, setToggleText] = useState(false);
-  const shortTestimonial = testimonial.split(" ").slice(0, 40).join(" ");
+  const shortTestimonial = testimonial.split(" ").slice(0, 25).join(" ");
 
   let backgroundColorClass = "";
 
@@ -35,7 +35,7 @@ export default function TestimonialsItem({
           <img
             src={testominalImage}
             alt=""
-            className="object-cover max-sm:object-top max-md:object-center object-top w-96 max-lg:w-full max-lg:h-[37rem] max-sm:h-[20rem] max-sm:w-full"
+            className="object-cover max-sm:object-top max-md:object-center object-top w-96 max-lg:w-full max-lg:h-[37rem] max-sm:h-[35rem] max-sm:w-full "
           />
         </div>
         <div
@@ -46,7 +46,7 @@ export default function TestimonialsItem({
           }
         >
           <div
-            className={`grid items-center col-span-7 py-10 min-h-full ${backgroundColorClass} p-10 max-sm:p-6 grid gap-0 max-xl:gap-5 `}
+            className={`grid items-center col-span-7 py-10 min-h-full ${backgroundColorClass} p-10 max-sm:p-6 grid gap-5 max-xl:gap-5 `}
           >
             <div>
               <p className="mb-4 text-lg max-sm:text-sm">{category}</p>
@@ -55,7 +55,6 @@ export default function TestimonialsItem({
             <div
               className={`w-full h-[3px] ${
                 (color === "black" ? "bg-white" : "bg-black",
-                color === "#DC4242" ? "bg-white" : "bg-black",
                 color === "#EDCA21" ? "bg-black" : "bg-white")
               } `}
             ></div>
@@ -67,7 +66,7 @@ export default function TestimonialsItem({
                 <p className="garde_ghotic_semibold max-sm:text-md">
                   {toggleText ? testimonial : shortTestimonial + "..."}
                 </p>
-                {testimonial.split(" ").length > 40 ? (
+                {testimonial.split(" ").length > 25 ? (
                   <div
                     className="grid justify-center py-3 cursor-pointer"
                     onClick={() => {

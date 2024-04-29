@@ -47,9 +47,9 @@ import fotografia_3 from "../../../public/services/fotografia/3.png";
 import videografia_1 from "../../../public/services/videografia/1.png";
 import videografia_2 from "../../../public/services/videografia/2.png";
 import videografia_3 from "../../../public/services/videografia/3.png";
-import imagen_corporativa_1 from "../../../public/services/imagen_corporativa/1.jpg";
-import imagen_corporativa_2 from "../../../public/services/imagen_corporativa/2.jpg";
-import imagen_corporativa_3 from "../../../public/services/imagen_corporativa/3.jpg";
+import imagen_corporativa_1 from "../../../public/services/imagen_corporativa/1.png";
+import imagen_corporativa_2 from "../../../public/services/imagen_corporativa/2.png";
+import imagen_corporativa_3 from "../../../public/services/imagen_corporativa/3.png";
 export default function ServiceSlider({ index }) {
   const swiperRef = useRef(null);
   const swiperRef2 = useRef(null);
@@ -124,7 +124,7 @@ export default function ServiceSlider({ index }) {
                 spaceBetween: 90,
               },
             }}
-            className="services-item-slider px-20 mb-16 pt-10 pb-10 max-md:px-[3rem] "
+            className="services-item-slider px-20 mb-5 pt-10 pb-10 max-md:px-[3rem] "
           >
             <SwiperSlide>
               <Tab as={Fragment}>

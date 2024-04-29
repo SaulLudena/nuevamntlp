@@ -21,6 +21,10 @@ export default function TestimonialCarousel() {
       slidesPerView={1}
       navigation
       className="mx-20 swiper-testimonials max-md:mx-0"
+      style={{
+        "--swiper-navigation-color": "#000",
+        "--swiper-navigation-size": "25px",
+      }}
     >
       {testimonials.map((testimonial, index) => (
         <SwiperSlide key={index}>
@@ -46,7 +50,7 @@ const testimonials = [
     name: "Juan Diego Nicolalde",
     testominalImage: JuanDiegoNicoLalde,
     testimonial:
-      "❝La alianza que hemos mantenido desde hace más de un año con Nuevamente ha sido un impulso para la academia. Su creatividad, organización y enfoque han llevado la marca a nuevos públicos y estamos encantados con los resultados y sin duda lo recomendaría a otros emprendedores y empresa que quieran impactar en las redes.❞",
+      "❝Mi experiencia trabajando con Nuevamente ha sido excepcional. A pesar de la distancia entre Ecuador y Perú, todos los procesos se han desarrollado de manera fluida y eficiente, siempre en base a lo planificado. Lo que más valoro es su disposición constante para adaptarse a los cambios necesarios, lo cual ha contribuido enormemente a tener un crecimiento orgánico adecuado en nuestras redes y en nuestra comunicación con cada uno de nuestros clientes y prospectos.  como cliente  de nuevamente siento que su servicio verdaderamente ahora es imprescindible para el dia a dia de Legacy Ecuador.❞",
   },
   {
     color: "#EDCA21",
