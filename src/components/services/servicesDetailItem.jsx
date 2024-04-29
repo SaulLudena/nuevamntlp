@@ -53,7 +53,7 @@ export default function ServicesDetailItem({ servicessliderItem }) {
         className="grid grid-cols-12  max-xl:flex max-2xl:flex-col w-full max-w-[2800px] m-auto h-auto md:h-full "
         id="detail"
       >
-        <div className="grid items-center col-span-6 w-[80%] max-w-[1500px] m-auto max-xl:h-[45rem] max-md:h-[40rem]">
+        <div className="grid items-center col-span-6 w-[80%] max-w-[1500px] m-auto max-xl:h-[45rem] max-md:h-[40rem] max-sm:h-[48rem] max-sm:items-start">
           <div className="grid px-10 gap-7 max-md:px-0">
             <h1 className="text-5xl text-[#DC4242] max-md:text-4xl">{title}</h1>
             <p className="garde_ghotic_semibold max-md:text-sm">{paragraph1}</p>

@@ -61,7 +61,7 @@ body {
   color: #dc4242;
   transform: translateY(-0.4rem);
   @media (max-width: 640px) {
-    --swiper-navigation-size: 620px; /* Cambiar el tamaño en el breakpoint sm */
+    --swiper-navigation-size: 30px; /* Cambiar el tamaño en el breakpoint sm */
   }
 
   @media (min-width: 641px) and (max-width: 768px) {

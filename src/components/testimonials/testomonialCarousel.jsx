@@ -22,7 +22,6 @@ export default function TestimonialCarousel() {
       navigation
       className="mx-20 swiper-testimonials max-md:mx-0"
       style={{
-        "--swiper-navigation-color": "#000",
         "--swiper-navigation-size": "25px",
       }}
     >
