@@ -1,12 +1,11 @@
 import TeamMemberItem from "./teamMemberItem";
-import memberImage from "../../../public/teammemberexample.png";
+
 import Jeff from "../../../public/team/Jeff.png";
 
 import Rafael from "../../../public/team/Rafael.png";
 import Leslie from "../../../public/team/Leslie.png";
 import Alba from "../../../public/team/Alba.png";
 import Carlos from "../../../public/team/Carlos.png";
-import Maico from "../../../public/team/Maico.png";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -87,7 +86,7 @@ const teamMember = [
     nombre: "Leslie Cervera",
     cargo: "Senior Graphic Designer",
     cargo2: "Directora creativa",
-    instagram: "",
+    instagram: "https://www.instagram.com/lesliecer/",
     behance: "",
     memberImage: Leslie,
   },
@@ -103,23 +102,23 @@ const teamMember = [
     nombre: "Carlos Pacaya",
     cargo: "Graphic Designer",
     cargo2: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/carlosmanuel.pr/",
     behance: "",
     memberImage: Carlos,
   },
   {
-    nombre: "Maico Rodriguez",
+    nombre: "Iván Enciso",
     cargo: "Video Editor",
     cargo2: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/ivanencisso/",
     behance: "",
-    memberImage: Maico,
+    memberImage: null,
   },
   {
     nombre: "Jeff Blass",
     cargo: "CEO",
     cargo2: "Director General",
-    instagram: "",
+    instagram: "https://www.instagram.com/blasjeff/",
     behance: "",
     memberImage: Jeff,
   },

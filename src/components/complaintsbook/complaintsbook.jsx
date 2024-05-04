@@ -1,4 +1,4 @@
-import PresentationBackground4 from "../../../public/presentationBackground4.jpg";
+import PresentationBackground4 from "../../../public/important_images/presentationBackground4.jpg";
 import ComplaintsbookItem from "./complaintsbookItem";
 export default function Complaintsbook() {
   return (

@@ -1,5 +1,6 @@
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { FaBehanceSquare } from "react-icons/fa";
+import Default_image from "../../../public/team/default_image.png";
 export default function TeamMemberItem({
   nombre,
   cargo,
@@ -12,7 +13,7 @@ export default function TeamMemberItem({
     <div>
       <div>
         <img
-          src={memberImage}
+          src={memberImage ? memberImage : Default_image}
           alt=""
           className="object-cover w-full h-96 max-md:h-[35rem] max-sm:h-[25rem] max-sm:object-top"
         />

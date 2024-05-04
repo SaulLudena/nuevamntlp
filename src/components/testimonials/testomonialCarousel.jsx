@@ -29,7 +29,6 @@ export default function TestimonialCarousel() {
         <SwiperSlide key={index}>
           <TestimonialsItem
             color={testimonial.color}
-            TestomialImage={testimonial.TestomialImage}
             category={testimonial.category}
             name={testimonial.name}
             testominalImage={testimonial.testominalImage}

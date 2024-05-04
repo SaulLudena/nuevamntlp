@@ -1,9 +1,8 @@
 import { FaWhatsapp } from "react-icons/fa";
 
-import TestImage from "../../../public/test_image.jpg";
+import TestImage from "../../../public/important_images/test_image.jpg";
 import { Fragment, useEffect, useState } from "react";
 
-import ServicesDetailItemModal from "./servicesDetailItemModal";
 import { Dialog, Transition } from "@headlessui/react";
 
 export default function ServicesDetailItem({ servicessliderItem }) {
@@ -83,7 +82,7 @@ export default function ServicesDetailItem({ servicessliderItem }) {
               </p>
               <div className="text-center ">
                 <a
-                  href={`https://api.whatsapp.com/send?phone=+573014000000&text=Hola,%20me%20interesa%20el%20servicio%20de%20${title}%20me%20gustaria%20saber%20mas`}
+                  href={`https://api.whatsapp.com/send?phone=+51972146904&text=Hola,%20me%20interesa%20el%20servicio%20de%20${title},%20me%20gustaria%20conocer%20más`}
                   target="_blank"
                   rel="noreferrer noopener"
                   className="px-5 py-3 bg-gradient-to-r bg-[#dc4242] text-white text-sm flex items-center gap-3 justify-center"

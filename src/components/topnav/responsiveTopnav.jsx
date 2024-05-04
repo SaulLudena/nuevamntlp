@@ -1,7 +1,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 import TopnavContact from "./topnavContact";
 import TopnavItem from "./topnavItem";
-import TopnavLogoSrc from "../../../public/TopnavLogo2.png";
+import TopnavLogoSrc from "../../../public/important_images/TopnavLogo2.png";
 
 export default function ResponsiveTopnav({ isOpen, handleOpen }) {
   const handleItemClick = () => {
@@ -42,10 +42,15 @@ export default function ResponsiveTopnav({ isOpen, handleOpen }) {
           </ul>
         </div>
         <div className="flex w-[50%] ">
-          <div className="px-5 py-3 bg-gradient-to-r bg-[#dc4242] text-white text-sm max-lg:flex flex items-center gap-3 justify-center ">
+          <a
+            className="px-5 py-3 bg-gradient-to-r bg-[#dc4242] text-white text-sm max-lg:flex flex items-center gap-3 justify-center "
+            href={`https://api.whatsapp.com/send?phone=+51972146904&text=Hola,%20me%20interesan%20sus%20servicios.`}
+            target="_blank"
+            rel="noreferrer"
+          >
             <p>Contáctanos</p>
             <FaWhatsapp />
-          </div>
+          </a>
         </div>
       </div>
     </div>

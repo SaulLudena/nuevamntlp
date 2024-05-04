@@ -1,5 +1,5 @@
-import Logo from "../../../public/TopnavLogo.png";
-import { FaFacebookF, FaTiktok, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import Logo from "../../../public/important_images/TopnavLogo.png";
+import { FaFacebookF, FaTiktok } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { IoLogoWhatsapp } from "react-icons/io";
 export default function ChatMessageOpen() {

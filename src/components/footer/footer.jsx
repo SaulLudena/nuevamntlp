@@ -1,11 +1,11 @@
-import FooterBackground from "../../../public/footerbackground.png";
+import FooterBackground from "../../../public/important_images/footerbackground.png";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
-import FooterLogo from "../../../public/TopnavLogo2.png";
+import FooterLogo from "../../../public/important_images/TopnavLogo2.png";
 import { FaWhatsapp } from "react-icons/fa6";
 import { HashLink as Link } from "react-router-hash-link";
 export default function Footer() {

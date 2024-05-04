@@ -11,7 +11,7 @@ export default function Faq() {
         </div>
         <div className="grid gap-2">
           <h1 className="text-6xl max-lg:text-4xl">FAQ</h1>
-          <p className="text-md garde_ghotic_semibold max-lg:text-sm max-sm:w-full">
+          <p className="text-md garde_ghotic_semibold max-lg:text-sm max-sm:w-[90%]">
             ¿Dudas sobre nuestro flujo de trabajo, tiempo de entrega o cualquier
             otro aspecto? Encuentra las respuestas a las preguntas más
             frecuentes aquí:

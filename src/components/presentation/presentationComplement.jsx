@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PresentationComplementItem from "./presentationComplementItem";
-import TopnavLogo2 from "../../../public/TopnavLogo2.png";
-import bloque2 from "../../../public/bloque2.png";
+import TopnavLogo2 from "../../../public/important_images/TopnavLogo2.png";
+import bloque2 from "../../../public/important_images/bloque2.png";
 import Aboutus from "../aboutus/aboutus";
 import Services from "../services/services";
 import { SiMaterialdesignicons } from "react-icons/si";
@@ -26,63 +26,6 @@ export default function PresentationComplement() {
     setPresentationItemIndex(index);
     setMostradoEnSlide(showedInSlide);
   };
-  const iconSize = 40;
-  const items = [
-    {
-      id: 0,
-      to: "/",
-      label: "Diseño Gráfico",
-      icon: <SiMaterialdesignicons size={iconSize} />,
-    },
-    {
-      id: 1,
-      to: "/",
-      label: "Redes Sociales",
-      icon: <LuMonitorSmartphone size={iconSize} />,
-    },
-    {
-      id: 2,
-      to: "/",
-      label: "Desarrollo de Páginas Web",
-      icon: <MdComputer size={iconSize} />,
-    },
-    {
-      id: 3,
-      to: "/",
-      label: "Coaching de Marca Personal",
-      icon: <RiTeamFill size={iconSize} />,
-    },
-    {
-      id: 4,
-      to: "/",
-      label: "Creación de Logos",
-      icon: <MdStars size={iconSize} />,
-    },
-    {
-      id: 5,
-      to: "/",
-      label: "Fotografía",
-      icon: <FaCamera size={iconSize} />,
-    },
-    {
-      id: 6,
-      to: "/",
-      label: "Videgrafía",
-      icon: <FaVideo size={iconSize} />,
-    },
-    {
-      id: 7,
-      to: "/",
-      label: "Imagen corporativa",
-      icon: <AiOutlineTeam size={iconSize} />,
-    },
-    {
-      id: 8,
-      to: "/",
-      label: "Packaing",
-      icon: <FaBox size={iconSize} />,
-    },
-  ];
 
   return (
     <>
@@ -134,3 +77,60 @@ export default function PresentationComplement() {
     </>
   );
 }
+const iconSize = 40;
+const items = [
+  {
+    id: 0,
+    to: "/",
+    label: "Diseño Gráfico",
+    icon: <SiMaterialdesignicons size={iconSize} />,
+  },
+  {
+    id: 1,
+    to: "/",
+    label: "Redes Sociales",
+    icon: <LuMonitorSmartphone size={iconSize} />,
+  },
+  {
+    id: 2,
+    to: "/",
+    label: "Desarrollo de Páginas Web",
+    icon: <MdComputer size={iconSize} />,
+  },
+  {
+    id: 3,
+    to: "/",
+    label: "Coaching de Marca Personal",
+    icon: <RiTeamFill size={iconSize} />,
+  },
+  {
+    id: 4,
+    to: "/",
+    label: "Creación de Logos",
+    icon: <MdStars size={iconSize} />,
+  },
+  {
+    id: 5,
+    to: "/",
+    label: "Fotografía",
+    icon: <FaCamera size={iconSize} />,
+  },
+  {
+    id: 6,
+    to: "/",
+    label: "Videografía",
+    icon: <FaVideo size={iconSize} />,
+  },
+  {
+    id: 7,
+    to: "/",
+    label: "Imagen corporativa",
+    icon: <AiOutlineTeam size={iconSize} />,
+  },
+  {
+    id: 8,
+    to: "/",
+    label: "Packaging",
+    icon: <FaBox size={iconSize} />,
+  },
+];

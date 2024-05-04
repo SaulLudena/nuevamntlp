@@ -20,13 +20,11 @@ export default function OurClients() {
       </p>
       <ul className="grid grid-cols-5 gap-5 max-lg:grid-cols-2 max-md:grid-cols-2 max-md:justify-center">
         <OurClientItem clienteImagen={LogoNetworkers6} />
-
         <OurClientItem clienteImagen={LogoNetworkers2} />
         <OurClientItem clienteImagen={LogoNetworkers7} />
         <OurClientItem clienteImagen={LogoNetworkers3} />
         <OurClientItem clienteImagen={LogoNetworkers9} />
         <OurClientItem clienteImagen={LogoNetworkers1} />
-
         <OurClientItem clienteImagen={LogoNetworkers4} />
         <OurClientItem clienteImagen={LogoNetworkers5} />
         <OurClientItem clienteImagen={LogoNetworkers10} />

@@ -1,11 +1,11 @@
 import { FaWhatsapp } from "react-icons/fa";
-import PresentationBackground4 from "../../../public/presentationBackground4.jpg";
+import PresentationBackground from "../../../public/important_images/presentationBackground4.jpg";
 
 export default function presentation() {
   return (
     <div className="grid items-center bg-[#0B0101] pt-16 " id="Inicio">
       <img
-        src={PresentationBackground4}
+        src={PresentationBackground}
         alt=""
         className="object-bottom w-full select-none max-sm:h-[30rem] max-lg:h-[40rem] max-sm:opacity-20 max-lg:opacity-40 max-lg:object-right max-xl:object-cover "
       />

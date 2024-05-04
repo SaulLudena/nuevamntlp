@@ -16,7 +16,7 @@ export default function Testimonials() {
           <div className="grid gap-5">
             <h1 className="text-6xl max-lg:text-4xl">Testimonios</h1>
             <p className="text-md garde_ghotic_semibold max-lg:text-sm max-sm:w-[12rem]">
-              Lorem ipsum dolor sit amet consectetur.
+              Conoce lo que nuestros clientes opinan sobre nuestros servicios
             </p>
           </div>
         </div>

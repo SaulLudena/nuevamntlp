@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import TopnavLogoSrc from "../../../public/TopnavLogo2.png";
+import TopnavLogoSrc from "../../../public/important_images/TopnavLogo2.png";
 
 export default function TopnavLogo() {
   const scrollToTop = () => {

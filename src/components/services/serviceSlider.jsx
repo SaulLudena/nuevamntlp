@@ -38,9 +38,9 @@ import creacion_de_logos_1 from "../../../public/services/creacion_de_logos/1.pn
 import creacion_de_logos_2 from "../../../public/services/creacion_de_logos/2.png";
 import creacion_de_logos_3 from "../../../public/services/creacion_de_logos/3.png";
 
-import packaing_1 from "../../../public/services/packaing/1.png";
-import packaing_2 from "../../../public/services/packaing/2.png";
-import packaing_3 from "../../../public/services/packaing/3.png";
+import packaging_1 from "../../../public/services/packaging/1.png";
+import packaging_2 from "../../../public/services/packaging/2.png";
+import packaging_3 from "../../../public/services/packaging/3.png";
 import fotografia_1 from "../../../public/services/fotografia/1.png";
 import fotografia_2 from "../../../public/services/fotografia/2.png";
 import fotografia_3 from "../../../public/services/fotografia/3.png";
@@ -86,7 +86,7 @@ export default function ServiceSlider({ index }) {
       <Tab.Group selectedIndex={selectedIndex} onChange={handleTabChange}>
         <Tab.List className="flex  overflow-x-hidden  w-[80%] max-w-[1500px] m-auto max-md:w-[95%]">
           <Swiper
-            // install Swiper modules
+            // modulos de swipper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={90}
             slidesPerView={3}
@@ -98,8 +98,6 @@ export default function ServiceSlider({ index }) {
             style={{ "--swiper-navigation-size": "50px" }}
             ref={swiperRef}
             onSlideChange={() => {
-              /*quiero que se haga un slide del panel cuando haga un slide a los SwiperSliders */
-
               if (swiperRef2.current && swiperRef2.current.swiper) {
                 swiperRef2.current.swiper.slideTo(
                   swiperRef.current.swiper.activeIndex
@@ -109,19 +107,15 @@ export default function ServiceSlider({ index }) {
             breakpoints={{
               320: {
                 slidesPerView: 1,
-                spaceBetween: 90,
               },
               740: {
                 slidesPerView: 1,
-                spaceBetween: 90,
               },
               1280: {
                 slidesPerView: 2,
-                spaceBetween: 90,
               },
               1380: {
                 slidesPerView: 3,
-                spaceBetween: 90,
               },
             }}
             className="services-item-slider px-20 mb-5 pt-10 pb-10 max-md:px-[3rem] "
@@ -274,7 +268,7 @@ export default function ServiceSlider({ index }) {
 
 const servicesDetailItems = [
   {
-    title: "Diseño grafico",
+    title: "Diseño gráfico",
     paragraph1:
       "Creemos que el diseño gráfico es una poderosa herramienta para comunicar mensajes, valores e información; que represente la identidad de tu marca a tu público objetivo para, así, generar recordación",
     include: [
@@ -538,7 +532,7 @@ const servicesDetailItems = [
     ],
   },
   {
-    title: "Packaing",
+    title: "Packaging",
     paragraph1: "Nuestro equipo de artistas apasionados te ayudará a: ",
     include: [
       {
@@ -563,9 +557,9 @@ const servicesDetailItems = [
       },
     ],
     images: [
-      { image1: packaing_1 },
-      { image2: packaing_2 },
-      { image3: packaing_3 },
+      { image1: packaging_1 },
+      { image2: packaging_2 },
+      { image3: packaging_3 },
     ],
   },
 ];
