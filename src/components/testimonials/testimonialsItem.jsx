@@ -46,7 +46,7 @@ export default function TestimonialsItem({
           }
         >
           <div
-            className={`grid items-center col-span-7 py-10 min-h-full ${backgroundColorClass} p-10 max-sm:p-6 grid gap-5 max-xl:gap-5 `}
+            className={`grid col-span-7 py-10  ${backgroundColorClass} p-10 max-sm:p-6 grid gap-5 max-xl:gap-5   h-[calc(100%)]`}
           >
             <div>
               <p className="mb-4 text-lg max-sm:text-sm">{category}</p>
@@ -62,7 +62,7 @@ export default function TestimonialsItem({
               <p className="garde_ghotic_semibold max-sm:text-md max-sm:hidden">
                 {testimonial}
               </p>
-              <div className="hidden max-sm:block">
+              <div className="flex-col hidden max-sm:flex">
                 <p className="garde_ghotic_semibold max-sm:text-md">
                   {toggleText ? testimonial : shortTestimonial + "..."}
                 </p>

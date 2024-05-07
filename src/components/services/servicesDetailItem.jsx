@@ -49,10 +49,10 @@ export default function ServicesDetailItem({ servicessliderItem }) {
   return (
     <>
       <div
-        className="grid grid-cols-12  max-xl:flex max-2xl:flex-col w-full max-w-[2800px] m-auto h-auto md:h-full "
+        className="grid grid-cols-12  max-xl:flex max-2xl:flex-col w-full max-w-[2800px] m-auto h-auto md:h-full  cursor-grab"
         id="detail"
       >
-        <div className="grid items-center col-span-6 w-[80%] max-w-[1500px] m-auto max-xl:h-[45rem] max-md:h-[40rem] max-sm:h-[55rem] max-sm:items-start ">
+        <div className="grid items-center col-span-6 w-[80%] max-w-[1500px] m-auto max-xl:h-[45rem] max-md:h-[40rem] max-sm:h-[61rem] max-sm:items-center  pb-2">
           <div className="grid px-10 gap-7 max-md:px-0">
             <h1 className="text-5xl text-[#DC4242] max-md:text-4xl">{title}</h1>
             <p className="garde_ghotic_semibold max-md:text-sm">{paragraph1}</p>
@@ -71,26 +71,26 @@ export default function ServicesDetailItem({ servicessliderItem }) {
               ))}
             </ul>
             <div className="w-full h-[2px] bg-[#DC4242] "></div>
-            <div className="flex items-center justify-center gap-10">
-              <p
-                className="text-5xl better_yesterday "
-                onClick={() => {
-                  openModal();
-                }}
+          </div>
+          <div className="flex items-center justify-around min-h-full gap-10 py-10 pb-2 max-md:flex-col max-md:gap-2 max-md:justify-between w-[80%] m-auto max-md:w-full">
+            <p
+              className="text-7xl better_yesterday max-md:text-8xl"
+              onClick={() => {
+                openModal();
+              }}
+            >
+              ¿Lo quieres?
+            </p>
+            <div className="text-center max-md:w-full">
+              <a
+                href={`https://api.whatsapp.com/send?phone=+51972146904&text=Hola,%20me%20interesa%20el%20servicio%20de%20${title},%20me%20gustaria%20conocer%20más`}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="px-5 py-5 bg-gradient-to-r bg-[#dc4242] text-white text-md max-md:text-sm flex items-center gap-3 justify-center"
               >
-                ¿Lo quieres?
-              </p>
-              <div className="text-center ">
-                <a
-                  href={`https://api.whatsapp.com/send?phone=+51972146904&text=Hola,%20me%20interesa%20el%20servicio%20de%20${title},%20me%20gustaria%20conocer%20más`}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="px-5 py-3 bg-gradient-to-r bg-[#dc4242] text-white text-sm flex items-center gap-3 justify-center"
-                >
-                  <p>Contáctanos</p>
-                  <FaWhatsapp />
-                </a>
-              </div>
+                <p>Contáctanos</p>
+                <FaWhatsapp />
+              </a>
             </div>
           </div>
         </div>
