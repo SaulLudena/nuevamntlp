@@ -54,6 +54,12 @@ body {
   /* Otros estilos que desees agregar */
 }
 
+@media (max-width: 640px) {
+  .swiper-testimonials .swiper-button-next,
+  .swiper-testimonials .swiper-button-prev {
+    transform: translateY(-120%);
+  }
+}
 .services-item-slider .swiper-button-next,
 .services-item-slider .swiper-button-prev {
   color: #dc4242;

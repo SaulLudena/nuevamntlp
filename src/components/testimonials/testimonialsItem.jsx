@@ -41,19 +41,19 @@ export default function TestimonialsItem({
         <div
           className={
             name === "Kennet Mansilla"
-              ? ` py-32 max-lg:py-0 grid items-center col-span-7`
-              : ` py-28 max-lg:py-0 grid items-center col-span-7`
+              ? ` py-32 max-lg:py-0 grid  col-span-7`
+              : ` py-28 max-lg:py-0 grid col-span-7 items-center`
           }
         >
           <div
-            className={`grid col-span-7 py-10  ${backgroundColorClass} p-10 max-sm:p-6 grid gap-5 max-xl:gap-5   h-[calc(100%)]`}
+            className={` col-span-7 py-10  ${backgroundColorClass} p-10 max-sm:p-6 `}
           >
-            <div>
-              <p className="mb-4 text-lg max-sm:text-sm">{category}</p>
+            <div className="mb-8 max-md:mb-5">
+              <p className="mb-4 text-lg max-sm:text-sm ">{category}</p>
               <h1 className="text-5xl max-sm:text-3xl">{name}</h1>
             </div>
             <div
-              className={`w-full h-[3px] ${
+              className={`w-full h-[3px] mb-8 max-md:mb-5 ${
                 (color === "black" ? "bg-white" : "bg-black",
                 color === "#EDCA21" ? "bg-black" : "bg-white")
               } `}
@@ -62,6 +62,7 @@ export default function TestimonialsItem({
               <p className="garde_ghotic_semibold max-sm:text-md max-sm:hidden">
                 {testimonial}
               </p>
+
               <div className="flex-col hidden max-sm:flex">
                 <p className="garde_ghotic_semibold max-sm:text-md">
                   {toggleText ? testimonial : shortTestimonial + "..."}
